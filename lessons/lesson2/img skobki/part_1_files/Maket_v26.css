@@ -1,0 +1,649 @@
+.SMainBody
+{
+  font-family: Arial;
+  font-size: 13px;
+  color: rgb(0,0,0);
+}
+
+.SLogoCell
+{
+  padding: 38px 10px 0 23px;
+  background: url('../images/logo_border2.gif') right bottom no-repeat;
+}
+
+.SLearnCell
+{
+  background-color: rgb(254,204,9);
+  font-size: 18px;
+  padding: 15px 10px 15px 28px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.SLearnCell a
+{
+  color: #000000;
+}
+
+.SLearnCell span
+{
+  color: #FFFFFF;
+}
+
+.SMainLeftCell
+{
+  background-color: rgb(230,230,230);
+  padding: 0 21px 0 0;
+  border-top: solid #FFFFFF 3px;
+}
+
+/*
+.SMainLeftCell table td
+{
+  border-bottom: solid #FFFFFF 1px;
+  font-size: 12px;
+  padding: 20px 0 20px 0;
+  text-align: right;
+}
+
+.SMainLeftCell table td.L
+{
+  border-bottom-style: none;
+}
+*/
+
+.SMainLeftCell a
+{
+  color: #000000;
+  margin-left: 110px;
+}
+
+.SMainMenuTable td
+{
+  border-bottom: solid #FFFFFF 1px;
+  font-size: 12px;
+  padding: 20px 0 20px 0;
+  text-align: right;
+}
+
+.SMainMenuTable td.L
+{
+  border-bottom-style: none;
+}
+
+.SMainMenuTable td a
+{
+  text-decoration: none;
+}
+.SMainMenuTable td a:hover
+{
+  text-decoration: underline;
+}
+
+.SMainCenterCell
+{
+  background-color: rgb(78,174,59);
+  color: #FFFFFF;
+  padding: 26px 27px 10px 27px;
+  font-size: 18px;
+  border-top: solid #FFFFFF 3px;
+}
+
+.SMainCenterCell a
+{
+  color: #FFFFFF;
+}
+
+.SMainCenterCell input
+{
+  font-size: 13px;
+}
+
+.SNearestGroups
+{
+  margin-top: 18px;
+  margin-bottom: 14px;
+}
+
+.SNearestGroups td
+{
+  font-size: 14px;
+  padding-right: 14px;
+}
+
+.SNearestGroups td.R
+{
+  padding-right: 0;
+  padding-left: 17px;
+  border-left: solid #ffffff 1px;
+  text-align: left;
+}
+
+.SNearestGroups td a
+{
+  display: block;
+}
+
+.SMainRightCell
+{
+  background-color: rgb(153,153,153);
+  color: #FFFFFF;
+  padding: 26px 17px 10px 27px;
+  font-size: 18px;
+  border-top: solid #FFFFFF 3px;
+}
+
+.SSearchCoursesTable
+{
+  margin: 18px 0 10px 0;
+}
+
+.SSearchCoursesTable td
+{
+  font-size: 14px;
+  padding-right: 0;
+  padding-bottom: 9px;
+}
+
+.SSearchCoursesTable option.L1
+{
+  font-weight: bold;
+}
+
+.SSearchCoursesTable option.L2
+{
+  padding-left: 10px;
+}
+
+.SSearchCoursesTable td select
+{
+  width: 183px;
+  margin-left: 10px;
+}
+
+.SMainBlockCell
+{
+  padding: 20px 21px 0 24px;
+  vertical-align: top;
+}
+
+.SMainBlockCell .SMainBlockHeaderTable
+{
+  width: 100%;
+}
+
+.SMainBlockCell .SMainBlockHeaderTable th
+{
+  width: 1%;
+  white-space: nowrap;
+}
+
+.SMainBlockCell .SMainBlockHeaderTable th H2
+{
+  margin: 0 11px 0 13px;
+  line-height: 95%;
+}
+
+.SMainBlockCell .SMainBlockHeaderTable td.Y
+{
+  background-color: rgb(254,204,9);
+}
+
+.SMainBlockCell .SMainBlockHeaderTable td.G
+{
+  /*background-color: rgb(230,230,230);*/
+  border-bottom: rgb(230,230,230) solid 2px;
+  width: 100%;
+}
+
+.SMainBlockRightCell
+{
+  background-color: rgb(230,230,230);
+}
+
+.SMainBlockRightDiv
+{
+  border-top: solid #FFFFFF 3px;
+  /*width: 100%;*/
+  padding: 16px 28px 20px 28px
+}
+
+.SNewsAnonsesContainer
+{
+  padding-left: 17px;
+  padding-top: 5px;
+}
+
+.SNewsAnonsesContainer .D
+{
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+.SNewsAnonsesContainer .D a
+{
+  color: #000000;
+}
+
+.SNewsAnonsesContainer .A
+{
+  font-size: 12px;
+}
+
+.SNewsAnonsesContainer .H
+{
+  text-align: right;
+}
+
+.SListItem
+{
+  margin-top: 14px;
+}
+
+.SListItem td.F
+{
+  border-right: solid rgb(78,174,59) 1px;
+  padding-right: 8px;
+}
+
+.SListItem td.T
+{
+  padding-left: 6px;
+  background: url('../images/box_green.gif') left top no-repeat;
+}
+
+.SListItem td.E
+{
+  padding-left: 18px !important;
+  background: none !important;
+}
+
+.SListItem td.T div.F
+{
+  margin: 0 0 2px 15px;
+  font-weight: bold;
+}
+
+.SListItem td.E div.F
+{
+  margin-left: 0;
+}
+
+.SListItem td.T div.F a
+{
+  color: #000000;
+}
+
+.SListItem td.T div.P
+{
+  font-style: italic;
+  padding: 2px 0 3px 0;
+}
+
+.SListItem td.T div.C
+{
+  margin: 0 0 2px 15px;
+  font-style: italic;
+}
+
+.SListItem .H
+{
+  text-align: right;
+}
+
+.SSimpleListItem
+{
+  margin-top: 14px;
+}
+
+.SSimpleListItem td.F
+{
+  padding-right: 10px;
+}
+
+.SSimpleListItem td.T div.F
+{
+  margin: 0 0 2px 0;
+  font-weight: bold;
+}
+
+.SSimpleListItem td.T div.F a
+{
+  color: #000000;
+}
+
+.SSimpleListItem td.T div.C
+{
+  margin: 0 0 2px 0;
+  font-style: italic;
+}
+
+.SSimpleListItem .H
+{
+  text-align: right;
+}
+
+.SVoteQuestion
+{
+  margin: 10px 0 2px 17px;
+  font-weight: bold;
+}
+
+.SVoteAnswers
+{
+  margin: 10px 0 0 40px;
+}
+
+.SVoteAnswers td
+{
+  padding: 1px 0 12px 0;
+}
+
+.SVoteResultsTable
+{
+  margin-top: 5px;
+}
+
+.SVoteResultsTable th
+{
+  text-align: left;
+  padding-left: 17px;
+}
+
+.SVoteResultsTable td
+{
+  vertical-align: middle;
+}
+
+.SVoteResultsTable td.P
+{
+  padding: 5px 0 7px 40px;
+}
+
+.SVoteResultsTable .SVoteBarTable
+{
+  margin: 5px 0 7px 5px;
+}
+
+.SBottomRightCell
+{
+  background-color: rgb(78,174,59);
+  text-align: right;
+  padding: 15px 34px 15px 10px;
+  white-space: nowrap;
+}
+
+.SBottomLeftCell
+{
+  background-color: rgb(153,153,153);
+}
+
+.SBottomLeftDiv
+{
+  border-top: solid #ffffff 23px;
+}
+
+.SBottomLeftDiv table
+{
+  margin: 11px 0 0 7px;
+}
+
+.SBottomLeftDiv td
+{
+  padding: 0 17px 0 17px;
+  border-right: solid #FFFFFF 1px;
+}
+
+.SBottomLeftDiv td.L
+{
+  border-right-style: none;
+}
+
+.SBottomLeftDiv a
+{
+  color: #FFFFFF;
+}
+
+.SBottomLeftDiv span
+{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.STopLeftCell
+{
+  background-color: rgb(230,230,230);
+}
+
+.STopLeftDiv
+{
+  border-top: solid #ffffff 23px;
+}
+
+.STopLeftDiv table
+{
+  margin: 11px 0 12px 7px;
+}
+
+.STopLeftDiv td
+{
+  padding: 0 17px 0 17px;
+  border-right: solid #FFFFFF 1px;
+}
+
+.STopLeftDiv td.L
+{
+  border-right-style: none;
+}
+
+.STopLeftDiv a
+{
+  color: #000000;
+}
+
+.STopLeftDiv span
+{
+  color: #000000;
+  font-weight: bold;
+}
+
+.SContentCell
+{
+  border-top: solid #FFFFFF 3px;
+}
+
+.SContentCell .SContentDiv
+{
+  padding: 12px 30px 0 30px;
+}
+
+.STracePath
+{
+  margin: 0 0 0 0;
+  border-bottom: solid rgb(153,153,153) 9px;
+}
+
+.STracePath h1
+{
+  background-color: rgb(78,174,59);
+  color: #FFFFFF;
+  margin: 0;
+  padding: 9px 0 5px 24px;
+  font-weight: normal;
+}
+
+.STracePath h1 a
+{
+  color: #FFFFFF;
+}
+
+.SRightCell
+{
+  background-color: rgb(230,230,230);
+  padding: 0 0 20px 28px;
+  border-top: solid #FFFFFF 3px;
+}
+
+.SLocalMenuTable td
+{
+  border-bottom: solid #FFFFFF 1px;
+  font-size: 12px;
+  padding: 20px 0 20px 0;
+}
+
+.SLocalMenuTable td.L
+{
+  border-bottom-style: none;
+}
+
+.SLocalMenuTable td.S
+{
+  background: url('../images/box_white.gif') left bottom no-repeat;
+}
+
+.SLocalMenuTable a
+{
+  color: #000000;
+  margin-right: 110px;
+}
+
+.SProgramsList h3
+{
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.SProgramsList div
+{
+  background: url('../images/box_yellow.gif') left center no-repeat;
+  padding: 4px 0 4px 17px;
+}
+
+.SProgramsList a
+{
+  color: #000000;
+}
+
+.SProgramsList a span
+{
+  color: rgb(78,174,59);
+}
+
+.SCoursesTable th
+{
+  background-color: rgb(242,242,242);
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center !important;
+}
+
+.SCoursesTable a
+{
+  color: #000000;
+  text-decoration: underline;
+}
+
+.SCoursesTable td
+{
+  border: solid #000000 1px !important;
+  /*text-align: left;*/
+  vertical-align: middle;
+}
+
+.SCourseDependsTable td
+{
+  /*text-align: left;*/
+  background-color: rgb(230,230,230);
+}
+
+.SCourseDependsTable th
+{
+  border: none !important;
+  background-color: rgb(254,204,9);
+  vertical-align: middle;
+}
+
+.SCourseDependsTable a
+{
+  display: block;
+  color: #000000;
+  margin: 5px 0 5px 0;
+}
+
+.SCourseDependsTable td.W
+{
+  background: url('../images/depends_arr.gif') center center no-repeat;
+  background-color: #FFFFFF;
+  padding: 0 30px 0 30px;
+}
+
+.SFormLearnRequest th.FL
+{
+  text-align: left;
+  vertical-align: middle;
+  padding: 0 5px 0 0;
+  white-space: nowrap;
+  line-height: 150%;
+}
+
+.SFormLearnRequest td.FV
+{
+  text-align: left;
+  padding: 2px 0 0px 0;
+  width: 100%;
+}
+
+.SFormLearnRequest .Butt
+{
+  width: 100px;
+  margin-right: 10px;
+}
+
+.SFormLearnRequest td select
+{
+  margin: 0 0 10px 10px;
+  font-size: 13px;
+}
+
+.SFormLearnRequest td.FC
+{
+  padding: 10px 0 3px 0;
+  font-weight: bold;
+}
+
+.SFormLearnRequest td.FC div
+{
+  font-weight: normal;
+  font-style: italic;
+}
+
+.SDateTable
+{
+/*  display: inline;*/
+}
+
+.SDateTable td
+{
+  padding-right: 5px;
+  padding-bottom: 0;
+  /*padding-top: 3px;*/
+  vertical-align: middle;
+}
+
+.SDateTable td input
+{
+  height: 16px;
+}
+
+.SDateTable td select
+{
+  margin-left: 0;
+  margin-bottom: 0;
+  height: 22px;
+}
+
+.SErrorsList
+{
+  color: #FF0000;
+}
