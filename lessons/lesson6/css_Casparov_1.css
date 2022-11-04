@@ -1,0 +1,38 @@
+*{padding: 0;
+    margin: 0;
+    }
+    
+    .name{font-weight: bold;
+        font-size: 24px;
+    }
+
+    .data{
+        color: green;
+    }
+
+    .mir{
+        color: red;
+        font-weight: bold;
+    }
+
+    .info{
+        color:blue;
+            font-weight: bold;
+        text-decoration: none;}
+
+    [href^="https://"]::before
+    {content: url('img/extref.png');
+    }
+    
+    .text{
+        color:blue;
+        font-style: italic;
+        padding-bottom: 20px;
+    }
+    
+    .perexod{
+        color:blue; 
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
