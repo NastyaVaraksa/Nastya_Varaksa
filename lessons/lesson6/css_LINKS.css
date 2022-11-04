@@ -1,0 +1,52 @@
+*{margin: 0;
+    padding: 0;
+}
+
+
+
+.menu_1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.menu_1 a{color: green;
+    border-right: 5px solid red;
+    padding: 5px 10px 10px 10px;
+}
+
+
+
+.menu_2{
+    font-size: 20px;
+    margin-bottom: 20px;   
+}
+
+.menu_2 a{
+    color: green;
+    }
+    
+.menu_2 table{
+    border-collapse: collapse;
+}
+
+.menu_2 table td{
+    border-right: red 5px solid; 
+    padding: 5px 10px 10px 10px;
+}
+
+
+.menu_3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.menu_3 a{
+    color: green;
+}
+
+.menu_3 ul li{
+    list-style-type: none; 
+    float: left; 
+    padding: 5px 10px 10px 10px; 
+    border-right: red solid 5px 
+}

@@ -4,57 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css_LINKS.css" rel="stylesheet">
     <title>LINKS</title>
+    </head>
 
-    <style>
-
-.menu_1{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.menu_1 a{color: green;
-    border-right: 5px solid red;
-    padding: 5px 10px 10px 10px;
-}
-
-
-
-.menu_2{
-    font-size: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.menu_2 a{
-    color: green;
-    padding: 5px 10px 10px 10px;}
-    
-
-
-
-.menu_3{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.menu_3 a{
-    color: green;
-    padding: 5px 10px 10px 10px;
-
-}
-
-.menu_3 ul li{
-    list-style-type: none; 
-    float: left;  
-    border-right: red solid 5px
-}
-
-
-    </style>
-
-</head>
 <body>
-    
+<!--Первый вариант: ссылки расположены в строку, так как тег а - строчный. Красный разделитель появился добавление бордера справа. Размер задавался при помощи поддингов.
+    Самый простой и быстрый вариант из 3-->
     <div class="menu_1">
         <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="первая ссылка">первая ссылка</a>
         <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="вторая ссылка">вторая ссылка</a>
@@ -63,27 +19,29 @@
         <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="пятая ссылка">пятая ссылка</a>
     </div>
 
-
+<!--Второй вариант: ссылки расположены в строку при помощи таблицы. Красный разделитель появился выделением правой боковой стороны ячейки. Размер задавался при помощи поддингов.-->
     <div class="menu_2">
+        <table>
+          <tr>
+            <td><a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="первая ссылка">первая ссылка</a></td>
+            <td><a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="вторая ссылка">вторая ссылка</a></td>
+            <td> <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="третья ссылка">третья ссылка</a></td>
+            <td><a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="четвертая ссылка">четвертая ссылка</a></td>
+            <td> <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="пятая ссылка">пятая ссылка</a></td>
+          </tr>
+        </table>
+   </div>
 
-        <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="первая ссылка">первая ссылка</a>
-        <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="вторая ссылка">вторая ссылка</a>
-        <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="третья ссылка">третья ссылка</a>
-        <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="четвертая ссылка">четвертая ссылка</a>
-        <a  href="http://htmlbook.ru/samcss/vvedenie-v-css" title="пятая ссылка">пятая ссылка</a>
-    </div>
-
+<!--Третий вариант: ссылки расположены в строку при помощи списка и обтекания влево. Красный разделитель появился добавление бордера справа. Размер задавался при помощи поддингов.  -->
     <div class="menu_3">
-
         <ul>
-        <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="первая ссылка">первая ссылка</a></li>
-        <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="вторая ссылка">вторая ссылка</a></li>
-        <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="третья ссылка">третья ссылка</a></li> 
-        <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="четвертая ссылка">четвертая ссылка</a></li>
-        <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="пятая ссылка">пятая ссылка</a></li>
+            <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="первая ссылка">первая ссылка</a></li>
+            <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="вторая ссылка">вторая ссылка</a></li>
+            <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="третья ссылка">третья ссылка</a></li> 
+            <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="четвертая ссылка">четвертая ссылка</a></li>
+            <li><a href="http://htmlbook.ru/samcss/vvedenie-v-css" title="пятая ссылка">пятая ссылка</a></li>
         </ul>
-    
-        </div>
+    </div>
     
 </body>
 </html>
