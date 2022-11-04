@@ -12,6 +12,9 @@
 .menu_1 a{color: green;
     border-right: 5px solid red;
     padding: 5px 10px 10px 10px;
+    }
+.menu_1 a:hover{
+    color: red;
 }
 
 
@@ -33,6 +36,9 @@
     border-right: red 5px solid; 
     padding: 5px 10px 10px 10px;
 }
+.menu_2 a:hover{
+    color: red;
+}
 
 
 .menu_3{
@@ -49,4 +55,7 @@
     float: left; 
     padding: 5px 10px 10px 10px; 
     border-right: red solid 5px 
+}
+.menu_3 a:hover{
+    color: red;
 }
