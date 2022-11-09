@@ -36,9 +36,16 @@
         text-decoration: none;
     }
     
-    @media print{
-        a{игщшлдго
-        }
-
-        
+    @media print { 
+        [href^="https://"]::before
+    {content:none;
     }
+
+    a[href^="http"]::before {
+        content: " ссылка ";
+            }
+    a[href^="http"]:after {
+        content: " на " attr(href) ;
+            }
+        }
+    
