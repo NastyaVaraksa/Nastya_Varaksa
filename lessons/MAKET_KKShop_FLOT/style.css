@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+ 
+
+body{
+    font-family: 'Gilroy';
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.container_KK{
+    width: 1678px;
+    margin: 0 auto;
+}
+
+.clearfit::after{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+                          /*header Blok 1*/      
+
+.header_top{
+    background: #323232;
+    height: 49px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.city{
+    float: left;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 14px 0px;
+ 
+}
+.city ul li{
+    list-style-type: none;
+}
+.number{
+   
+    float: right;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 8px 0px;
+}
+
+.header_menu{
+    background: #FFFFFF;
+    height: 87px;
+}
+.logo img{
+    float: left;
+    margin: 32px 40px 17px 0px;
+}
+.menu{
+    float: left; 
+}
+
+.menu ul li, .icons ul li{
+    list-style-type: none;
+    float: left;
+}
+.menu ul li{
+    margin: 37px 25px 23px 0px;
+}
+.menu a{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    text-decoration: none;
+}
+.icons{
+    float: right;
+    }
+.icons ul li{
+    margin: 40px 23px 28px 0px; 
+}
+.icons ul li:last-child{
+    margin-right: 0px; 
+}
+   
+                          /*skindom Blok 2*/ 
+
+.skindom{
+    width: 1920px;
+    height: 698px;
+    background-image: url(img/SKINDOM.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    
+}
+h1{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 99px;
+    line-height: 150%;
+    color: #000000;
+    position: absolute;
+    left: 275px;
+    top: 90px;
+}
+.text_skidom p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    position: absolute;
+    left: 275px;
+    top: 239px;
+}
+.text_skidom button{
+    width:268px;
+    height:58px;
+    background: #000000;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.0375em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 275px;
+    top: 320px;
+}
+
+                        /*Blok 3*/
+.blok3{
+    margin-top: 68px;
+    margin-bottom: 150px;
+}
+.picture2{
+    float: left;
+}
+
+.text_blok3{
+    margin-left: 856px;
+}
+h3{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.text_blok3 p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 24px;
+
+}
+            /* Радиокнопка Подробнее начало*/
+
+/* оба чекбокса скрыты всегда, работа с ними только через label */
+.read-more-radio
+{
+    display: none;
+}
+
+/* большой текст обычно скрыт */
+.read-more-radio + label + div
+{
+    display: none;
+}
+/* и отображается только если выбран первый чекбокс */
+.read-more-radio:checked + label + div
+{
+    display: block;
+}
+
+/* первый label обычно отображается */
+.read-more-radio + label
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* и скрывается если выбран первый чекбокс */
+.read-more-radio:checked + label
+{
+    display: none;
+}
+
+/* второй label обычно скрыт */
+.read-more-radio + label + div + input + label
+{
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* и отображается только если выбран первый чекбокс */
+.read-more-radio:checked + label + div + input + label
+{
+    display: block;
+}
+.text_blok3 label {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC4C6E;
+}
+.text_blok3 label::after{
+    content: url(img/Vector.svg);
+    margin-left: 8px;
+}
+
+        /* Радиокнопка Подробнее конец*/
+
+.blok3_bottom{
+    height: 123px;
+}
+.blok3_bottom ul li{
+    list-style-type: none; 
+    border: solid #C4C4C4 1px;
+    float: left;
+    width: 400px ;
+    height: 90px;
+    padding: 20px;
+    margin-right: 25px;
+    margin-top: 33px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #464646;
+    
+}
+.blok3_bottom ul li:last-child{
+    margin-right: 0px;
+    float: right;
+} 
+
+                        /*Blok 4 и 6*/
+              
+.carousel{
+    width: 1676px;
+    margin: 0px auto 183px auto;
+}
+
+.carousel_1_p1, .carousel_1_p2, .carousel_1_p3, .carousel_1_p4{
+    float: left;
+    width: 419px;
+    height: 534px;
+    position: relative;
+}
+.carousel_1_p1 img, .carousel_1_p2 img, .carousel_1_p3 img, .carousel_1_p4 img{
+margin: 135px auto 149px 42px;
+}
+h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    color: #000000;
+}
+.sell{
+    width: 56px;
+    height: 56px;
+    background-color: #FF3465;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+.sell span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 21px 14px;
+}
+h5{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    position: absolute;
+    top: 484px;
+    left: 0;
+}
+.carousel_1_p1 p, .carousel_1_p2 p, .carousel_1_p3 p, .carousel_1_p4 p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #5C5C66;
+    position: absolute;
+    top: 516px;
+    left: 0;
+}
+h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #1A1A1A;
+    position: absolute;
+    top: 515px;
+    left: 236px;
+}
+.carousel_1_p1 p:last-child, .carousel_1_p2 p:last-child, .carousel_1_p3 p:last-child, .carousel_1_p4 p:last-child{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #BCBCBC;
+    position: absolute;
+    top: 518px;
+    left: 315px;
+}
+.carousel_1_p4 [src="img/Vector1.png"]{
+    position: absolute;
+    right: 42px;
+    bottom: 355px;
+ }
+.carousel_1_p4 [src="img/Vector2.png"]{
+    position: absolute;
+    right: 2px; 
+    bottom: 355px;
+  }
+
+
+
+                        /*Blok 7*/
+.blok7{
+    height: 555px;
+    margin: 0px 0px 150px 0px;
+}
+.picture7{
+    margin: 51px 56px 51px 0px;
+    float: left;
+}
+.text_blok7{
+    width: 1243px;
+    height: 555px;
+    background: #F3F3F3;
+    margin-left: 434px;
+}
+.text_blok7 h2{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #000000;
+    padding: 98px 0px 20px 0px;
+}
+.text_blok7 p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #5A5A5A;
+    padding-bottom: 48px;
+}
+
+.mail [name="mail"]{
+    width: 530px;
+    height: 30px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    color: #9A9A9A;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    background-color: #F3F3F3;
+    outline: none;
+}
+[type="submit"]{
+    width: 530px;
+    height: 64px;
+    background: #000000;
+    margin-top: 24px;
+}
+[value="Подписаться"]{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0.0375em;
+    color: #FFFFFF;
+    }
+
+                            /*Blok 8*/
+
+       .footer{
+        height: 632px;
+       }  
+                          
