@@ -4,7 +4,6 @@
     box-sizing: border-box;
    }
  
-
 body{
     font-family: 'Gilroy';
 }
@@ -22,11 +21,13 @@ body{
     display: block;
     clear: both;
 }
+
 ul{
     padding-left: 0px;
     margin-bottom: 0px;
 }
-                          /*header Blok 1*/      
+
+                      /*Header Blok 1*/      
 
 .header_top{
     background: #323232;
@@ -104,7 +105,7 @@ ul{
     margin-right: 0px; 
 }
    
-                          /*skindom Blok 2*/ 
+                         /*skindom Blok 2*/ 
 
 .skindom{
     width: 1920px;
@@ -155,6 +156,7 @@ h1{
 }
 
                         /*Blok 3*/
+
 .blok3{
     margin-top: 68px;
     margin-bottom: 150px;
@@ -185,6 +187,7 @@ h3{
     margin-bottom: 24px;
 
 }
+
             /* Радиокнопка начало*/
 
 /* оба чекбокса скрыты всегда, работа с ними только через label */
@@ -240,7 +243,6 @@ h3{
     content: url(img/Vector.svg);
     margin-left: 8px;
 }
-
         /* Радиокнопка конец*/
 
 .blok3_bottom{
@@ -380,6 +382,7 @@ h6{
 
 
                         /*Blok 7*/
+
 .blok7{
     height: 555px;
     margin: 0px 0px 150px 0px;
@@ -442,6 +445,7 @@ h6{
     letter-spacing: 0.0375em;
     color: #FFFFFF;
     }
+
 
                             /*Blok 8*/
 

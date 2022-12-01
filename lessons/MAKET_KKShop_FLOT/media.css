@@ -1,0 +1,12 @@
+@media all and (max-width: 1600px) {
+   
+    .number{
+    float: none;
+    margin: 0px 160px;
+    padding: 8px;
+   }
+   .icons{
+    float: none;
+    ;
+   }
+    }
