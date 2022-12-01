@@ -74,10 +74,11 @@ ul{
     float: left; 
 }
 
-.menu ul li, .icons ul li{
+.menu ul li{
     list-style-type: none;
     float: left;
 }
+
 .menu ul li{
     margin: 37px 25px 23px 0px;
 }
@@ -97,11 +98,15 @@ ul{
 }
 .icons{
     float: right;
-    }
-.icons ul li{
-    margin: 40px 23px 28px 0px; 
 }
-.icons ul li:last-child{
+.icons ul li{
+    list-style-type: none;
+    float: right;
+}
+.icons ul li{
+    margin: 40px 25px 28px 0px; 
+}
+.icons ul li:first-child{
     margin-right: 0px; 
 }
    
