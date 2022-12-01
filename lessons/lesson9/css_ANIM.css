@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.conteiner{
+    padding: 20px;
+    width: 1000px;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 20px auto;
+  }
+
+
+.anim_1{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+    transition-duration: 2s;
+   }
+.conteiner:hover .anim_1{
+    background-color: rgb(238, 241, 45);
+    color: rgb(207, 21, 145);
+    font-size: 48px;
+    border: solid 3px rgb(207, 21, 145);
+} 
+
+
+@keyframes MyAnimation2{
+    from { background-color: cyan; color: red }
+    50% { background-color: magenta; color: rgb(0, 255, 115) }
+    to { background-color: rgb(255, 0, 0); color: blue }
+}
+.conteiner:hover .anim_2{
+    -webkit-animation: MyAnimation2 3s steps(5) infinite;
+}
+.anim_2{
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    color: aqua;
+    text-align: center; 
+    animation: MyAnimation2;
+    background-color: blue;
+}
+
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+.anim_3{
+    width: 300px;
+    height: 100px;
+    background-color:  blue;
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+    animation: rotate-scale-up 2s infinite; 
+}
+
+
+.anim_4{
+    width: 300px;
+    height: 100px;
+    background-color:  blue;
+    padding: 20px;
+    color: aqua;
+    text-align: center; 
+}
+.conteiner:hover .anim_4{
+    transform: scale(1.5);
+    background-color:  rgb(207, 21, 145);
+}
+
+
+
+.anim_5{
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    color: aqua;
+    text-align: center; 
+    background-color:  blue;
+    -webkit-animation: rotate-scale-down 0.65s linear both;
+    animation: rotate-scale-down 0.65s linear both;
+}
+
+.conteiner:hover .anim_5{
+    border-radius:70%;
+    padding: 35px;
+    color: rgb(158, 9, 113);
+    background-color: black;
+}
+
