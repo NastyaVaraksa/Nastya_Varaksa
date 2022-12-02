@@ -10,7 +10,10 @@ body{
 .roboto{
     font-family: 'Roboto', sans-serif;
 } 
-
+.all{
+    width: 1920px;
+    margin: 0 auto;
+} 
 .container_KK{
     width: 1678px;
     margin: 0 auto;
@@ -31,8 +34,6 @@ ul{
 
 .header_top{
     background: #323232;
-    height: 49px;
-    width: 1920px;
     margin: 0 auto;
 }
 
