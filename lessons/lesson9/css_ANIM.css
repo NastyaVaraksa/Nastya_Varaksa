@@ -88,7 +88,7 @@
     text-align: center; 
 }
 .conteiner:hover .anim_4{
-    transform: scale(1.5);
+    transform: scale(1.7);
     background-color:  rgb(207, 21, 145);
 }
 
