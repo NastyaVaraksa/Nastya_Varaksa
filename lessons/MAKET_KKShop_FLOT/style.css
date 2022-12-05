@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
    }
-   
+
+
 body{
     font-family: 'Gilroy';
 }
+
+.all{
+    overflow: hidden;
+}
+
 .roboto{
     font-family: 'Roboto', sans-serif;
 } 
@@ -22,7 +28,7 @@ body{
     clear: both;
 }
 
-ul{
+ul, p, h1, h2, h3, h4, h5, h6{
     padding-left: 0px;
     margin-bottom: 0px;
 }
@@ -274,25 +280,13 @@ h3{
 } 
 
                         /*Blok 4 и 6*/
-              
+                           
 .carousel{
-    width: 1676px;
     margin: 0px auto 183px auto;
 }
 
-.carousel_1_p1, .carousel_1_p2, .carousel_1_p3, .carousel_1_p4{
+.text_button a{
     float: left;
-    width: 419px;
-    height: 534px;
-    position: relative;
-}
-.carousel_1_p1 img, .carousel_1_p2 img, .carousel_1_p3 img, .carousel_1_p4 img{
-margin: 135px auto 149px 42px;
-}
-.carousel-item a{
-    position: absolute;
-    top: 0;
-    left: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -301,12 +295,32 @@ margin: 135px auto 149px 42px;
     color: #000000;
     text-decoration: none;
 }
+.text_button img{
+    float: right;
+    margin-left: 20px;
+}
+
+.carousel_1_p1, .carousel_1_p2, .carousel_1_p3, .carousel_1_p4{
+    float: left;
+    width: 373px;
+    height: 498px;
+    margin-right: 62px;
+    position: relative;
+}
+.carousel_1_p4{
+    margin-right: 0px;
+}
+
+.carousel_1_p1 img, .carousel_1_p2 img, .carousel_1_p3 img, .carousel_1_p4 img{
+margin: 99px auto 149px 42px;
+}
+
 .sell{
     width: 56px;
     height: 56px;
     background-color: #FF3465;
     position: absolute;
-    top: 60px;
+    top: 24px;
     left: 0;
 }
 .sell span{
@@ -329,7 +343,7 @@ h5{
     text-transform: uppercase;
     color: #1A1A1A;
     position: absolute;
-    top: 484px;
+    bottom: 26px;
     left: 0;
 }
 .carousel_1_p1 p, .carousel_1_p2 p, .carousel_1_p3 p, .carousel_1_p4 p{
@@ -340,7 +354,7 @@ h5{
     line-height: 18px;
     color: #5C5C66;
     position: absolute;
-    top: 516px;
+    bottom: 0px;
     left: 0;
 }
 h6{
@@ -352,7 +366,7 @@ h6{
     text-align: right;
     color: #1A1A1A;
     position: absolute;
-    top: 515px;
+    bottom: 0px;
     left: 236px;
 }
 .carousel_1_p1 p:last-child, .carousel_1_p2 p:last-child, .carousel_1_p3 p:last-child, .carousel_1_p4 p:last-child{
@@ -364,23 +378,74 @@ h6{
     text-align: right;
     color: #BCBCBC;
     position: absolute;
-    top: 518px;
+    bottom: 0px;
     left: 315px;
 }
-.carousel_1_p4 [src="img/Vector1.png"]{
-    position: absolute;
-    right: 42px;
-    bottom: 355px;
- }
-.carousel_1_p4 [src="img/Vector2.png"]{
-    position: absolute;
-    right: 2px; 
-    bottom: 355px;
-  }
+
 
                        /*Blok 5*/
+            
+.blok5_2{
+    width: 3240px;
+    margin: 0px auto 183px auto;
+} 
+/* .blok5_1{
+    width: 3240px;
+    margin: 0px auto 183px auto;
+}  */
+
+.name_button a{
+    float: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.name_button img{
+    float: right;
+    padding-left: 20px;
+    }
 
 
+.carousel_5_p1, .carousel_5_p2, .carousel_5_p3{
+    float: left;
+    width: 1080px;
+    height: 540px;
+    position: relative;
+}
+.carousel_5_p1 img, .carousel_5_p2 img, .carousel_5_p3 img{
+    margin: 0 auto 58px auto;
+}
+
+.carousel_5_p1 span, .carousel_5_p2 span, .carousel_5_p3 span{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0.0375em;
+    text-transform: uppercase;
+    color: #000000;
+    position: absolute;
+    top: 447px;
+    left: 77px;
+}
+
+.carousel_5_p1 p, .carousel_5_p2 p, .carousel_5_p3 p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #969696;
+    position: absolute;
+    bottom: 0px;
+    left: 77px;
+}
 
 
 
