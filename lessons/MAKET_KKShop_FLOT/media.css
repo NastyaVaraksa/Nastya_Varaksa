@@ -1,11 +1,12 @@
-/* @media all and (max-width: 1600px) {
+/* @media all and (max-width: 1720px) {
    
-    .number{
-    float: none;
-    margin: 0px 160px;
-    padding: 8px;
-   }
+    .container_KK{
+        width: 1500px;
+    }
    
+    .blok3_bottom ul li:last-child{
+        float: left;
+    } 
   
 
-} */
+}  */
