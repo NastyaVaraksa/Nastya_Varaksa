@@ -4,7 +4,9 @@
     box-sizing: border-box;
    }
 
-
+.all{
+    overflow-x:hidden;
+}
 body{
     font-family: 'Gilroy';
 }
@@ -119,13 +121,10 @@ ul, p, h1, h2, h3, h4, h5, h6{
 .skindom{
     width: 1920px;
     height: 698px;
-    background-image: url(img/SKINDOM.jpg); 
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 0 auto;
-    position: relative;
-    
+    position: relative; 
 }
+
 h1{
     font-family: 'Gilroy';
     font-style: normal;
@@ -137,7 +136,7 @@ h1{
     left: 275px;
     top: 90px;
 }
-.text_skidom p{
+.text_skindom p{
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
@@ -148,7 +147,7 @@ h1{
     left: 275px;
     top: 239px;
 }
-.text_skidom button{
+.text_skindom button{
     width:268px;
     height:58px;
     background: #000000;
@@ -172,10 +171,12 @@ h1{
 }
 .picture2{
     float: left;
+    padding: 0px 72px 30px 0px;
 }
 
 .text_blok3{
-    margin-left: 856px;
+   
+    
 }
 h3{
     font-family: 'Gilroy';
@@ -306,7 +307,6 @@ h3{
     --bs-gutter-x: 0px;
 }
 .carousel{
-    
     margin: 0px auto 183px auto;
     position: relative;
 }
@@ -325,7 +325,7 @@ h3{
     position: relative;
 }
 .carousel_1_p1 img, .carousel_1_p2 img, .carousel_1_p3 img, .carousel_1_p4 img{
-margin: 99px auto 149px 42px;
+margin: 99px auto 99px 42px;
 }
 
 .sell{
@@ -397,22 +397,11 @@ h6{
 
 
                        /*Blok 5*/
-    .container{
+ /* .container{
         overflow: hidden;
         width: auto;
         margin: 0px auto;
     }
-
-
-/* .blok5_2{
-     width: 3240px;  
-    overflow: hidden;
-    margin: 0px auto 183px auto;
-}  */
-/* .blok5_1{
-    width: 3240px;
-    margin: 0px auto 183px auto;
-}  */
 
 .blok5_a a{
     font-family: 'Roboto';
@@ -458,7 +447,7 @@ h6{
     position: absolute;
     bottom: 0px;
     left: 77px;
-}
+}   */
 
 
 
@@ -473,8 +462,6 @@ h6{
     float: left;
 }
 .text_blok7{
-    width: 1243px;
-    height: 555px;
     background: #F3F3F3;
     margin-left: 434px;
 }
@@ -516,6 +503,7 @@ h6{
     height: 64px;
     background: #000000;
     margin-top: 24px;
+    margin-bottom: 99px;
 }
 [value="Подписаться"]{
     font-family: 'Gilroy';
@@ -534,7 +522,6 @@ h6{
    
 } 
 .footer_top_1{
-    width: 1074px;
     float: left;
 }
 .address{
@@ -560,7 +547,7 @@ h6{
 }
 .catalog{
     float: right;
-   
+    margin-left: 305px; 
 }
 
 .catalog ul a{
@@ -571,7 +558,7 @@ h6{
     line-height: 150%;
     color: #000000;
     text-decoration: none;
-    margin-right: 302px;
+    
     
 }
 .catalog ul li{
@@ -593,6 +580,10 @@ h6{
 }
 .catalog ul li, .information ul li, .sotseti ul li, .pay ul li{
     list-style-type: none;  
+}
+
+.footer_top_2{
+    float: right;
 }
 
 .information{
@@ -648,8 +639,7 @@ float: left;
 
 .pay{
     display: inline-block;
-    width: 604px;
-    height: 59px;
+    
 }
 .pay ul{
     margin-top: 113px;
@@ -660,10 +650,7 @@ float: left;
     opacity: 0.5;
     margin-right: 40px;
 }
-.footer_top_2{
-    width: 604px;
-    float: right;
-}
+
 .footer_bottom{
     
 }
