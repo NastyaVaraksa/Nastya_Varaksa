@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ex{
+            display: flex;
+           justify-content: space-around;
+
+        }
+
+        @keyframes MyAnimation1
+        {
+            from { background: url('img/fire.jpg') 0 0; }
+            to { background: url('img/fire.jpg') -1500px 0; } 
+        }
+        
+        .ex1
+        {
+            width: 250px;
+            height: 657px;
+            animation: MyAnimation1 1s steps(6) infinite;
+        }
+        
+        @keyframes MyAnimation2
+        {
+            from { background: url('img/men.png') 0 0; }
+            to { background: url('img/men.png') -1536px 0; } 
+        }
+        
+        .ex2
+        {
+            width: 384px;
+            height: 458px;
+            animation: MyAnimation2 1s steps(4) infinite;
+        }
+
+        @keyframes MyAnimation3
+        {
+            from { background: url('img/bird.png') 0 0; }
+            to { background: url('img/bird.png') -880px 0; } 
+        }
+        
+        .ex3
+        {
+            width: 220px;
+            height: 250px;
+            animation: MyAnimation3 1s steps(4) infinite;
+        }
+
+
+
+        </style>
+</head>
+<body>
+    <div class="ex">
+        <div class='ex2'></div>
+        <div class='ex3'></div>
+        <div class='ex1'></div>
+    </div>
+
+</body>
+</html>
