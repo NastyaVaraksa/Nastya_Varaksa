@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="test">
+        <div>
+            test
+        </div>
+    </div>
+
+    <div id="app"></div>
+    <button onclick="filterColor('red')">red</button>
+    <button onclick="filterColor('green')">green</button>
+    <button onclick="filterColor('blue')">blue</button>
+    
+    <script>
+
+        
+        
+        var clothes = [
+            {
+                id: 1,
+                color: 'red',
+                size: 'XL',
+                price: 100,
+            },
+            {
+                color: 'green',
+                size: 'L',
+                price: 200,
+            },
+            {
+                color: 'blue',
+                size: 'XXL',
+                price: 300,
+            },
+            {
+                color: 'violet',
+                size: 'XXXL',
+                price: 400,
+            },
+            {
+                color: 'orange',
+                size: 'L',
+                price: 50,
+            },
+            {
+                color: 'red',
+                size: 'XXXXL',
+                price: 500,
+            }
+        ];
+
+        var result = [];
+
+        function filterColor(filteredColor){
+            for(var i=0; i<clothes.length; i++){
+                if(filteredColor === clothes[i].color){
+                    result.push(clothes[i])
+                }
+            } 
+        }
+
+        
+           
+
+
+
+    </script>
+</body>
+</html>

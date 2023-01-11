@@ -1,0 +1,117 @@
+@media all and (max-width: 320px) {
+  .containerNeiro {
+    width: 290px;
+    max-width: 290px; }
+
+  .banner {
+    display: none; }
+
+  .carousel {
+    display: block;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    .carousel .carousel-indicators {
+      bottom: -45px;
+      border-top: none;
+      border-bottom: none;
+      opacity: 1; }
+      .carousel .carousel-indicators button {
+        background-color: #DFDFDF;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        opacity: 1; }
+      .carousel .carousel-indicators button.active {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        opacity: 1;
+        border: 3px solid #F07FAE;
+        background-color: #FFFFFF; }
+    .carousel .carousel-inner .board {
+      width: 290px;
+      height: 392px;
+      background-image: url("../img/Fon_all.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      position: relative; }
+      .carousel .carousel-inner .board h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 48px;
+        top: 28px; }
+      .carousel .carousel-inner .board img {
+        position: absolute;
+        left: 45px;
+        top: 71px; }
+      .carousel .carousel-inner .board a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+        padding: 17px 28px 15px 30px;
+        border: 1px solid transparent;
+        background: #FFFFFF;
+        border-radius: 5px;
+        position: absolute;
+        left: 43px;
+        top: 312px; }
+    .carousel .carousel-inner .stand, .carousel .carousel-inner .neuro8 {
+      width: 290px;
+      height: 392px;
+      opacity: 0.9;
+      -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+              box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      position: relative; }
+      .carousel .carousel-inner .stand h1, .carousel .carousel-inner .neuro8 h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        color: #FFFFFF;
+        position: absolute; }
+      .carousel .carousel-inner .stand a, .carousel .carousel-inner .neuro8 a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+        color: #FFFFFF;
+        position: absolute; }
+      .carousel .carousel-inner .stand a::after, .carousel .carousel-inner .neuro8 a::after {
+        content: url("../img/Vector.svg");
+        margin-left: 10px; }
+    .carousel .carousel-inner .stand {
+      background: linear-gradient(0deg, rgba(0, 141, 65, 0.2), rgba(0, 141, 65, 0.2)), linear-gradient(113.62deg, #2AB86B 0%, #5DE39A 97.37%); }
+      .carousel .carousel-inner .stand h1 {
+        left: 40px;
+        top: 28px;
+        text-align: center; }
+      .carousel .carousel-inner .stand img {
+        position: absolute;
+        left: 48px;
+        top: 97px; }
+      .carousel .carousel-inner .stand a {
+        left: 99px;
+        top: 336px; }
+    .carousel .carousel-inner .neuro8 {
+      background: linear-gradient(112.82deg, #F68AB1 0%, #FEB5CF 100%); }
+      .carousel .carousel-inner .neuro8 h1 {
+        left: 67px;
+        top: 28px; }
+      .carousel .carousel-inner .neuro8 a {
+        left: 99px;
+        top: 336px; }
+      .carousel .carousel-inner .neuro8 img {
+        position: absolute;
+        left: 45px;
+        top: 58px; } }
+
+/*# sourceMappingURL=neiro_media.css.map */

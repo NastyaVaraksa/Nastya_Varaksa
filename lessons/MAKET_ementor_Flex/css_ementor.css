@@ -29,15 +29,11 @@ a{
 }
 
 .top_header{
-   
     display: flex;
-    justify-content: center;
-   
-    
+    justify-content: center;  
 }
 .top_header a:hover{
     border-bottom: 2px dashed #FA9F42;
-
 }
 .top_header a{
     font-style: normal;
@@ -46,9 +42,11 @@ a{
     line-height: 100%;
     color: #FDFDFD;
     margin: 40px 40px 64px 0px;
+    border-bottom: 2px dashed transparent;
+    padding-bottom: 8px;
 }
 .top_header a:last-child{
-    margin: 40px 0px 64px 0px;
+    margin-right: 0px;
 }
 
 .center_header{
@@ -60,14 +58,13 @@ a{
 .center_bottom_left{
     position: relative;
     margin: 104px 0 120px 0;
-
 }
 .center_bottom_left img{
     border-radius: 0px 80px 0px 0px; 
     position: relative;
     z-index: 1; 
-
 }
+
 .border_left{
     width: 240px;
     height: 300px;
@@ -91,7 +88,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     color: #FDFDFD;
 }
 .center_2 img{
