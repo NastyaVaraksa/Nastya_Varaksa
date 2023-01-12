@@ -1,3 +1,707 @@
+@media all and (max-width: 1215px) {
+    .containerNeiro{
+        width: 725px;
+        max-width: 725px;
+    }
+
+
+    @mixin text1
+    {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #707070;
+    }
+    @mixin text2
+    {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+    }
+    @mixin text3
+    {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    @mixin h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 18px;
+        color: #333333;
+    }
+
+    // header
+
+    .header_top{
+        margin-bottom: 30px;
+            .menu{
+                a{
+                    @include text1();
+                    font-size: 14px;
+                    line-height: 15px;
+                    margin: 17px 18px 15px 0;
+                }   
+            }
+            .network{
+                a{
+                    margin-left: 15px;
+                }
+            }
+    
+    }
+    .header_center{
+        display: none;
+    }
+    .header_center_media725{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img:first-child{
+            width: 250px; 
+        }
+        .info{ 
+            .info_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img:nth-of-type(1){
+                    width: 16px;
+                    height: 16px;
+                } 
+                img:nth-of-type(2){
+                    width: 16px;
+                    height: 12.8px;
+                }
+                a:first-of-type{
+                    @include text2();
+                    font-size: 18px;
+                    margin: 0px 16px 0px 10px;
+                }
+                a:last-of-type{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #333333;
+                    margin: 0 0px 0 9px;
+                } 
+            }
+            p{
+                @include text1();
+                font-size: 15px;
+                line-height: 18px; 
+                margin-top: 6px;
+            }
+            
+        }
+        .personbasket{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 1px solid #EEEEEE;
+            position: relative;
+            a:nth-of-type(1){
+                margin: 10px 20px 10px 17px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            a:nth-of-type(2){
+                margin: 0 15px 0 0px;
+                img{
+                    width: 23px;
+                    height: 30px;
+                };
+            }
+            a:nth-of-type(3){
+                img{
+                    width: 30px;
+                    height: 30px;
+                };
+            }
+            .ellipse{
+                background: #F07FAE;
+                border-radius: 14px;
+                position: absolute;
+                top: 0px;
+                right: -10px;
+                p{
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    padding: 2px 7px;
+                }
+            }
+        }
+    }
+    .header_bottom{
+        display: none;
+    }
+    .header_bottom_media725{
+        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 21px 0 30px 0;
+        a{
+            @include text2();
+            font-size: 16px;
+            line-height: 16px;
+            padding: 17px 0px 15px 0px;
+            color: #151515;
+            text-align: center;
+            &:hover{
+                color: #333333;  
+            }
+        }
+    }
+
+    // banner
+
+    .banner{
+        .containerNeiro{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 37px;    
+            .board{
+                width: 725px;
+                height: 385px;
+                margin-bottom: 20px;
+                h1{
+                    left: 77px;
+                    top: 73px;   
+                }
+                img:nth-of-type(1){
+                   display: none; 
+                }
+                img:nth-of-type(2){
+                    display: block; 
+                    position: absolute;
+                    left: 368px;
+                    top: -10px;
+                 }
+                p{
+                    left: 77px;
+                    top: 121px; 
+                }
+                button{
+                    left: 77px;
+                    top: 265px;
+                }
+            }
+            .stand-neuro8{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                .stand, .neuro8{
+                    width: 346px;
+                    height: 185px;
+                    h1{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+                .stand{
+                    h1{
+                        left: 30px;
+                        top: 30px;
+                    }
+                    p{
+                        left: 30px;
+                        top: 73px;
+                    }
+                    a{
+                        left: 30px;
+                        top: 142px;
+                    }
+                    img:nth-of-type(1){
+                    display: none; 
+                    }
+                    img:nth-of-type(2){
+                        display: block; 
+                        position: absolute;
+                        left: 212px;
+                        top: 11px;
+                    }
+                }
+                .neuro8{
+                    h1{
+                        left: 28px;
+                        top: 29px;
+                    }
+                    p{
+                        left: 28px;
+                        top: 56px; 
+                    }
+                    a{
+                        left: 28px;
+                        top: 142px;
+                    }
+                    img:nth-of-type(1){
+                        display: none; 
+                        }
+                    img:nth-of-type(2){
+                        display: block; 
+                        position: absolute;
+                        left: 201px;
+                        top: -18px;
+                    }
+                }
+            }
+        }    
+    }
+
+    // hat шапка для блоков
+
+    .hat{
+        margin-bottom: 23px;
+        a:nth-child(1){
+            font-size: 25px;
+        }
+    }
+    
+    // productsmonth
+    .products{
+        ul{
+            li:nth-of-type(4){
+                display: none;
+            }
+        }
+    }
+
+    // products описание стилевых свойств продуктов
+
+.products1, .products2, .products3, .products4{
+    width: 225px;
+    height: 375px;
+    
+    span:nth-of-type(1){
+        left: 15px;
+        top: 15px;
+     
+    }
+    span:nth-of-type(2){
+        left: 15px;
+        top: 43px;
+    }
+    img:nth-of-type(1){
+        display: none;
+    }
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 40px;
+    }
+    h3:nth-of-type(1){
+        font-size: 16px;
+        line-height: 16px;
+        left: 16px;
+        top: 175px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 16px;
+        left: 16px;
+        top: 209px;
+    }
+    .price{
+        p:nth-of-type(1){
+            font-size: 18px;
+            left: 16px;
+            top: 263px;
+        }
+        p:nth-of-type(2){
+            font-size: 14px;
+            left: 16px;
+            top: 283px;
+        }
+    }
+    .buy{
+        width: 119px;
+        height: 50px;
+        left: 89px;
+        top: 254px;
+        span:nth-child(1){
+            left: 10px;
+            top: 14px;
+            padding: 5px 8px 5px 0;
+        }
+        button{
+            width: 67px;
+            height: 52px;
+        }
+        button:hover{
+           
+        }
+        img{
+            display: block;
+            position: absolute;
+            left: 36px;
+            top: 19px;
+        }
+    }
+    a{
+        padding: 12px 59px 10px 59px;
+        left: 15px;
+        top: 319px; 
+    }
+    
+}
+.products2{
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 44px;
+        top: 24px;
+    }
+}
+.products3{
+    h3:nth-of-type(1){
+        display: none;
+    }
+    h3:nth-of-type(2){
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #333333;
+        position: absolute;
+        left: 16px;
+        top: 175px;
+    }
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 25px;
+    }
+}
+.products4{
+    img{
+        left: 48px;
+        top: 30px; 
+    }
+}
+.products1:hover, .products2:hover, .products3:hover, .products4:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+} 
+
+
+
+
+
+
+
+
+
+
+    // For neuropsychologists
+    .neuropsychologists{
+        margin-top: 47px;
+        .containerNeiro{
+            .video_products{
+                .video_psychologists{
+                    iframe{
+                        width: 475px;
+                        height: 375px;
+                    }
+                }
+                .products{
+                    ul{
+                        display: block;
+                        li{
+                            margin-left: 0px;
+                        }
+                        li:nth-of-type(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+
+    // Neurotrainers
+
+    .aboutusAll{
+        margin: 50px 0 47px 0;
+        .containerNeiro{
+            .hat{
+                margin-top: 50px;
+            } 
+            .aboutus{
+                display: flex;
+                justify-content: space-between;
+                margin: 22px 0 60px 0;
+                .video1{
+                    iframe{
+                        width: 346px;
+                        height: 273px;
+                    }        
+                }
+                .text_certificates{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .text{
+                        h6{
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 18px;
+                            color: #333333;  
+                        }
+                        p:nth-of-type(1){
+                            display: none;
+                        }
+                        p:nth-of-type(2){
+                            display: block;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #333333;
+                            margin: 6px 0 10px 0;
+                        }
+                    }
+                    .certificates {
+                        a{
+                            img{
+                                width: 82px;
+                                height: 116px;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+
+
+    // reviews
+
+    .reviewsAll{
+        .containerNeiro{
+            .reviews{
+                display: flex;
+                justify-content: space-between;
+                .review2, .review1{
+                    width: 346px;
+                    height: 250px;
+                    img{
+                        left: 22px;
+                        top: 20px;
+                    }
+                    h4{
+                        left: 94px; 
+                    }
+                    span{
+                        left: 94px;
+                    };
+                    p{
+                        left: 22px;   
+                    } 
+                }
+                .review2{
+                    display: none;
+                }
+                .video2{
+                    iframe{
+                        width: 361px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    // footer
+
+    .footer{
+        margin-top: 50px;
+        .footer_top{
+            .containerNeiro{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    margin: 42px 0 40px 0;
+                }
+                .form{
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    input{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #707070;
+                        padding: 17px 73px 15px 14px;
+                        background: #FFFFFF;
+                        border: none;
+                    }
+                    .button_input{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        background: #F07FAE;
+                        padding: 17px 19px 15px 19px;
+                        border: none;
+                        margin-left: -5px;  
+                    }
+    
+                }
+                .phone_footer{
+                    svg{
+                        margin: 0 10px 8px 0;
+                    }
+                    span{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                    };
+                    p{
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        margin: 0;
+                    }
+                }
+                .batton_footer{
+                    button{
+                        border: 2px solid #FFFFFF;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        background-color: #292929;
+                        padding: 17px 19px 15px 20px;
+                        margin: 25px 0;
+                        transition: 0.2;
+                    }
+                    button:hover{
+                        border: 2px solid #F07FAE;
+                    }
+                }
+            }
+        }
+        .footer_centre{
+            background-color: #333333;
+            .containerNeiro{
+                display: flex;
+                justify-content: space-between;
+                border: 0.1px solid transparent;
+                a{
+                    margin: 46px 0 126px 0;
+    
+                }
+    
+                .information_footer, .webinar_footer, .news_footer{
+                    a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        text-decoration-line: underline;
+                    }
+                    a:hover{
+                        color: #F07FAE;
+                    }
+    
+                    }
+                .contacts_footer{
+                    li{
+                        margin-bottom: 5px;
+                    }
+                    span, p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #F07FAE;
+                        text-decoration: underline;
+                    }
+                    svg{
+                        opacity: 0.3;
+                        margin: 19px 20px 0px 0;  
+                    }
+    
+                }
+                .information_footer, .webinar_footer, .news_footer, .contacts_footer{
+                    .one{
+                        margin: 46px 0 9px 0; 
+                        a{
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 18px;
+                            text-decoration-line: none;
+                            color: #FFFFFF;
+                           
+                        }
+                        a:hover{
+                            color: #F07FAE;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_bottom{
+            background-color: #292929;
+            .containerNeiro{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                }
+                span{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                }
+                svg{
+                    margin: 20px 0 15px 0;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 320px) {
     .containerNeiro{
         width: 290px;

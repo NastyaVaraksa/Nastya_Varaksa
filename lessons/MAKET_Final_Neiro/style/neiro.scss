@@ -115,9 +115,13 @@ p {
 //         }
 // }
 
+
+ // hat шапка для блоков
+
 .hat{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
     a:nth-child(1){
         font-weight: 700;
         font-size: 30px;
@@ -168,12 +172,17 @@ p {
                 display: flex;
                 justify-content:flex-end;
                 align-items: center;
-                svg{
+                a{
                     margin-left: 20px;
+                    transition: 1s;
+                }
+                a:hover{
+                    transform: scale(1.2);
                 }
             }
     
 }
+
 .header_center{
     display: flex;
     justify-content: space-between;
@@ -194,18 +203,23 @@ p {
             margin: 15px;
         }
     }
-    .info{   
-        a:first-of-type{
-            @include text2();
-            margin: 0px 18px 0px 10px;
+    .info{  
+        .info_top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a:first-of-type{
+                @include text2();
+                margin: 0px 18px 0px 10px;
+            }
+            a:last-of-type{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                color: #333333;
+                margin: 0 23px 0 9px;
+            } 
         }
-        a:last-of-type{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 18px;
-            color: #333333;
-            margin: 0 23px 0 9px;
-        } 
         p{
             @include text1(); 
             margin-top: 7px;
@@ -218,10 +232,10 @@ p {
         align-items: center;
         border-left: 1px solid #EEEEEE;
         position: relative;
-        img:first-of-type{
+        a:first-of-type{
             margin: 0 27px 0 30px;
         }
-        img:last-of-type{
+        a:last-of-type{
           
             // margin-right: 10px;
         }
@@ -241,10 +255,13 @@ p {
         }
     }
 }
+.header_center_media725{
+    display: none;
+}
 
 .header_bottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -258,7 +275,9 @@ p {
         }
     }
 }
-
+.header_bottom_media725{
+    display: none;
+}
 // banner
 
 .banner{
@@ -284,10 +303,13 @@ p {
                 left: 69px;
                 top: 135px;   
             }
-            img{
+            img:nth-of-type(1){
                 position: absolute;
                 left: 331px;
                 top: -18px; 
+            }
+            img:nth-of-type(2){
+                display: none; 
             }
             p{
                 @include text3();
@@ -352,48 +374,48 @@ p {
                 background: linear-gradient(0deg, rgba(0, 141, 65, 0.2), rgba(0, 141, 65, 0.2)), linear-gradient(113.62deg, #2AB86B 0%, #5DE39A 97.37%);
 
                 h1{
-                    position: absolute;
                     left: 28px;
                     top: 43px;
                 }
                 p{
-                    position: absolute;
                     left: 28px;
                     top: 100px;
                 }
-                img{
+                a{
+                    left: 28px;
+                    top: 174px;
+                }
+                img:nth-of-type(1){
                     position: absolute;
                     left: 195px;
                     top: 11px;
                 }
-                a{
-                    position: absolute;
-                    left: 28px;
-                    top: 174px;
+                img:nth-of-type(2){
+                    display: none; 
                 }
             }
             .neuro8{
                 background: linear-gradient(112.82deg, #F68AB1 0%, #FEB5CF 100%);
 
                 h1{
-                    position: absolute;
                     left: 28px;
                     top: 48px;
                 }
                 p{
-                    position: absolute;
                     left: 28px;
                     top: 80px; 
                 }
                 a{
-                    position: absolute;
                     left: 28px;
                     top: 172px;
                 }
-                img{
+                img:nth-of-type(1){
                     position: absolute;
                     left: 202px;
                     top: -20px;
+                }
+                img:nth-of-type(2){
+                    display: none; 
                 }
             }
         }
@@ -407,7 +429,184 @@ p {
 }
 
 
+// products описание стилевых свойств продуктов
 
+.products1, .products2, .products3, .products4{
+    position: relative;
+    width: 270px;
+    height: 433px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    // margin-top: 30px;
+    transition: 0.5s;
+    background: top 47px left 20px no-repeat #fff;
+
+    span:nth-of-type(1){
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        background: #5DE39A;
+        border-radius: 5px;
+        padding: 5px 10px 2px 10px;
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        z-index: 2;
+    }
+    span:nth-of-type(2){
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        background: #FFC480;
+        border-radius: 5px;
+        padding: 5px 10px 2px 10px;
+        position: absolute;
+        left: 20px;
+        top: 52px;
+        z-index: 2;
+    }
+    img:nth-of-type(1){
+        position: absolute;
+        left: 20px;
+        top: 47px;
+    }
+    img:nth-of-type(2){
+        display: none;
+    }
+    h3:nth-of-type(1){
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+        position: absolute;
+        left: 20px;
+        top: 219px;
+    }
+    h3:nth-of-type(2){
+        display: none;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #707070;
+        position: absolute;
+        left: 20px;
+        top: 265px;
+    }
+    .price{
+        p:nth-of-type(1){
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 18px;
+            color: #333333;
+            position: absolute;
+            left: 20px;
+            top: 317px;
+        }
+        p:nth-of-type(2){
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-decoration-line: line-through;
+            color: #707070;
+            position: absolute;
+            left: 20px;
+            top: 337px;
+        }
+    }
+    .buy{
+        background: #FFFFFF;
+        border: 1px solid #DFDFDF;
+        border-radius: 5px;
+        width: 140px;
+        height: 50px;
+        position: absolute;
+        left: 110px;
+        top: 308px;
+        overflow: hidden;
+        span:nth-child(1){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #707070;
+            position: absolute;
+            left: 14px;
+            top: 13px;
+            background: none;
+            border-radius: 0;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid rgba(223, 223, 223, 0.5);
+            padding: 5px 12px 5px 0;
+        }
+        button{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #FFFFFF;
+            background: #F07FAE;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 77px;
+            height: 52px;
+            border: none;
+            z-index: 5;
+          
+        }
+        button:hover{
+           
+        }
+        img{
+            position: absolute;
+            left: 44px;
+            top: 19px;
+        }
+
+    }
+    a{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+        padding: 12px 76px 10px 77px;
+        border: 1px solid #EEEEEE;
+        border-radius: 10px;
+        position: absolute;
+        left: 20px;
+        top: 373px;
+        
+    }
+    a:hover{
+        border: 2px solid #EEEEEE;
+    }
+    
+}
+.products2{
+    img{
+        left: 58px;
+        top: 30px; 
+    }
+}
+.products3{
+    img{
+        left: 25px;
+        top: 30px; 
+    }
+}
+.products4{
+    img{
+        left: 48px;
+        top: 30px; 
+    }
+}
+.products1:hover, .products2:hover, .products3:hover, .products4:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+} 
 
 
 
@@ -420,159 +619,7 @@ p {
                 display: flex;
                 justify-content: space-between;
                     li.img1, li.img2, li.img3, li.img4{
-                        .products1{
-                            position: relative;
-                            width: 270px;
-                            height: 433px;
-                            background: #FFFFFF;
-                            border: 1px solid #EEEEEE;
-                            border-radius: 10px;
-                            margin-top: 30px;
-                            transition: 0.5s;
-                            background: top 47px left 20px no-repeat #fff;
-
-                            span:nth-of-type(1){
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 18px;
-                                color: #FFFFFF;
-                                background: #5DE39A;
-                                border-radius: 5px;
-                                padding: 5px 10px 2px 10px;
-                                position: absolute;
-                                left: 20px;
-                                top: 24px;
-                            }
-                            span:nth-of-type(2){
-                                font-weight: 700;
-                                font-size: 12px;
-                                line-height: 18px;
-                                color: #FFFFFF;
-                                background: #FFC480;
-                                border-radius: 5px;
-                                padding: 5px 10px 2px 10px;
-                                position: absolute;
-                                left: 20px;
-                                top: 52px;
-                                z-index: 2;
-                            }
-                            img{
-                                position: absolute;
-                                left: 20px;
-                                top: 47px;
-                            }
-                            h3{
-                                font-weight: 700;
-                                font-size: 18px;
-                                line-height: 18px;
-                                color: #333333;
-                                position: absolute;
-                                left: 20px;
-                                top: 219px;
-            
-                            }
-                            p{
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 18px;
-                                color: #707070;
-                                position: absolute;
-                                left: 20px;
-                                top: 265px;
-                            }
-                            .price{
-                                p:nth-of-type(1){
-                                    font-weight: 700;
-                                    font-size: 20px;
-                                    line-height: 18px;
-                                    color: #333333;
-                                    position: absolute;
-                                    left: 20px;
-                                    top: 317px;
-                                }
-                                p:nth-of-type(2){
-                                    font-weight: 400;
-                                    font-size: 16px;
-                                    line-height: 18px;
-                                    text-decoration-line: line-through;
-                                    color: #707070;
-                                    position: absolute;
-                                    left: 20px;
-                                    top: 337px;
-                                }
-                            }
-                            .buy{
-                                background: #FFFFFF;
-                                border: 1px solid #DFDFDF;
-                                border-radius: 5px;
-                                width: 140px;
-                                height: 50px;
-                                position: absolute;
-                                left: 110px;
-                                top: 308px;
-                                overflow: hidden;
-                                span:nth-child(1){
-                                    font-weight: 400;
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    color: #707070;
-                                    position: absolute;
-                                    left: 14px;
-                                    top: 17px;
-                                    background: none;
-                                    border-radius: 0;
-                                    margin: 0;
-                                    padding: 0;
-                                    
-                                }
-                                span:nth-child(1)::after{
-                                    content: url("../img/lineVertical.svg");
-                                    margin-left: 12px;
-                                }
-                                button{
-                                    font-weight: 700;
-                                    font-size: 16px;
-                                    line-height: 18px;
-                                    color: #FFFFFF;
-                                    background: #F07FAE;
-                                    position: absolute;
-                                    right: 0px;
-                                    top: 0px;
-                                    width: 77px;
-                                    height: 52px;
-                                    border: none;
-                                    z-index: 5;
-                                }
-                                img{
-                                    position: absolute;
-                                    left: 44px;
-                                    top: 19px;
-                                }
-            
-                            }
-                            a{
-                                font-weight: 700;
-                                font-size: 16px;
-                                line-height: 18px;
-                                color: #333333;
-                                padding: 12px 76px 10px 77px;
-                                border: 1px solid #EEEEEE;
-                                border-radius: 10px;
-                                position: absolute;
-                                left: 20px;
-                                top: 373px;
-                                
-                            }
-                            a:hover{
-                                border: 2px solid #EEEEEE;
-                            }
-                            
-                        }
-            
-                        .products1:hover{
-                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-                            
-                        } 
+                       
                         
                     }
                     li.img1{
@@ -597,6 +644,54 @@ p {
     }
 }
 
+// For neuropsychologists
+
+.neuropsychologists{
+    margin-top: 78px;
+    .containerNeiro{
+        .video_products{
+            display: flex;
+            justify-content: space-between;
+            .video_psychologists{
+                iframe{
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                    border-radius: 10px; 
+                }
+                iframe:hover{
+                    opacity: 1;
+                }
+
+            }
+            .products{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Neurotrainers
+
+.neurotrainers{
+    .containerNeiro{
+
+        .products{
+            ul{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
 // aboutus
 
 .aboutusAll{
@@ -605,10 +700,9 @@ p {
 
     .containerNeiro{
         border: 1px solid transparent;
-        a{
-            @include h2();
+        .hat{
             margin-top: 90px;
-        } 
+        }
         .aboutus{
             display: flex;
             justify-content: space-between;
@@ -641,14 +735,17 @@ p {
                         line-height: 18px;
                         color: #333333;  
                     }
-                    p{
+                    p:nth-of-type(1){
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 23px;
                         color: #333333;
                         margin: 9px 0 17px 0;
                     }
-                    span{
+                    p:nth-of-type(2){
+                        display: none;
+                    }
+                    a{
                         font-weight: 700;
                         font-size: 20px;
                         line-height: 18px;
@@ -657,16 +754,8 @@ p {
                 }
                 .certificates {
                     display: flex;
-                    img{
-                        transition: 1s;
-                    }
-                    img:hover{
-                        transform: scale(1.2);
-                    }
                 }
                 
-
-
             }
         }
 
@@ -678,12 +767,9 @@ p {
 
 .reviewsAll{
     .containerNeiro{
-       
         .reviews{
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
-
             .review2, .review1{
                 width: 370px;
                 height: 250px;
@@ -723,10 +809,7 @@ p {
                     line-height: 20px;
                     color: #333333;
                 }
-
             }
-            
-        }
             .video2{
                 iframe{
                     width: 370px;
@@ -739,7 +822,7 @@ p {
                     opacity: 1.0;
                 }
             }
-       
+        }
     }
 
 }
