@@ -522,7 +522,7 @@ p {
     background-image: url("../img/toy_BilgouBoard.svg"); }
 
 .neuropsychologists {
-  margin-top: 78px; }
+  margin: 78px 0; }
   .neuropsychologists .containerNeiro .video_products {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -727,52 +727,57 @@ p {
         transition: 0.2; }
       .footer .footer_top .containerNeiro .batton_footer button:hover {
         border: 2px solid #F07FAE; }
+  .footer .footer_top_media {
+    display: none; }
   .footer .footer_centre {
     background-color: #333333; }
     .footer .footer_centre .containerNeiro {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       border: 0.1px solid transparent; }
-      .footer .footer_centre .containerNeiro a {
-        margin: 46px 0 126px 0; }
-      .footer .footer_centre .containerNeiro .information_footer a, .footer .footer_centre .containerNeiro .webinar_footer a, .footer .footer_centre .containerNeiro .news_footer a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        -webkit-text-decoration-line: underline;
-                text-decoration-line: underline; }
-      .footer .footer_centre .containerNeiro .information_footer a:hover, .footer .footer_centre .containerNeiro .webinar_footer a:hover, .footer .footer_centre .containerNeiro .news_footer a:hover {
-        color: #F07FAE; }
-      .footer .footer_centre .containerNeiro .contacts_footer li {
-        margin-bottom: 5px; }
-      .footer .footer_centre .containerNeiro .contacts_footer span, .footer .footer_centre .containerNeiro .contacts_footer p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px; }
-      .footer .footer_centre .containerNeiro .contacts_footer a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #F07FAE;
-        text-decoration: underline; }
-      .footer .footer_centre .containerNeiro .contacts_footer svg {
-        opacity: 0.3;
-        margin: 19px 20px 0px 0; }
-      .footer .footer_centre .containerNeiro .information_footer .one, .footer .footer_centre .containerNeiro .webinar_footer .one, .footer .footer_centre .containerNeiro .news_footer .one, .footer .footer_centre .containerNeiro .contacts_footer .one {
-        margin: 46px 0 9px 0; }
-        .footer .footer_centre .containerNeiro .information_footer .one a, .footer .footer_centre .containerNeiro .webinar_footer .one a, .footer .footer_centre .containerNeiro .news_footer .one a, .footer .footer_centre .containerNeiro .contacts_footer .one a {
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 18px;
-          -webkit-text-decoration-line: none;
-                  text-decoration-line: none;
-          color: #FFFFFF; }
-        .footer .footer_centre .containerNeiro .information_footer .one a:hover, .footer .footer_centre .containerNeiro .webinar_footer .one a:hover, .footer .footer_centre .containerNeiro .news_footer .one a:hover, .footer .footer_centre .containerNeiro .contacts_footer .one a:hover {
+      .footer .footer_centre .containerNeiro .logo_footer_media a {
+        display: none; }
+      .footer .footer_centre .containerNeiro .centre_text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .footer .footer_centre .containerNeiro .centre_text img {
+          margin: 46px 0px 126px 0; }
+        .footer .footer_centre .containerNeiro .centre_text .information_footer a, .footer .footer_centre .containerNeiro .centre_text .webinar_footer a, .footer .footer_centre .containerNeiro .centre_text .news_footer a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          -webkit-text-decoration-line: underline;
+                  text-decoration-line: underline; }
+        .footer .footer_centre .containerNeiro .centre_text .information_footer a:hover, .footer .footer_centre .containerNeiro .centre_text .webinar_footer a:hover, .footer .footer_centre .containerNeiro .centre_text .news_footer a:hover {
           color: #F07FAE; }
+        .footer .footer_centre .containerNeiro .centre_text .contacts_footer li {
+          margin-bottom: 5px; }
+        .footer .footer_centre .containerNeiro .centre_text .contacts_footer span, .footer .footer_centre .containerNeiro .centre_text .contacts_footer p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px; }
+        .footer .footer_centre .containerNeiro .centre_text .contacts_footer a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: #F07FAE;
+          text-decoration: underline; }
+        .footer .footer_centre .containerNeiro .centre_text .contacts_footer svg {
+          opacity: 0.3;
+          margin: 19px 20px 0px 0; }
+        .footer .footer_centre .containerNeiro .centre_text .information_footer .one, .footer .footer_centre .containerNeiro .centre_text .webinar_footer .one, .footer .footer_centre .containerNeiro .centre_text .news_footer .one, .footer .footer_centre .containerNeiro .centre_text .contacts_footer .one {
+          margin: 46px 0 9px 0; }
+          .footer .footer_centre .containerNeiro .centre_text .information_footer .one a, .footer .footer_centre .containerNeiro .centre_text .webinar_footer .one a, .footer .footer_centre .containerNeiro .centre_text .news_footer .one a, .footer .footer_centre .containerNeiro .centre_text .contacts_footer .one a {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            -webkit-text-decoration-line: none;
+                    text-decoration-line: none;
+            color: #FFFFFF; }
+          .footer .footer_centre .containerNeiro .centre_text .information_footer .one a:hover, .footer .footer_centre .containerNeiro .centre_text .webinar_footer .one a:hover, .footer .footer_centre .containerNeiro .centre_text .news_footer .one a:hover, .footer .footer_centre .containerNeiro .centre_text .contacts_footer .one a:hover {
+            color: #F07FAE; }
   .footer .footer_bottom {
     background-color: #292929; }
     .footer .footer_bottom .containerNeiro {

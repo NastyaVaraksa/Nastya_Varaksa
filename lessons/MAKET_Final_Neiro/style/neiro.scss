@@ -647,7 +647,7 @@ p {
 // For neuropsychologists
 
 .neuropsychologists{
-    margin-top: 78px;
+    margin: 78px 0 ;
     .containerNeiro{
         .video_products{
             display: flex;
@@ -904,67 +904,76 @@ p {
             }
         }
     }
+    .footer_top_media{
+        display: none;
+    }
     .footer_centre{
         background-color: #333333;
         .containerNeiro{
-            display: flex;
-            justify-content: space-between;
             border: 0.1px solid transparent;
-            a{
-                margin: 46px 0 126px 0;
-
-            }
-
-            .information_footer, .webinar_footer, .news_footer{
+            .logo_footer_media{
                 a{
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 30px;
-                    text-decoration-line: underline;
-                }
-                a:hover{
-                    color: #F07FAE;
-                }
-
-                }
-            .contacts_footer{
-                li{
-                    margin-bottom: 5px;
-                }
-                span, p{
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
-                }
-                a{
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 30px;
-                    color: #F07FAE;
-                    text-decoration: underline;
-                }
-                svg{
-                    opacity: 0.3;
-                    margin: 19px 20px 0px 0;  
-                }
-
+                    display: none;
+                }  
             }
-            .information_footer, .webinar_footer, .news_footer, .contacts_footer{
-                .one{
-                    margin: 46px 0 9px 0; 
+            .centre_text{
+                display: flex;
+                justify-content: space-between;
+                img{
+                    margin: 46px 0px 126px 0; ;
+                }
+                .information_footer, .webinar_footer, .news_footer{
                     a{
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 18px;
-                        text-decoration-line: none;
-                        color: #FFFFFF;
-                       
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        text-decoration-line: underline;
                     }
                     a:hover{
                         color: #F07FAE;
                     }
+    
+                    }
+                .contacts_footer{
+                    li{
+                        margin-bottom: 5px;
+                    }
+                    span, p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #F07FAE;
+                        text-decoration: underline;
+                    }
+                    svg{
+                        opacity: 0.3;
+                        margin: 19px 20px 0px 0;  
+                    }
+    
+                }
+                .information_footer, .webinar_footer, .news_footer, .contacts_footer{
+                    .one{
+                        margin: 46px 0 9px 0; 
+                        a{
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 18px;
+                            text-decoration-line: none;
+                            color: #FFFFFF;
+                           
+                        }
+                        a:hover{
+                            color: #F07FAE;
+                        }
+                    }
                 }
             }
+
         }
     }
     .footer_bottom{
