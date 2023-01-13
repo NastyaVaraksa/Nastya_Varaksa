@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Countries</title>
 
     <style>
 
@@ -19,27 +19,14 @@ input{
 </head>
 <body>
     
-    <!-- <div class="container">
-        <h1>COUNTRIES</h1>
-        <input type="button" value="ввод информации о стране" onclick="inputCountryInfo()">
-        <br>
-        <input type="button" value="получение информации о стране" onclick="inputCountry()">
-        <br>
-        <input type="button" value="перечень всех стран" onclick="showListCountries()">
-        <br>
-        <input type="button" value="удаление информации о стране" onclick="inputDeletedCountry()">
 
-        <script src="js/countries.js"></script>
-    </div> -->
-
-
-    <input type='button' value='ввод информации о стране' onclick='InputCountryInfo()'>
+    <input type='button' value='ввод информации о стране' onclick='InputCountry()'>
     <br>
-    <input type='button' value='получение информации о стране' onclick='GetCountryInfo()'>
+    <input type='button' value='получение информации о стране' onclick='GetCountry()'>
     <br>
-    <input type='button' value='перечень всех стран' onclick='listCountrys()'>
+    <input type='button' value='перечень всех стран' onclick='AllCountrys()'>
     <br>
-    <input type='button' value='удаление информации о стране' onclick='deleteCountry()'>
+    <input type='button' value='удаление информации о стране' onclick='namedeleteCountry()'>
     
 
 
@@ -47,130 +34,44 @@ input{
 
 var countrysH={};
 
-function InputCountryInfo(){
+function InputCountry(){
     var countryName=prompt("Введите название страны : ");
-    var capitalName=prompt("Введите название столицу для страны: ");
-    // countrysH[countryName]=capitalName;
+    var capitalName=prompt("Введите название столицы: ");
     addCountry(countryName,capitalName);
 }
-
 function addCountry(countryName,capitalName) {
     countrysH[countryName]=capitalName;
 }
 
-
-
-// const countries = {};
-
-// function inputCountryInfo() {
-//    var countryName = prompt("Введите название страны : ");
-//    var countryCapital = prompt("Введите название столицу для страны \""+ countryName +"\": "); 
-//    addCountry(countryName, countryCapital);
-// }
-
-// function inputCountry() {
-//     var countryName = prompt("Введите название страны : ");
-//     alert(getCountryInfo(countryName))
-//  }
-
-function GetCountryInfo(){
-    var countryName=prompt();
-    // countrysH[countryName]=capitalName;
-    getCountryInfo();
+function GetCountry(){
+    var countryName=prompt("Введите название страны : ");
+    alert(getCountryInfo(countryName)); 
 }
-
 function getCountryInfo(countryName) {
     if ( countryName in countrysH )
         return 'страна: ' + countryName + ' столица: ' + countrysH[countryName] ;
     else
-    return 'нет информации о стране ' + countryName + '!' ;
+        return 'нет информации о стране ' + countryName + '!' ;
 }
 
+function AllCountrys(){
+    alert(listCountrys()); 
+}
+function listCountrys() {
+    var res="";
+    for ( var CN in countrysH )
+        res+='\n'+getCountryInfo(CN);
+    return res;
+}
 
-
-//     var countrysH={};
-
-// function addCountry(countryName,capitalName) {
-//     countrysH[countryName]=capitalName;
-// }
-
-// function deleteCountry(countryName) {
-//     delete countrysH[countryName];
-// }
-
-// function getCountryInfo(countryName) {
-//     if ( countryName in countrysH )
-//         return 'страна: ' + countryName + ' столица: ' + countrysH[countryName] ;
-//     else
-//         return 'нет информации о стране ' + countryName + '!' ;
-// }
-
-// function listCountrys() {
-//     var res="";
-//     for ( var CN in countrysH )
-//         res+='\n'+getCountryInfo(CN);
-//     return res;
-// }
-
-// addCountry('Германия','Берлин');
-// addCountry('Венгрия','Будапешт');
-// addCountry('Франция','Париж');
-
-// console.log( "список стран:" + listCountrys() );
-
-
-
-
-// const countries = {};
-
-// function inputCountryInfo() {
-//    var countryName = prompt("Введите название страны : ");
-//    var countryCapital = prompt("Введите название столицу для страны \""+ countryName +"\": "); 
-//    addCountry(countryName, countryCapital);
-// }
-
-// function inputCountry() {
-//     var countryName = prompt("Введите название страны : ");
-//     alert(getCountryInfo(countryName))
-//  }
-
-//  function showListCountries() {
-//     alert(listCountries());
-//  }
-
-//  function inputDeletedCountry() {
-//     var countryName = prompt("Введите название страны : ");
-//     deleteCountry(countryName);
-//  }
-   
-// function addCountry(countryName, countryCapital) {
-//     countries[countryName] = countryCapital;
-// }
-
-// function getCountryInfo(countryName) {
-//     if (countryName in countries)
-//         return "страна: " + countryName + " - столица: " + countries[countryName];
-//     else
-//         return "нет информации о стране " + countryName;
-// }
-
-// function listCountries() {
-//     list = "";
-//     for (country in countries) {
-//          list += getCountryInfo(country) + "\n";
-//     }
-
-//     return list;
-// }
-
-// function deleteCountry(countryName) {
-//     delete countries[countryName];
-// }
-
-
-
-
-
+function namedeleteCountry() {
+    var countryName = prompt("Введите название страны : ");
+    deleteCountry(countryName);
+    alert(listCountrys());
+}
+function deleteCountry(countryName) {
+    delete countrysH[countryName];
+}
 
 </script>
 
