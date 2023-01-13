@@ -1,84 +1,84 @@
-var products1 = [
-    {
-        id: 1,
-        discount: true,
-        recommendation: true,
-        imgClassName: 'img1',
-        title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
-        text: 'Тренажеров для мозжечковой<br> стимуляции.',
-        newPrice: '2 490 р.',
-        oldPrice: '3 470 р.'
-    },
-    {
-        id: 2,
-        discount: true,
-        recommendation: true,
-        imgClassName: 'img2',
-        title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
-        text: 'Тренажеров для мозжечковой<br> стимуляции.',
-        newPrice: '1 134 900 ₽',
-        oldPrice: '1 234 567 ₽'
-    },
-    {
-        id: 3,
-        discount: true,
-        recommendation: true,
-        imgClassName: 'img3',
-        title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
-        text: 'Тренажеров для мозжечковой<br> стимуляции.',
-        newPrice: '1 134 900 ₽',
-        oldPrice: '1 234 567 ₽'
-    },
-    {
-        id: 4,
-        discount: true,
-        recommendation: true,
-        imgClassName: 'img4',
-        title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
-        text: 'Тренажеров для мозжечковой<br> стимуляции.',
-        newPrice: '1 134 900 ₽',
-        oldPrice: '1 234 567 ₽'
-    },
+// var products1 = [
+//     {
+//         id: 1,
+//         discount: true,
+//         recommendation: true,
+//         imgClassName: 'img1',
+//         title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
+//         text: 'Тренажеров для мозжечковой<br> стимуляции.',
+//         newPrice: '2 490 р.',
+//         oldPrice: '3 470 р.'
+//     },
+//     {
+//         id: 2,
+//         discount: true,
+//         recommendation: true,
+//         imgClassName: 'img2',
+//         title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
+//         text: 'Тренажеров для мозжечковой<br> стимуляции.',
+//         newPrice: '1 134 900 ₽',
+//         oldPrice: '1 234 567 ₽'
+//     },
+//     {
+//         id: 3,
+//         discount: true,
+//         recommendation: true,
+//         imgClassName: 'img3',
+//         title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
+//         text: 'Тренажеров для мозжечковой<br> стимуляции.',
+//         newPrice: '1 134 900 ₽',
+//         oldPrice: '1 234 567 ₽'
+//     },
+//     {
+//         id: 4,
+//         discount: true,
+//         recommendation: true,
+//         imgClassName: 'img4',
+//         title: 'Доска Бильгоу для<br> мозжечковой стимуляции',
+//         text: 'Тренажеров для мозжечковой<br> стимуляции.',
+//         newPrice: '1 134 900 ₽',
+//         oldPrice: '1 234 567 ₽'
+//     },
    
       
-];
+// ];
 
-var ul = document.querySelector('.productsmonth ul');
+// var ul = document.querySelector('.productsmonth ul');
 
-var str = ''
+// var str = ''
 
 
-for(var i=0; i<products1.length; i++){
+// for(var i=0; i<products1.length; i++){
 
-    // var ratingHtml = ''
+//     // var ratingHtml = ''
 
-    // for(var j=0; j<products[i].rating; j++){
-    //     ratingHtml+='<span></span>'
-    // }
+//     // for(var j=0; j<products[i].rating; j++){
+//     //     ratingHtml+='<span></span>'
+//     // }
 
-    str += `<li class="${products1[i].imgClassName}">
-    ${products1[i].discount ? ' <span>-30%</span>>': ''}
-    ${products1[i].recommendation ? '<span>Рекомендуем</span>': ''}
+//     str += `<li class="${products1[i].imgClassName}">
+//     ${products1[i].discount ? ' <span>-30%</span>>': ''}
+//     ${products1[i].recommendation ? '<span>Рекомендуем</span>': ''}
     
-    <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
+//     <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
 
-    <h3>${products1[i].title}</h3>
-    <p>${products1[i].text}</p>
-    <div class="price">
-        <p>${products1[i].newPrice}</p>
-        <p>${products1[i].oldPrice}</p>
-    </div>
-    <div class="buy">
-        <span>1</span>
-        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
-        <button>Купить</button>
-    </div>   
-    <a href="#">Подробнее</a>
-    </li>`
-}
+//     <h3>${products1[i].title}</h3>
+//     <p>${products1[i].text}</p>
+//     <div class="price">
+//         <p>${products1[i].newPrice}</p>
+//         <p>${products1[i].oldPrice}</p>
+//     </div>
+//     <div class="buy">
+//         <span>1</span>
+//         <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+//         <button>Купить</button>
+//     </div>   
+//     <a href="#">Подробнее</a>
+//     </li>`
+// }
 
 
-ul.innerHTML = str;
+// ul.innerHTML = str;
 
 
 {/* 
@@ -158,3 +158,19 @@ function openMenu(){
         menu.setAttribute('data-open', 'false')
     }
 } */}
+
+
+function openMenu(){
+    var menu = document.querySelector('.header_top');
+    var btn = document.querySelector('.header_top_mobil img:nth-child(2)');
+    var isOpenMenu = menu.getAttribute('data-open');
+    if(isOpenMenu === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'true')
+    } else {
+        menu.style.right = '-100%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-open', 'false')
+    }
+}
+

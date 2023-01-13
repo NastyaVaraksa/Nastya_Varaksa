@@ -42,20 +42,22 @@ p {
     font-size: 30px;
     line-height: 18px;
     color: #333333; }
-  .hat a:nth-child(2) {
+  .hat a:nth-child(2), .hat a:nth-child(3) {
     font-weight: 500;
     font-size: 16px;
     line-height: 17px;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
     color: #333333; }
-  .hat a:nth-child(2)::after {
+  .hat a:nth-child(2)::after, .hat a:nth-child(3)::after {
     content: '';
     display: inline-block;
     background-image: url("../img/Vector2.svg");
     width: 6px;
     height: 8px;
     margin-left: 9px; }
+  .hat a:nth-child(3) {
+    display: none; }
 
 .header_top {
   display: -webkit-box;
@@ -101,11 +103,14 @@ p {
             align-items: center; }
     .header_top .network a {
       margin-left: 20px;
-      -webkit-transition: 1s;
-      transition: 1s; }
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
     .header_top .network a:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
+
+.header_top_mobil {
+  display: none; }
 
 .header_center {
   display: -webkit-box;
@@ -197,6 +202,9 @@ p {
 .header_center_media725 {
   display: none; }
 
+.header_center_mobil {
+  display: none; }
+
 .header_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +230,9 @@ p {
       color: #333333; }
 
 .header_bottom_media725 {
+  display: none; }
+
+.header_bottom_mobil {
   display: none; }
 
 .banner .containerNeiro {
@@ -444,20 +455,18 @@ p {
     left: 110px;
     top: 308px;
     overflow: hidden; }
-    .products1 .buy span:nth-child(1), .products2 .buy span:nth-child(1), .products3 .buy span:nth-child(1), .products4 .buy span:nth-child(1) {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      color: #707070;
+    .products1 .buy input, .products2 .buy input, .products3 .buy input, .products4 .buy input {
+      top: 11px;
+      border: none;
       position: absolute;
-      left: 14px;
-      top: 13px;
-      background: none;
-      border-radius: 0;
-      margin: 0;
-      padding: 0;
-      border-right: 1px solid rgba(223, 223, 223, 0.5);
-      padding: 5px 12px 5px 0; }
+      left: 8px;
+      outline: none; }
+    .products1 .buy input[type=number]::-webkit-inner-spin-button,
+    .products1 .buy input[type=number]::-webkit-outer-spin-button, .products2 .buy input[type=number]::-webkit-inner-spin-button,
+    .products2 .buy input[type=number]::-webkit-outer-spin-button, .products3 .buy input[type=number]::-webkit-inner-spin-button,
+    .products3 .buy input[type=number]::-webkit-outer-spin-button, .products4 .buy input[type=number]::-webkit-inner-spin-button,
+    .products4 .buy input[type=number]::-webkit-outer-spin-button {
+      opacity: 1; }
     .products1 .buy button, .products2 .buy button, .products3 .buy button, .products4 .buy button {
       font-weight: 700;
       font-size: 16px;
@@ -471,10 +480,6 @@ p {
       height: 52px;
       border: none;
       z-index: 5; }
-    .products1 .buy img, .products2 .buy img, .products3 .buy img, .products4 .buy img {
-      position: absolute;
-      left: 44px;
-      top: 19px; }
   .products1 a, .products2 a, .products3 a, .products4 a {
     font-weight: 700;
     font-size: 16px;
@@ -489,15 +494,15 @@ p {
   .products1 a:hover, .products2 a:hover, .products3 a:hover, .products4 a:hover {
     border: 2px solid #EEEEEE; }
 
-.products2 img {
+.products2 img:nth-of-type(1) {
   left: 58px;
-  top: 30px; }
+  top: 34px; }
 
-.products3 img {
+.products3 img:nth-of-type(1) {
   left: 25px;
   top: 30px; }
 
-.products4 img {
+.products4 img:nth-of-type(1) {
   left: 48px;
   top: 30px; }
 
@@ -520,6 +525,9 @@ p {
     background-image: url("../img/toy_Outdoorcolortarget.svg"); }
   .productsmonth .containerNeiro .products ul li.img4 {
     background-image: url("../img/toy_BilgouBoard.svg"); }
+
+.products_mobil {
+  display: none; }
 
 .neuropsychologists {
   margin: 78px 0; }
@@ -601,6 +609,8 @@ p {
           margin: 9px 0 17px 0; }
         .aboutusAll .containerNeiro .aboutus .text_certificates .text p:nth-of-type(2) {
           display: none; }
+        .aboutusAll .containerNeiro .aboutus .text_certificates .text p:nth-of-type(3) {
+          display: none; }
         .aboutusAll .containerNeiro .aboutus .text_certificates .text a {
           font-weight: 700;
           font-size: 20px;
@@ -610,6 +620,8 @@ p {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
+          .aboutusAll .containerNeiro .aboutus .text_certificates .certificates a:nth-child(even) {
+            display: none; }
 
 .reviewsAll .containerNeiro .reviews {
   display: -webkit-box;
@@ -727,13 +739,13 @@ p {
         transition: 0.2; }
       .footer .footer_top .containerNeiro .batton_footer button:hover {
         border: 2px solid #F07FAE; }
-  .footer .footer_top_media {
+  .footer .footer_top_media725 {
     display: none; }
   .footer .footer_centre {
     background-color: #333333; }
     .footer .footer_centre .containerNeiro {
       border: 0.1px solid transparent; }
-      .footer .footer_centre .containerNeiro .logo_footer_media a {
+      .footer .footer_centre .containerNeiro .logo_footer_media725 a {
         display: none; }
       .footer .footer_centre .containerNeiro .centre_text {
         display: -webkit-box;

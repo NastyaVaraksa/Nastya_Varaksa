@@ -128,22 +128,25 @@ p {
         line-height: 18px;
         color: #333333;
     }
-    a:nth-child(2){
+    a:nth-child(2), a:nth-child(3){
         font-weight: 500;
         font-size: 16px;
         line-height: 17px;
         text-decoration-line: underline;
         color: #333333;
     }
-    a:nth-child(2)::after{
+    a:nth-child(2)::after, a:nth-child(3)::after{
         content: '';
         display: inline-block;
         background-image: url("../img/Vector2.svg");
         width: 6px;
         height: 8px;
-        margin-left: 9px;
-       
+        margin-left: 9px; 
     }
+    a:nth-child(3){
+        display: none;
+    }
+
 }
 
 
@@ -174,7 +177,7 @@ p {
                 align-items: center;
                 a{
                     margin-left: 20px;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
                 a:hover{
                     transform: scale(1.2);
@@ -182,7 +185,9 @@ p {
             }
     
 }
-
+.header_top_mobil{
+    display: none;
+}
 .header_center{
     display: flex;
     justify-content: space-between;
@@ -258,6 +263,9 @@ p {
 .header_center_media725{
     display: none;
 }
+.header_center_mobil{
+    display: none;
+}
 
 .header_bottom{
     display: flex;
@@ -276,6 +284,9 @@ p {
     }
 }
 .header_bottom_media725{
+    display: none;
+}
+.header_bottom_mobil{
     display: none;
 }
 // banner
@@ -528,20 +539,16 @@ p {
         left: 110px;
         top: 308px;
         overflow: hidden;
-        span:nth-child(1){
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            color: #707070;
+        input{
+            top: 11px;
+            border: none;
             position: absolute;
-            left: 14px;
-            top: 13px;
-            background: none;
-            border-radius: 0;
-            margin: 0;
-            padding: 0;
-            border-right: 1px solid rgba(223, 223, 223, 0.5);
-            padding: 5px 12px 5px 0;
+            left: 8px;
+            outline:none;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
         }
         button{
             font-weight: 700;
@@ -558,14 +565,6 @@ p {
             z-index: 5;
           
         }
-        button:hover{
-           
-        }
-        img{
-            position: absolute;
-            left: 44px;
-            top: 19px;
-        }
 
     }
     a{
@@ -578,28 +577,26 @@ p {
         border-radius: 10px;
         position: absolute;
         left: 20px;
-        top: 373px;
-        
+        top: 373px;   
     }
     a:hover{
         border: 2px solid #EEEEEE;
-    }
-    
+    } 
 }
 .products2{
-    img{
+    img:nth-of-type(1){
         left: 58px;
-        top: 30px; 
+        top: 34px; 
     }
 }
 .products3{
-    img{
+    img:nth-of-type(1){
         left: 25px;
         top: 30px; 
     }
 }
 .products4{
-    img{
+    img:nth-of-type(1){
         left: 48px;
         top: 30px; 
     }
@@ -644,6 +641,9 @@ p {
     }
 }
 
+.products_mobil{
+    display: none;
+}
 // For neuropsychologists
 
 .neuropsychologists{
@@ -745,6 +745,9 @@ p {
                     p:nth-of-type(2){
                         display: none;
                     }
+                    p:nth-of-type(3){
+                        display: none;
+                    }
                     a{
                         font-weight: 700;
                         font-size: 20px;
@@ -754,8 +757,10 @@ p {
                 }
                 .certificates {
                     display: flex;
-                }
-                
+                    a:nth-child(even){
+                        display: none; 
+                    }
+                } 
             }
         }
 
@@ -904,14 +909,14 @@ p {
             }
         }
     }
-    .footer_top_media{
+    .footer_top_media725{
         display: none;
     }
     .footer_centre{
         background-color: #333333;
         .containerNeiro{
             border: 0.1px solid transparent;
-            .logo_footer_media{
+            .logo_footer_media725{
                 a{
                     display: none;
                 }  

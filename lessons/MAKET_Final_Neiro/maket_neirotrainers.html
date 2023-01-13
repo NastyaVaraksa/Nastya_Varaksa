@@ -7,12 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="fonts/bloggersans.css">
-    <link rel="stylesheet" href="style/neiro.css">
+    <link rel="stylesheet" href="css/neiro.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="media/neiro_media.css">
 
     <title>neurotrainers</title>
 </head>
 <body>
+   
 
 <!-- <div class="wrapper">
     <header class="header">
@@ -68,7 +70,7 @@
     <div class="containerNeiro">
 
 
-        <div class="header_top">
+        <div class="header_top" data-open="fasle">
             <div class="menu">
                     <a href="" target="_blank">Главная</a>
                     <a href="" target="_blank">О компании</a>
@@ -90,6 +92,10 @@
                     <path d="M13.6585 2.33333C12.1533 0.833333 10.1463 0 8.02787 0C3.62369 0 0.0557483 3.55556 0.0557483 7.94444C0.0557483 9.33333 0.445993 10.7222 1.11498 11.8889L0 16L4.23694 14.8889C5.40767 15.5 6.68989 15.8333 8.02787 15.8333C12.4321 15.8333 16 12.2778 16 7.88889C15.9443 5.83333 15.1638 3.83333 13.6585 2.33333ZM11.8746 10.7778C11.7073 11.2222 10.9268 11.6667 10.5366 11.7222C10.2021 11.7778 9.7561 11.7778 9.31011 11.6667C9.03136 11.5556 8.64112 11.4444 8.19512 11.2222C6.18815 10.3889 4.90592 8.38889 4.79443 8.22222C4.68293 8.11111 3.95819 7.16667 3.95819 6.16667C3.95819 5.16667 4.45993 4.72222 4.62718 4.5C4.79443 4.27778 5.01742 4.27778 5.18467 4.27778C5.29617 4.27778 5.46341 4.27778 5.57491 4.27778C5.68641 4.27778 5.85366 4.22222 6.02091 4.61111C6.18815 5 6.5784 6 6.63415 6.05556C6.68989 6.16667 6.68989 6.27778 6.63415 6.38889C6.5784 6.5 6.52265 6.61111 6.41115 6.72222C6.29965 6.83333 6.18815 7 6.1324 7.05556C6.0209 7.16667 5.90941 7.27778 6.02091 7.44444C6.1324 7.66667 6.52265 8.27778 7.13589 8.83333C7.91638 9.5 8.52962 9.72222 8.75261 9.83333C8.97561 9.94445 9.08711 9.88889 9.1986 9.77778C9.3101 9.66667 9.70035 9.22222 9.81185 9C9.92335 8.77778 10.0906 8.83333 10.2578 8.88889C10.4251 8.94444 11.4286 9.44445 11.5958 9.55556C11.8188 9.66667 11.9303 9.72222 11.9861 9.77778C12.0418 9.94444 12.0418 10.3333 11.8746 10.7778Z" fill="#333333"/>
                     </svg></a> 
             </div>
+        </div>
+        <div class="header_top_mobil">
+            <a href="#"><img src="img/logo_mobil.svg" alt="logotip neurotrainer"></a>
+            <img onclick="openMenu()" src="img/button_burger.svg" alt="button_burger">
         </div>
         <div class="header_center">
             <img src="img/logo (1).svg" alt="logotip neurotrainers">
@@ -134,6 +140,23 @@
                 </div>
             </div>
         </div>
+        <div class="header_center_mobil">
+            <div class="info">
+                <div class="info_top">
+                    <img src="img/phone.png" alt="phone">
+                    <a href="" target="_blank">8 (800) 55 48 97</a>
+                </div>
+                <p>07:00 - 19:00 по МСК</p>
+            </div>
+            <div class="personbasket">
+                <a href="#" target="_blank"><img src="img/glass_mobil.svg" alt="glass"></a>
+                <a href="#" target="_blank"><img src="img/personal_mobil.svg" alt="personal area"></a>
+                <a href="#" target="_blank"><img src="img/basket_mobil.svg" alt="basket"></a>
+                <div class="ellipse">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
         <div class="header_bottom">
             <a href="" target="_blank">Мозжечковая стимуляция</a>
             <a href="" target="_blank">Межполушарные доски</a>
@@ -150,7 +173,9 @@
             <a href="" target="_blank">Нейровосьмерки</a>
             <a href="" target="_blank">Разное</a>
         </div>
-
+        <div class="header_bottom_mobil">
+            <a href="#">Каталог продукции</a>
+        </div>
     </div>
 </div>  
     
@@ -165,7 +190,7 @@
             <p>Cпециально разработанное устройство для<br> работы над стимуляцией мозжечка. Принцип<br> работы балансировочной доски: Ребенок стоит<br> на доске, которая закреплена на округлой<br> основе, что заставляет его удерживать<br> равновесие.</p>
             <button>Узнать подробности</button>
             <img src="img/girl 1.svg" alt="Billow boards girl">
-            <img src="img/girl_media.svg" alt="Billow boards girl">
+            <img src="img/girl_media725.svg" alt="Billow boards girl">
           
         </div>
         <div class="stand-neuro8">
@@ -174,7 +199,7 @@
                 <p>Стойка регулируется по высоте (от<br> 60 до 120 см) стойка, На стойке<br> расположено 5 мишеней-целей. </p>
                 <a href="#" target="_blank">Подробнее</a>
                 <img src="img/banner_target_rack.svg" alt="target rack">
-                <img src="img/banner_target_rack_media.svg" alt="target rack">
+                <img src="img/banner_target_rack_media725.svg" alt="target rack">
 
             </div>
             <div class="neuro8">
@@ -182,7 +207,7 @@
                 <p>один из тренажеров для<br> мозжечковой стимуляции. Для<br> успешного выполнения заданий<br> необходимо регулировать...</p>
                 <a href="#" target="_blank">Подробнее</a>
                 <img src="img/banner_neiro8.svg" alt="neuro-eight">
-                <img src="img/banner_neiro8_media.svg" alt="neuro-eight">
+                <img src="img/banner_neiro8_media725.svg" alt="neuro-eight">
             </div>
         </div>
     </div>
@@ -200,7 +225,7 @@
         <div class="carousel-item">
             <div class="stand">
                 <h1>Стойка<br> с мишенями-целями</h1>
-                <img class="d-block" src="img/toy 1.svg" alt="target rack">
+                <img class="d-block" src="img/banner_target_rack.svg" alt="target rack">
                 <a href="" target="_blank">Подробнее</a>
             </div>
         </div>
@@ -214,7 +239,7 @@
         <div class="carousel-item">
             <div class="neuro8">
                 <h1>Нейровосьмерка</h1>
-                <img class="d-block" src="img/toy 2.svg" alt="neuro-eighte">
+                <img class="d-block" src="img/banner_neiro8.svg" alt="neuro-eighte">
                 <a href="" target="_blank">Подробнее</a>
             </div>
         </div>
@@ -230,6 +255,7 @@
         <div class="hat">
             <a href="#" target="_blank">Товары месяца</a>
             <a href="#" target="_blank">В каталог</a>
+            <a href="#" target="_blank">Еще</a>
         </div>
         <div class="products">
             <ul>
@@ -237,7 +263,7 @@
                     <span>-30%</span>
                     <span>Рекомендуем</span>
                     <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                    <img src="img/toy_BilgouBoard_media.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
                     <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -245,15 +271,14 @@
                         <p>3 470 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
                 </li>
                 <li class="products2">
                     <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
-                    <img src="img/toy_setofballs_media.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
                     <h3>Набор мячей с фиксацией<br> на одежде</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -261,8 +286,7 @@
                         <p>935 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -271,7 +295,7 @@
                     <span>-30%</span>
                     <span>Рекомендуем</span>
                     <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
-                    <img src="img/toy_Outdoorcolortarget_media.svg" alt="Color floor target">
+                    <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
                     <h3>Мишень напольная цветная</h3>
                     <h3>Мишень напольная<br> цветная</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
@@ -280,8 +304,7 @@
                         <p>2 000 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -295,8 +318,7 @@
                         <p>3 000 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -304,6 +326,43 @@
             </ul>
             <ul></ul>
         </div>
+        <div class="products_mobil">
+            <ul>
+                <li class="products1">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р.</p>
+                        <p>3 470 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products2">
+                    <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <h3>Набор мячей с фиксацией<br> на одежде</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>650 р.</p>
+                        <p>935 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </div>
 
@@ -315,6 +374,7 @@
         <div class="hat">
             <a href="#" target="_blank">Для нейропсихологов</a>
             <a href="#" target="_blank">В каталог</a>
+            <a href="#" target="_blank">Еще</a>
         </div>
         <div class="video_products">
             <div class="video_psychologists">
@@ -326,7 +386,7 @@
                         <span>-30%</span>
                         <span>Рекомендуем</span>
                         <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_BilgouBoard_media.svg" alt="toy Bilgou Board">
+                        <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
                         <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                         <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                         <div class="price">
@@ -334,8 +394,7 @@
                             <p>3 470 р.</p>
                         </div>
                         <div class="buy">
-                            <span>1</span>
-                            <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                            <input type="number" min="0" max="100" step="1" value="1" >
                             <button>Купить</button>
                         </div>   
                         <a href="#" target="_blank">Подробнее</a>
@@ -344,7 +403,7 @@
                         <span>-30%</span>
                         <span>Рекомендуем</span>
                         <img src="img/toy_setofballs.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_setofballs_media.svg" alt="Set of balls with fixation on clothes">
+                        <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
                         <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                         <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                         <div class="price">
@@ -352,8 +411,7 @@
                             <p>3 470 р.</p>
                         </div>
                         <div class="buy">
-                            <span>1</span>
-                            <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                            <input type="number" min="0" max="100" step="1" value="1" >
                             <button>Купить</button>
                         </div>   
                         <a href="#" target="_blank">Подробнее</a>
@@ -374,6 +432,7 @@
         <div class="hat">
             <a href="#" target="_blank">Нейротренажеры</a>
             <a href="#" target="_blank">В каталог</a>
+            <a href="#" target="_blank">Еще</a>
         </div>
         <div class="products">
             <ul>
@@ -381,7 +440,7 @@
                     <span>-30%</span>
                     <span>Рекомендуем</span>
                     <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                    <img src="img/toy_BilgouBoard_media.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
                     <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -389,15 +448,14 @@
                         <p>3 470 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
                 </li>
                 <li class="products2">
                     <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
-                    <img src="img/toy_setofballs_media.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
                     <h3>Набор мячей с фиксацией<br> на одежде</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -405,8 +463,7 @@
                         <p>935 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -415,7 +472,7 @@
                     <span>-30%</span>
                     <span>Рекомендуем</span>
                     <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
-                    <img src="img/toy_Outdoorcolortarget_media.svg" alt="Color floor target">
+                    <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
                     <h3>Мишень напольная цветная</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -423,8 +480,7 @@
                         <p>2 000 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -438,8 +494,7 @@
                         <p>3 000 р.</p>
                     </div>
                     <div class="buy">
-                        <span>1</span>
-                        <img src="img/Vector_top_buttom.svg" alt="Vector top buttom">
+                        <input type="number" min="0" max="100" step="1" value="1" >
                         <button>Купить</button>
                     </div>   
                     <a href="#" target="_blank">Подробнее</a>
@@ -467,12 +522,16 @@
                     <h6>Что такое доска Бильгоу?</h6>
                     <p>История программы мозжечковой стимуляции родилась ее началась в 60е<br> годы XX века. Как-то раз американский педагог Фрэнк Бильгоу, который<br> работал в то время в школе, заметил интересную закономерность: ученики,<br> которые на переменах играли в игры, связанные с балансировкой.</p>
                     <p>История программы мозжечковой стимуляции<br> родилась ее началась в 60е годы XX века. Как-то раз<br> американский педагог Фрэнк Бильгоу, который<br> работал в то время в школе.</p>
+                    <p>История программы мозжечковой<br> стимуляции родилась ее началась в 60е<br> годы XX века. Как-то раз американский<br> педагог Фрэнк Бильгоу, который работал в<br> то время в школе.</p>
                     <a href="#" target="_blank">Лицензии и cертификаты</a>
                 </div>
                 <div class="certificates">
                     <a href="#" target="_blank"><img src="img/certificate1.svg" alt="certificates neurotrainers"></a>
+                    <a href="#" target="_blank"><img src="img/certificate1_media725.svg" alt="certificates neurotrainers"></a>
                     <a href="#" target="_blank"><img src="img/certificate2.svg" alt="certificates neurotrainers"></a>
+                    <a href="#" target="_blank"><img src="img/certificate2_media725.svg" alt="certificates neurotrainers"></a>
                     <a href="#" target="_blank"><img src="img/certificate3.svg" alt="certificates neurotrainers"></a>
+                    <a href="#" target="_blank"><img src="img/certificate3_media725.svg" alt="certificates neurotrainers"></a>
 
                 </div>
             </div>
@@ -488,6 +547,7 @@
         <div class="hat">
             <a href="" target="_blank">Отзывы</a>
             <a href="" target="_blank">Смотреть все</a>
+            <a href="#" target="_blank">Еще</a>
         </div>
         <div class="reviews">
                 <div class="review1">
@@ -524,29 +584,54 @@
                     <input class="button_input" type="submit" value="Подписаться"> 
                     </form>
                 </div>
-                <div class="phone_footer">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9277 20C4.90762 19.9398 -4.48825 8.26355 2.37753 1.39787C2.62146 1.15012 2.87966 0.91178 3.14494 0.689412C3.70594 0.219175 4.41671 -0.0233446 5.14589 0.00649192C5.878 0.0364456 6.56638 0.338404 7.08419 0.856676C7.08755 0.860035 7.09091 0.863471 7.09423 0.866908L8.41673 2.24005C9.84797 3.63932 9.34076 6.16269 7.47481 6.89287C6.89716 7.12828 6.52866 7.33733 6.4302 7.40806C5.70196 8.14948 5.23837 9.35419 7.96228 12.0806C8.8462 12.9653 10.1554 14.1414 11.3145 14.1414C11.7847 14.1414 12.2164 13.9426 12.633 13.5338C12.6872 13.4544 12.8745 13.1357 13.116 12.5344C13.8393 10.6573 16.3697 10.1354 17.7753 11.5754L19.1337 12.8888C19.1369 12.8919 19.1401 12.8951 19.1433 12.8982C19.659 13.4144 19.9608 14.1003 19.993 14.8296C20.0252 15.5583 19.7854 16.2681 19.3178 16.8282C19.1103 17.0766 18.8888 17.3192 18.6591 17.549C17.0416 19.168 15.0833 20 12.9277 20ZM5.02664 1.56416C4.71763 1.56416 4.40678 1.67074 4.14975 1.88615C3.92247 2.07669 3.70113 2.28098 3.49194 2.49343C-0.168233 6.20792 1.84347 11.2818 5.36004 14.7555C8.84496 18.22 13.8975 20.1142 17.5527 16.4453C17.7496 16.2483 17.9395 16.0404 18.1173 15.8275C18.5685 15.2871 18.5354 14.5051 18.0411 14.0061L16.6836 12.6935C16.6803 12.6903 16.6771 12.6872 16.674 12.684C16.3628 12.3726 15.9372 12.2444 15.5063 12.3323C15.0741 12.4205 14.7317 12.7063 14.567 13.1164C14.4577 13.3883 14.0767 14.3002 13.7625 14.6147C13.0406 15.3372 12.217 15.7035 11.3145 15.7035C9.59364 15.7035 8.02779 14.3571 6.85585 13.1842C5.07765 11.4796 3.02248 8.57289 5.34308 6.28489C5.67202 5.95563 6.60597 5.55987 6.88438 5.44642C7.2888 5.28162 7.57065 4.94057 7.65761 4.51079C7.74524 4.07769 7.61673 3.65037 7.30498 3.33834C7.30162 3.33498 7.29826 3.33154 7.29494 3.32811L5.97325 1.95578C5.71107 1.69577 5.37001 1.56416 5.02664 1.56416ZM19.2173 9.33778C18.8173 9.33778 18.4763 9.03258 18.4397 8.62678C18.1008 4.86996 15.1259 1.89756 11.366 1.55901C10.936 1.5203 10.6189 1.14063 10.6576 0.711008C10.6963 0.281347 11.0766 -0.0355682 11.5063 0.00321146C15.9026 0.331647 19.668 4.09402 19.9968 8.48654C20.0356 8.91617 19.7184 9.29584 19.2884 9.33454C19.2646 9.33673 19.2408 9.33778 19.2173 9.33778ZM13.1269 9.33661C13.5365 9.20008 13.7577 8.75773 13.6211 8.34849C13.3145 7.4302 12.5951 6.69256 11.6967 6.37526C11.2897 6.23147 10.843 6.44466 10.6992 6.85139C10.5553 7.25809 10.7686 7.70435 11.1757 7.8481C11.623 8.00611 11.9828 8.37798 12.1381 8.84286C12.2473 9.17005 12.5523 9.37695 12.8795 9.37695C12.9615 9.37699 13.0449 9.36399 13.1269 9.33661ZM16.1981 9.32985C16.6255 9.26878 16.9223 8.87309 16.8612 8.44605C16.4696 5.71089 14.2843 3.5274 11.5469 3.13612C10.5152 3.03041 10.3045 4.49466 11.3255 4.68251C13.3797 4.97611 15.0197 6.61469 15.3135 8.6672C15.3693 9.05676 15.7037 9.33774 16.0864 9.33774C16.1232 9.33782 16.1605 9.33521 16.1981 9.32985Z" fill="#F07FAE"/>
-                    </svg>
-                    <span>8 (800) 55 48 97</span>
-                    <p>Звонок бесплатный</p>
-                </div>
-                <div class="batton_footer">
-                    <button>Задать вопрос</button>
-                    <button>Заказать звонок</button>
-                </div>
+             
+                    <div class="phone_footer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9277 20C4.90762 19.9398 -4.48825 8.26355 2.37753 1.39787C2.62146 1.15012 2.87966 0.91178 3.14494 0.689412C3.70594 0.219175 4.41671 -0.0233446 5.14589 0.00649192C5.878 0.0364456 6.56638 0.338404 7.08419 0.856676C7.08755 0.860035 7.09091 0.863471 7.09423 0.866908L8.41673 2.24005C9.84797 3.63932 9.34076 6.16269 7.47481 6.89287C6.89716 7.12828 6.52866 7.33733 6.4302 7.40806C5.70196 8.14948 5.23837 9.35419 7.96228 12.0806C8.8462 12.9653 10.1554 14.1414 11.3145 14.1414C11.7847 14.1414 12.2164 13.9426 12.633 13.5338C12.6872 13.4544 12.8745 13.1357 13.116 12.5344C13.8393 10.6573 16.3697 10.1354 17.7753 11.5754L19.1337 12.8888C19.1369 12.8919 19.1401 12.8951 19.1433 12.8982C19.659 13.4144 19.9608 14.1003 19.993 14.8296C20.0252 15.5583 19.7854 16.2681 19.3178 16.8282C19.1103 17.0766 18.8888 17.3192 18.6591 17.549C17.0416 19.168 15.0833 20 12.9277 20ZM5.02664 1.56416C4.71763 1.56416 4.40678 1.67074 4.14975 1.88615C3.92247 2.07669 3.70113 2.28098 3.49194 2.49343C-0.168233 6.20792 1.84347 11.2818 5.36004 14.7555C8.84496 18.22 13.8975 20.1142 17.5527 16.4453C17.7496 16.2483 17.9395 16.0404 18.1173 15.8275C18.5685 15.2871 18.5354 14.5051 18.0411 14.0061L16.6836 12.6935C16.6803 12.6903 16.6771 12.6872 16.674 12.684C16.3628 12.3726 15.9372 12.2444 15.5063 12.3323C15.0741 12.4205 14.7317 12.7063 14.567 13.1164C14.4577 13.3883 14.0767 14.3002 13.7625 14.6147C13.0406 15.3372 12.217 15.7035 11.3145 15.7035C9.59364 15.7035 8.02779 14.3571 6.85585 13.1842C5.07765 11.4796 3.02248 8.57289 5.34308 6.28489C5.67202 5.95563 6.60597 5.55987 6.88438 5.44642C7.2888 5.28162 7.57065 4.94057 7.65761 4.51079C7.74524 4.07769 7.61673 3.65037 7.30498 3.33834C7.30162 3.33498 7.29826 3.33154 7.29494 3.32811L5.97325 1.95578C5.71107 1.69577 5.37001 1.56416 5.02664 1.56416ZM19.2173 9.33778C18.8173 9.33778 18.4763 9.03258 18.4397 8.62678C18.1008 4.86996 15.1259 1.89756 11.366 1.55901C10.936 1.5203 10.6189 1.14063 10.6576 0.711008C10.6963 0.281347 11.0766 -0.0355682 11.5063 0.00321146C15.9026 0.331647 19.668 4.09402 19.9968 8.48654C20.0356 8.91617 19.7184 9.29584 19.2884 9.33454C19.2646 9.33673 19.2408 9.33778 19.2173 9.33778ZM13.1269 9.33661C13.5365 9.20008 13.7577 8.75773 13.6211 8.34849C13.3145 7.4302 12.5951 6.69256 11.6967 6.37526C11.2897 6.23147 10.843 6.44466 10.6992 6.85139C10.5553 7.25809 10.7686 7.70435 11.1757 7.8481C11.623 8.00611 11.9828 8.37798 12.1381 8.84286C12.2473 9.17005 12.5523 9.37695 12.8795 9.37695C12.9615 9.37699 13.0449 9.36399 13.1269 9.33661ZM16.1981 9.32985C16.6255 9.26878 16.9223 8.87309 16.8612 8.44605C16.4696 5.71089 14.2843 3.5274 11.5469 3.13612C10.5152 3.03041 10.3045 4.49466 11.3255 4.68251C13.3797 4.97611 15.0197 6.61469 15.3135 8.6672C15.3693 9.05676 15.7037 9.33774 16.0864 9.33774C16.1232 9.33782 16.1605 9.33521 16.1981 9.32985Z" fill="#F07FAE"/>
+                        </svg>
+                        <span>8 (800) 55 48 97</span>
+                        <p>Звонок бесплатный</p>
+                    </div>
+                    <div class="batton_footer">
+                        <button>Задать вопрос</button>
+                        <button>Заказать звонок</button>
+                    </div>
+                
             </div>
         </div>
 
-        <div class="footer_top_media">
+        <div class="footer_top_media725">
             <div class="containerNeiro">
-
+                <div class="form_top">
+                    <p>Новинки и акции у вас в почте</p>
+                    <div class="form">
+                        <form action="https://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+                            <label>
+                                <input type="text" name="mail" placeholder="Ваш e-mail адрес">
+                            </label>
+                        <input class="button_input" type="submit" value="Подписаться"> 
+                        </form>
+                    </div>
+                </div>
+                <div class="phone_top">
+                    <div class="phone_footer">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9277 20C4.90762 19.9398 -4.48825 8.26355 2.37753 1.39787C2.62146 1.15012 2.87966 0.91178 3.14494 0.689412C3.70594 0.219175 4.41671 -0.0233446 5.14589 0.00649192C5.878 0.0364456 6.56638 0.338404 7.08419 0.856676C7.08755 0.860035 7.09091 0.863471 7.09423 0.866908L8.41673 2.24005C9.84797 3.63932 9.34076 6.16269 7.47481 6.89287C6.89716 7.12828 6.52866 7.33733 6.4302 7.40806C5.70196 8.14948 5.23837 9.35419 7.96228 12.0806C8.8462 12.9653 10.1554 14.1414 11.3145 14.1414C11.7847 14.1414 12.2164 13.9426 12.633 13.5338C12.6872 13.4544 12.8745 13.1357 13.116 12.5344C13.8393 10.6573 16.3697 10.1354 17.7753 11.5754L19.1337 12.8888C19.1369 12.8919 19.1401 12.8951 19.1433 12.8982C19.659 13.4144 19.9608 14.1003 19.993 14.8296C20.0252 15.5583 19.7854 16.2681 19.3178 16.8282C19.1103 17.0766 18.8888 17.3192 18.6591 17.549C17.0416 19.168 15.0833 20 12.9277 20ZM5.02664 1.56416C4.71763 1.56416 4.40678 1.67074 4.14975 1.88615C3.92247 2.07669 3.70113 2.28098 3.49194 2.49343C-0.168233 6.20792 1.84347 11.2818 5.36004 14.7555C8.84496 18.22 13.8975 20.1142 17.5527 16.4453C17.7496 16.2483 17.9395 16.0404 18.1173 15.8275C18.5685 15.2871 18.5354 14.5051 18.0411 14.0061L16.6836 12.6935C16.6803 12.6903 16.6771 12.6872 16.674 12.684C16.3628 12.3726 15.9372 12.2444 15.5063 12.3323C15.0741 12.4205 14.7317 12.7063 14.567 13.1164C14.4577 13.3883 14.0767 14.3002 13.7625 14.6147C13.0406 15.3372 12.217 15.7035 11.3145 15.7035C9.59364 15.7035 8.02779 14.3571 6.85585 13.1842C5.07765 11.4796 3.02248 8.57289 5.34308 6.28489C5.67202 5.95563 6.60597 5.55987 6.88438 5.44642C7.2888 5.28162 7.57065 4.94057 7.65761 4.51079C7.74524 4.07769 7.61673 3.65037 7.30498 3.33834C7.30162 3.33498 7.29826 3.33154 7.29494 3.32811L5.97325 1.95578C5.71107 1.69577 5.37001 1.56416 5.02664 1.56416ZM19.2173 9.33778C18.8173 9.33778 18.4763 9.03258 18.4397 8.62678C18.1008 4.86996 15.1259 1.89756 11.366 1.55901C10.936 1.5203 10.6189 1.14063 10.6576 0.711008C10.6963 0.281347 11.0766 -0.0355682 11.5063 0.00321146C15.9026 0.331647 19.668 4.09402 19.9968 8.48654C20.0356 8.91617 19.7184 9.29584 19.2884 9.33454C19.2646 9.33673 19.2408 9.33778 19.2173 9.33778ZM13.1269 9.33661C13.5365 9.20008 13.7577 8.75773 13.6211 8.34849C13.3145 7.4302 12.5951 6.69256 11.6967 6.37526C11.2897 6.23147 10.843 6.44466 10.6992 6.85139C10.5553 7.25809 10.7686 7.70435 11.1757 7.8481C11.623 8.00611 11.9828 8.37798 12.1381 8.84286C12.2473 9.17005 12.5523 9.37695 12.8795 9.37695C12.9615 9.37699 13.0449 9.36399 13.1269 9.33661ZM16.1981 9.32985C16.6255 9.26878 16.9223 8.87309 16.8612 8.44605C16.4696 5.71089 14.2843 3.5274 11.5469 3.13612C10.5152 3.03041 10.3045 4.49466 11.3255 4.68251C13.3797 4.97611 15.0197 6.61469 15.3135 8.6672C15.3693 9.05676 15.7037 9.33774 16.0864 9.33774C16.1232 9.33782 16.1605 9.33521 16.1981 9.32985Z" fill="#F07FAE"/>
+                        </svg>
+                        <span>8 (800) 55 48 97</span>
+                        <p>Звонок бесплатный</p>
+                    </div>
+                    <div class="batton_footer">
+                        <button>Задать вопрос</button>
+                        <button>Заказать звонок</button>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
         <div class="footer_centre">
             <div class="containerNeiro">
-                <div class="logo_footer_media">
+                <div class="logo_footer_media725">
                     <a href="#" target="_blank"><img src="img/logo (1).svg" alt="logo neurotrainers"></a>
                 </div>
                 <div class="centre_text">
@@ -640,7 +725,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
 
-<!-- <script src="js/script_neiro.js"></script>  -->
+<script src="js/script_neiro.js"></script> 
 
 </body>
 </html>

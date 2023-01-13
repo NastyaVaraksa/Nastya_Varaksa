@@ -3,8 +3,6 @@
         width: 725px;
         max-width: 725px;
     }
-
-
     @mixin text1
     {
         font-weight: 400;
@@ -53,6 +51,9 @@
     
     }
     .header_center{
+        display: none;
+    }
+    .header_center_mobil{
         display: none;
     }
     .header_center_media725{
@@ -140,6 +141,9 @@
         }
     }
     .header_bottom{
+        display: none;
+    }
+    .header_bottom_mobil{
         display: none;
     }
     .header_bottom_media725{
@@ -276,7 +280,9 @@
             }
         }
     }
-
+    .products_mobil{
+        display: none;
+    }
     // products описание стилевых свойств продуктов
 
 .products1, .products2, .products3, .products4{
@@ -330,23 +336,12 @@
         height: 50px;
         left: 89px;
         top: 254px;
-        span:nth-child(1){
-            left: 10px;
-            top: 14px;
-            padding: 5px 8px 5px 0;
+        input{
+            left: 4px;
         }
         button{
             width: 67px;
             height: 52px;
-        }
-        button:hover{
-           
-        }
-        img{
-            display: block;
-            position: absolute;
-            left: 36px;
-            top: 19px;
         }
     }
     a{
@@ -354,17 +349,16 @@
         left: 15px;
         top: 319px; 
     }
-    
-}
-.products2{
+    }
+    .products2{
     img:nth-of-type(2){
         display: block;
         position: absolute;
         left: 44px;
         top: 24px;
     }
-}
-.products3{
+    }
+    .products3{
     h3:nth-of-type(1){
         display: none;
     }
@@ -384,16 +378,16 @@
         left: 18px;
         top: 25px;
     }
-}
-.products4{
+    }
+    .products4{
     img{
         left: 48px;
         top: 30px; 
     }
-}
-.products1:hover, .products2:hover, .products3:hover, .products4:hover{
+    }   
+    .products1:hover, .products2:hover, .products3:hover, .products4:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-} 
+    } 
 
 
     // For neuropsychologists
@@ -467,13 +461,16 @@
                             color: #333333;
                             margin: 6px 0 10px 0;
                         }
+                        p:nth-of-type(3){
+                            display: none;
+                        }
                     }
                     .certificates {
-                        a{
-                            img{
-                                width: 82px;
-                                height: 116px;
-                            }
+                        a:nth-child(even){
+                            display: block; 
+                        }
+                        a:nth-child(odd){
+                            display: none; 
                         }
                     } 
                 }
@@ -524,84 +521,100 @@
 
     .footer{
         margin-top: 50px;
-
-
         .footer_top{
+            display: none;
+        }
+        .footer_top_media725{
+            display: block;
+            background-color: #292929;
             .containerNeiro{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                p{
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 18px;
-                    margin: 42px 0 40px 0;
-                }
-                .form{
-                    border: 1px solid transparent;
-                    border-radius: 5px;
-                    overflow: hidden;
-                    input{
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 18px;
-                        color: #707070;
-                        padding: 17px 73px 15px 14px;
-                        background: #FFFFFF;
-                        border: none;
-                    }
-                    .button_input{
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 18px;
-                        color: #FFFFFF;
-                        background: #F07FAE;
-                        padding: 17px 19px 15px 19px;
-                        border: none;
-                        margin-left: -5px;  
-                    }
-    
-                }
-                .phone_footer{
-                    svg{
-                        margin: 0 10px 8px 0;
-                    }
-                    span{
+                .form_top{
+                    display: flex;
+                    flex-direction: column;
+                    p{
                         font-weight: 700;
                         font-size: 18px;
                         line-height: 18px;
-                    };
-                    p{
-                        font-weight: 400;
-                        font-size: 15px;
-                        line-height: 18px;
-                        margin: 0;
+                        margin: 25px 0 14px 0;
+                        text-align: center;
                     }
-                }
-                .batton_footer{
-                    button{
-                        border: 2px solid #FFFFFF;
+                    .form{
+                        border: 1px solid transparent;
                         border-radius: 5px;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 18px;
-                        color: #FFFFFF;
-                        background-color: #292929;
-                        padding: 17px 19px 15px 20px;
-                        margin: 25px 0;
-                        transition: 0.2;
-                    }
-                    button:hover{
-                        border: 2px solid #F07FAE;
+                        overflow: hidden;
+                        margin-bottom: 29px;
+                        input{
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #707070;
+                            padding: 17px 73px 15px 14px;
+                            background: #FFFFFF;
+                            border: none;
+                        }
+                        .button_input{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            background: #F07FAE;
+                            padding: 17px 19px 15px 19px;
+                            border: none;
+                            margin-left: -5px;  
+                        }
+        
                     }
                 }
+                .phone_top{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .phone_footer{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 25px;
+                        span{
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 18px;
+                            margin: 0 26px 0 10px;
+                        };
+                        p{
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 18px;
+                            margin: 0;
+                        }
+                    }
+                    .batton_footer{
+                        button{
+                            border: 2px solid #FFFFFF;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            background-color: #292929;
+                            padding: 15px 28px 12px 28px;
+                            margin: 11px 0 29px 0;
+                            transition: 0.2;
+                        }
+                        button:hover{
+                            border: 2px solid #F07FAE;
+                        }
+                    }
+                }
+
             }
         }
-        
+
         .footer_centre{
             .containerNeiro{
                 border: 0.1px solid transparent;
-                .logo_footer_media{
+                .logo_footer_media725{
                     a{
                         display: block;
                         margin-top: 20px;
@@ -641,11 +654,185 @@
 
 
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 770px) {
     .containerNeiro{
         width: 290px;
         max-width: 290px;
     }
+    @mixin text1
+    {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #707070;
+    }
+    @mixin text2
+    {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+    }
+    @mixin text3
+    {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    @mixin h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 18px;
+        color: #333333;
+    }
+    .header_top{
+        display: none;
+    }
+    .header_top{
+        position: absolute;
+        right: -100%;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        z-index: 10;
+        width: 60%;
+        height: 1000vh;
+        background-color: #FFFFFF;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.5s;
+        .menu{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 19px;
+            a{
+                margin: 0  0 20px 30px;
+            }     
+        }
+        .network{
+            margin-left: 30px;
+            a{
+                margin: 0 15px 0 0px;
+            }
+            
+        }
+        
+
+    }
+
+    .header_top_mobil{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #EEEEEE;
+        a{
+            margin-bottom: 15px;
+        }
+        img:nth-child(2){
+            position: relative;
+            z-index: 15;
+        }
+    }
+    .header_center_media725{
+        display: none;
+    }
+    .header_center{
+       display: none;
+    }
+    .header_center_mobil{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid transparent;
+        .info{ 
+            margin: 13px 0 0px 0;
+            .info_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 16px;
+                    height: 16px;
+                } 
+                a{
+                    @include text2();
+                    font-size: 18px;
+                    margin: 0px 0px 0px 10px;
+                }
+            }
+            p{
+                @include text1();
+                font-size: 14px;
+                line-height: 18px; 
+                margin-top: 1px;
+            }   
+        }
+        .personbasket{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            a:nth-of-type(2){
+                margin: 0 15px 0 15px;
+            }
+            .ellipse{
+                background: #F07FAE;
+                border-radius: 14px;
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                p{
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    padding: 0px 5px;
+                }
+            }
+        }
+    }
+    
+    .header_bottom{
+        display: none;
+    }
+    .header_bottom_media725{
+        display: none;
+    }
+    .header_bottom_mobil{
+        display: block;
+        width: 290px;
+        height: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+
+        a{
+            border: 1px solid transparent;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: #333333;
+            
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     .banner{
         display: none;
     }
@@ -667,19 +854,16 @@
                     border-radius: 50%;
                     opacity: 1;
                 } 
-                button.active{
-                    width:6px;
-                    height: 6px;
-                    border-radius: 50%;
-                    opacity: 1;
-                    border: 3px solid #F07FAE;
-                    background-color: #FFFFFF;
-                }
-
-   
+                // button.active{
+                //     width:6px;
+                //     height: 6px;
+                //     border-radius: 50%;
+                //     opacity: 1;
+                //     border: 3px solid #F07FAE;
+                //     background-color: #FFFFFF;
+                // }
             }
         .carousel-inner{
-           
                 .board{
                     width: 290px;
                     height: 392px;
@@ -718,8 +902,6 @@
          
                     }
                     }
-            
-
                 .stand, .neuro8{
                     width: 290px;
                     height: 392px;
@@ -782,9 +964,233 @@
                         top: 58px; 
                     }
                 }
-            
-        }
-      
-        
+        }  
     }
+
+    
+    // hat шапка для блоков
+
+    .hat{
+        margin-bottom: 12x;
+        a:nth-child(1){
+            font-size: 20px;
+        }
+        a:nth-child(3){
+            display: block;
+        }
+        a:nth-child(2){
+            display: none;
+        }
+    }
+    
+    // productsmonth
+    .products{
+        display: none;
+    }
+
+
+// products описание стилевых свойств продуктов
+
+.products1, .products2, .products3, .products4{
+    width: 140px;
+    height: 282px;
+    
+    span:nth-of-type(1){
+        left: 15px;
+        top: 15px;
+     
+    }
+    span:nth-of-type(2){
+        left: 15px;
+        top: 43px;
+    }
+    img:nth-of-type(1){
+        display: none;
+    }
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 40px;
+    }
+    h3:nth-of-type(1){
+        font-size: 16px;
+        line-height: 16px;
+        left: 16px;
+        top: 175px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 16px;
+        left: 16px;
+        top: 209px;
+    }
+    .price{
+        p:nth-of-type(1){
+            font-size: 18px;
+            left: 16px;
+            top: 263px;
+        }
+        p:nth-of-type(2){
+            font-size: 14px;
+            left: 16px;
+            top: 283px;
+        }
+    }
+    .buy{
+        width: 119px;
+        height: 50px;
+        left: 89px;
+        top: 254px;
+        input{
+            left: 4px;
+        }
+        button{
+            width: 67px;
+            height: 52px;
+        }
+    }
+    a{
+        padding: 12px 59px 10px 59px;
+        left: 15px;
+        top: 319px; 
+    }
+    }
+    .products2{
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 44px;
+        top: 24px;
+    }
+    }
+    .products3{
+    h3:nth-of-type(1){
+        display: none;
+    }
+    h3:nth-of-type(2){
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #333333;
+        position: absolute;
+        left: 16px;
+        top: 175px;
+    }
+    img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 25px;
+    }
+    }
+    .products4{
+    img{
+        left: 48px;
+        top: 30px; 
+    }
+    }   
+    .products1:hover, .products2:hover, .products3:hover, .products4:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    } 
+
+
+    // For neuropsychologists
+    .neuropsychologists{
+        margin: 36px 0 40px 0;
+        .containerNeiro{
+            .video_products{
+                flex-direction: column;
+                .video_psychologists{
+                    margin-bottom: 10px;
+                    iframe{
+                        width: 290px;
+                        height: 200px;
+                    }
+                }
+                .products{
+                    ul{
+                        display: block;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        li:nth-of-type(2){
+                            display: block;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+
+
+    // aboutus
+
+    .aboutusAll{
+        margin: 40px 0 36px 0;
+        .containerNeiro{
+            .hat{
+                margin-top: 40px;
+            } 
+            .aboutus{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0px 0 40px 0;
+                .video1{
+                    iframe{
+                        width: 290px;
+                        height: 200px;
+                    }        
+                }
+                .text_certificates{
+                    display: flex;
+                    flex-direction: column;
+                    .text{
+                        h6{
+                            font-size: 18px;
+                            line-height: 18px;
+                            margin: 16px 0 4px 0; 
+                        }
+                        p:nth-of-type(1){
+                            display: none;
+                        }
+                        p:nth-of-type(2){
+                            display: none;
+                        }
+                        p:nth-of-type(3){
+                            display: block;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #333333;
+                            margin: 4px 0 10px 0;
+                        }
+
+                        a{
+                            font-size: 18px;
+                            line-height: 18px;  
+                        }
+                    }
+                    .certificates {
+                        a:nth-child(even){
+                            display: block; 
+                        }
+                        a:nth-child(odd){
+                            display: none; 
+                        }
+                    } 
+                }
+            }
+        }
+    }
+
+    // reviews 
+
+
+
+
+
 }
