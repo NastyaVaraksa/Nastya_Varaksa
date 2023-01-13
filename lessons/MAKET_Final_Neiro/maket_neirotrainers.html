@@ -15,55 +15,6 @@
 </head>
 <body>
    
-
-<!-- <div class="wrapper">
-    <header class="header">
-        <div class="container">
-            <div class="header_body">
-                <a href="#" class="header_logo">
-                    <img src="img/logo1.png" alt="">
-                </a>
-                <div class="header_burger">
-                    <span></span>
-                </div>
-                <nav class="header_menu">
-                    <ul class="header_list">
-                        <li>
-                            <a href="#" class="header_link">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">О компании</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Каталог</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Покупателям</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Доставка и оплата</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Акции</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Блог</a>
-                        </li>
-                        <li>
-                            <a href="#" class="header_link">Контакты</a>
-                        </li>
-                    </ul>
-
-                </nav>
-            </div>
-
-        </div>
-    </header>
-</div>
-
- -->
-
-
     <!-- header -->
 
 <div class="header">
@@ -158,24 +109,28 @@
             </div>
         </div>
         <div class="header_bottom">
-            <a href="" target="_blank">Мозжечковая стимуляция</a>
-            <a href="" target="_blank">Межполушарные доски</a>
-            <a href="" target="_blank">Нейрокосички</a>
-            <a href="" target="_blank">Балансиры</a>
-            <a href="" target="_blank">Нейровосьмерки</a>
-            <a href="" target="_blank">Разное</a>
+            <div class="button_mobil">
+                <a href="#" target="_blank">Каталог продукции</a>
+                <i onclick="closeProduct()" class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <a href="#" target="_blank">Мозжечковая стимуляция</a>
+            <a href="#" target="_blank">Межполушарные доски</a>
+            <a href="#" target="_blank">Нейрокосички</a>
+            <a href="#" target="_blank">Балансиры</a>
+            <a href="#" target="_blank">Нейровосьмерки</a>
+            <a href="#" target="_blank">Разное</a>
         </div>
         <div class="header_bottom_media725">
-            <a href="" target="_blank">Мозжечковая<br> стимуляция</a>
-            <a href="" target="_blank">Межполушарные<br> доски</a>
-            <a href="" target="_blank">Нейрокосички</a>
-            <a href="" target="_blank">Балансиры</a>
-            <a href="" target="_blank">Нейровосьмерки</a>
-            <a href="" target="_blank">Разное</a>
+            <a href="#" target="_blank">Мозжечковая<br> стимуляция</a>
+            <a href="#" target="_blank">Межполушарные<br> доски</a>
+            <a href="#" target="_blank">Нейрокосички</a>
+            <a href="#" target="_blank">Балансиры</a>
+            <a href="#" target="_blank">Нейровосьмерки</a>
+            <a href="#" target="_blank">Разное</a>
         </div>
-        <div class="header_bottom_mobil">
-            <a href="#">Каталог продукции</a>
-        </div>
+      
+        <button class="header_bottom_mobil" onclick="openProduct()">Каталог продукции</button>
+        
     </div>
 </div>  
     
@@ -264,6 +219,7 @@
                     <span>Рекомендуем</span>
                     <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
                     <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
                     <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -279,6 +235,7 @@
                 <li class="products2">
                     <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
                     <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
                     <h3>Набор мячей с фиксацией<br> на одежде</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -326,7 +283,7 @@
             </ul>
             <ul></ul>
         </div>
-        <div class="products_mobil">
+        <!-- <div class="products_mobil">
             <ul>
                 <li class="products1">
                     <span>-30%</span>
@@ -361,7 +318,7 @@
                     <a href="#" target="_blank">Подробнее</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
     </div>
 </div>
@@ -387,6 +344,7 @@
                         <span>Рекомендуем</span>
                         <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
                         <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                        <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
                         <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                         <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                         <div class="price">
@@ -400,15 +358,14 @@
                         <a href="#" target="_blank">Подробнее</a>
                     </li>
                     <li class="products2">
-                        <span>-30%</span>
-                        <span>Рекомендуем</span>
                         <img src="img/toy_setofballs.svg" alt="toy Bilgou Board">
                         <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
-                        <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
+                        <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
+                        <h3>Набор мячей с фиксацией<br> на одежде</h3>
                         <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                         <div class="price">
-                            <p>2 490 р.</p>
-                            <p>3 470 р.</p>
+                            <p>650 р.</p>
+                            <p>935 р.</p>
                         </div>
                         <div class="buy">
                             <input type="number" min="0" max="100" step="1" value="1" >
@@ -441,6 +398,7 @@
                     <span>Рекомендуем</span>
                     <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
                     <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
                     <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">
@@ -456,6 +414,7 @@
                 <li class="products2">
                     <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
                     <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
                     <h3>Набор мячей с фиксацией<br> на одежде</h3>
                     <p>Тренажеров для мозжечковой<br> стимуляции.</p>
                     <div class="price">

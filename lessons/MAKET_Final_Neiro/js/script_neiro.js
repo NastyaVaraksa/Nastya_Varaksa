@@ -173,4 +173,28 @@ function openMenu(){
         menu.setAttribute('data-open', 'false')
     }
 }
+function openProduct(){
+    var menu = document.querySelector('.header_bottom');
+    var isopenProduct = menu.getAttribute('data-open');
+    if(isopenProduct === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'true')
+    } else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-open', 'false')
+    }
+}
+function closeProduct(){
+    var menu = document.querySelector('.header_bottom');
+    var btn = document.querySelector('.header_bottom .button_mobil i');
+    var isloseProduct = menu.getAttribute('data-close');
+    if(isloseProduct === 'false'){
+        menu.style.right = '0%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-close', 'false')
+    }  else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-close', 'true')
+    }
+}
 
