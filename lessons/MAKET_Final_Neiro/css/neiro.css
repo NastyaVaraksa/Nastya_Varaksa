@@ -677,6 +677,9 @@ p {
   .reviewsAll .containerNeiro .reviews .video2 iframe:hover {
     opacity: 1.0; }
 
+.reviewsmobil {
+  display: none; }
+
 .footer {
   margin-top: 80px;
   color: #FFFFFF; }
@@ -814,7 +817,12 @@ p {
         font-weight: 400;
         font-size: 14px;
         line-height: 15px; }
-      .footer .footer_bottom .containerNeiro svg {
+      .footer .footer_bottom .containerNeiro .pay {
         margin: 20px 0 15px 0; }
+        .footer .footer_bottom .containerNeiro .pay a:nth-of-type(2) {
+          margin: 0 5px; }
+
+.footer_mobil {
+  display: none; }
 
 /*# sourceMappingURL=neiro.css.map */

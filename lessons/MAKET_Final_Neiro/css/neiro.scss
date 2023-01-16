@@ -784,6 +784,11 @@ p {
 
 }
 
+.reviewsmobil{
+    display: none;
+}
+
+
 // footer
 
 .footer{
@@ -949,9 +954,15 @@ p {
                 font-size: 14px;
                 line-height: 15px;
             }
-            svg{
+            .pay{
                 margin: 20px 0 15px 0;
+                a:nth-of-type(2){
+                    margin: 0 5px;
+                }
             }
         }
     }
+}
+.footer_mobil{
+    display: none;
 }

@@ -520,6 +520,10 @@
         }
     
     }
+    .reviewsmobil{
+        display: none;
+    }
+
 
     // footer
 
@@ -641,7 +645,9 @@
         }
     }
 
-
+    .footer_mobil{
+        display: none;
+    }
 
 
 }
@@ -1255,7 +1261,315 @@
         }
     }
 
-    // reviews 
+    .reviewsAll{
+        display: none;
+    }
+    // reviews for mobil
+    .reviewsmobil{
+        display: block;
+        .hat{
+            margin-bottom: 12px;
+        }
+        .carousel{
+            width: auto;
+            margin: 0;
+            position: relative;
+                .carousel-indicators{
+                    bottom: -45px;
+                    border-top: none;
+                    border-bottom: none;
+                    opacity: 1;
+                    align-items: center;
+                    button{
+                        background-color: #DFDFDF;  
+                        width:6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        opacity: 1;
+                    } 
+                    button.active{
+                        border-radius: 50%;
+                        opacity: 1;
+                        border: 3px solid #F07FAE;
+                        background-color: #FFFFFF;
+                    }
+                }
+            .carousel-inner{
+                .carousel-item{
+                    .review2, .review1{
+                        width: 290px;
+                        height: 168px;
+                        border: 1px solid #EEEEEE;
+                        border-radius: 10px;
+                        position: relative;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            position: absolute;
+                            left: 12px;
+                            top: 10px;
+                        }
+                        h4{
+                            position: absolute;
+                            left: 72px;
+                            top: 18px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #333333;   
+                        }
+                        span{
+                            position: absolute;
+                            left: 72px;
+                            top: 35px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #707070;
+                        };
+                        p{
+                            position: absolute;
+                            left: 10px;
+                            top: 65px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #333333;
+                        }
+                    }
+                }
+                .carousel-item{
+                    .video2{
+                        width: 290px;
+                        height: 168px;
+                        iframe{
+                            width: 290px;
+                            height: 168px;
+                            opacity: 0.3;
+                            border: 1px solid #EEEEEE;
+                            border-radius: 10px;
+                        }
+                        iframe:hover {
+                            opacity: 1.0;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    // footer
+    .footer{
+        display: none;
+    }
+    // footer for mobil
+    .footer_mobil{
+        display: block;
+        margin-top: 60px;
+        color: #FFFFFF;
+        .footer_top{
+            background-color: #292929;
+            .containerNeiro{
+                border: 1px solid transparent;
+                .text_footertop{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px 0 9px 0;
+                    p{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                    .phone_footer{
+                      
+                       svg{
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                       }
+                        span{
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px; 
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                } 
+                .button_footertop{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .form{
+                        label{
+                            input{
+                                width: 140px;
+                                height: 30px;
+                                background: #FFFFFF;
+                                border: 1px solid #DFDFDF;
+                                border-radius: 5px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #707070;
+                                text-align: start;
+                                padding-left: 9px;
+                                margin-bottom: 4px;
+                            }
+                        }
+                        input{
+                            width: 140px;
+                            height: 30px;
+                            left: 15px;
+                            top: 2912px;
+                            background: #F07FAE;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            border: 1px solid transparent;
+                            margin-bottom: 4px;
+                        }
+                    }
+                    .button_phone{
+                        button{
+                            width: 140px;
+                            height: 30px;
+                            left: 165px;
+                            top: 2878px;
+                            border: 1px solid #FFFFFF;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            background: #292929;
+                            color: #FFFFFF;
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+
+            }
+        }
+        .footer_centre{
+            background-color: #333333;
+            border: 1px solid transparent;
+            .containerNeiro{
+                margin-bottom: 23px;
+                a{
+                   img{
+                    margin: 20px 0 12px 0;
+                   }  
+                }
+                .centre{
+                
+                        display: flex;
+                        justify-content: space-between;
+                        .centre_text{
+                            .information_footer, .webinar_footer, .news_footer{
+                                a{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    text-decoration-line: underline;
+                                }
+                                a:hover{
+                                    color: #F07FAE;
+                                }
+                            }    
+                                .information_footer, .webinar_footer, .news_footer{
+                                    .one{
+                                        margin: 14px 0 0px 0; 
+                                        a{
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            line-height: 18px;
+                                            text-decoration-line: none;
+                                            color: #FFFFFF;
+                                           
+                                        }
+                                        a:hover{
+                                            color: #F07FAE;
+                                        }
+                                    }
+                                }
+                            
+                        }
+                        .contacts_pay{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .contacts_footer{
+                                li{
+                                    margin-bottom: 5px;
+                                }
+                                span, p{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                                a{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #F07FAE;
+                                    text-decoration: underline;
+                                }
+                                svg{
+                                    opacity: 0.3;
+                                    margin: 12px 20px 0px 0;  
+                                }
+                                .one{
+                                    margin: 14px 0 0px 0; 
+                                    a{
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 18px;
+                                        text-decoration-line: none;
+                                        color: #FFFFFF;
+                                       
+                                    }
+                                    a:hover{
+                                        color: #F07FAE;
+                                    }
+                                }
+                            }
+                        }
+                    
+
+
+                }
+            }
+        }
+        .footer_bottom{
+            background-color: #292929;
+            border: 1px solid transparent;
+            .containerNeiro{
+                margin: 17px auto 17px auto; 
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+
+   
+
+
+
 
 
 
