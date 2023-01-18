@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="media/neiro_media.css">
 
-    <title>NeuroTrainers Text_page</title>
-
-    
+    <title>product_page</title>
 </head>
 <body>
+  
     
- <!-- header -->
+    <!-- header -->
 
- <div class="header">
+<div class="header">
     <div class="containerNeiro">
 
 
@@ -135,95 +134,283 @@
         
     </div>
 </div>  
+   
 
-<!-- text_page -->
+<!-- hat с сылками a -->
 
-<div class="text_page">
+<div class="a_page">
     <div class="containerNeiro">
-        <h1>Текстовая страница</h1>
         <a href="main _page_neirotrainers.html" target="_blank">Главная страница</a>
-        <a href="text_page.html" target="_blank">Текстовая страница</a>
+        <a href="product_catalog_page.html" target="_blank">Каталог продукции</a>
+        <a href="#" target="_blank">Балансиры</a>
+        <a href="#" target="_blank">Доска Бильгоу</a>
+    </div>
+</div>   
+
+
+<!-- product_page_description -->
+
+<div class="product_page_description">
+    <div class="containerNeiro">
+        <div class="product_foto">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block" src="img/toy_BilgouBoard.svg" alt="toy BilgouBoard">
+                  </div>
+                  <div class="carousel-item">
+                    <iframe class="d-block" width="560" height="315" src="https://www.youtube.com/embed/SVVvp7iqLzE?controls=0&amp;start=24" title="Billow boardse video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="img/toy_BilgouBoard_back.svg" alt="toy BilgouBoarde"> 
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="text_product">
+                <h5>Что такое доска Бильгоу?</h5>
+                <p>Нейрокоррекционная реабилитация обязательно включает в себя программу стимуляции мозжечка. С помощью полноценной программы можно улучшить концентрацию внимания ребенка, восприятие речи, развить навыки чтения, счета и активизировать память. <br>
+                Необыкновенной популярностью у психологов, педагогов и дефектологов пользуется эффективная система упражнений на балансировочной доске Бильгоу. 
+                </p>
+            </div>
+        </div>
+        <div class="product_description">
+            <div class="basket">
+                <h1>Доска Бильгоу</h1>
+                <div class="prace_basket">
+                    <div class="prace">
+                        <h6>1 590 р.</h6> 
+                        <span>2 000 р.</span>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="description_radio">
+                <input type=radio name="folder" id="folder1" checked class="radio-folder">
+                <label for="folder1">Комплектация</label>
+                <div>
+                   <div class="description1">
+                    <p>Методичка с занятиями</p>
+                    <span>1 шт.</span>
+                   </div>
+                   <div class="description1">
+                    <p>Балансировочная цветная доска</p>
+                    <span>1 шт.</span>
+                   </div>
+                   <div class="description1">
+                    <p>Полусферические полозья</p>
+                    <span>2 шт.</span>
+                   </div>
+                   <div class="description1">
+                    <p>Ключ для регулирования полозьев</p>
+                    <span>1 шт.</span>
+                   </div>
+                   <div class="description1">
+                    <p> Инструкция по сборке</p>
+                    <span>1 шт.</span>
+                   </div>
+                </div>
+                <input type=radio name="folder" id="folder2" class="radio-folder">
+                <label for="folder2">Характеристики</label>
+                <div>
+                    <div class="description2">
+                        <p>Легко выдерживает вес занимающегося до 120 кг.<br>
+                            Размеры доски: 58 x 38 см.<br>
+                            Вес комплекта: 6.8 кг.<br>
+                            Размеры упаковки: 60 х 41 х 10 см.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
-<!-- About company -->
+<!-- With this product , they buy -->
 
-<div class="about_company">
+<div class="they_buy">
     <div class="containerNeiro">
-        <a href="#" target="_blank">О компании</a>
-        <div class="company">
-            <img src="img/about_company.jpg" alt="NeuroTrainers">
-            <h3>ЧТО ЭТО? Мозжечковая стимуляция — серия реабилитационных методик, направленных на стимуляцию работы ствола головного мозга и мозжечка.</h3>
-            <p>Мозжечок поддерживает постоянную связь с лобными долями, а значит, контролирует движение и сенсорное восприятие. Мозжечок — это самый быстродействующий в мозге механизм. Он быстро перерабатывает любую информацию, поступающую из других частей мозга, и в целом определяет скорость работы всего мозга.</p>
+        <div class="hat">
+            <a href="#" target="_blank">С этим товаром покупают</a>
+            <a href="product_catalog_page.html" target="_blank">В каталог</a>
+            <a href="product_catalog_page.html" target="_blank">Еще</a>
+        </div>
+        <div class="products">
             <ul>
-                <li>восприятие устной, письменной речи</li>
-                <li> навыки механического чтения</li>
-                <li>математические способности</li>
+                <li class="products1">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
+                    <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р.</p>
+                        <p>3 470 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="product_page.html" target="_blank">Подробнее</a>
+                </li>
+                <li class="products2">
+                    <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
+                    <h3>Набор мячей с фиксацией<br> на одежде</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>650 р.</p>
+                        <p>935 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products3">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
+                    <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
+                    <h3>Мишень напольная цветная</h3>
+                    <h3>Мишень напольная<br> цветная</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>1 590 р.</p>
+                        <p>2 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products4">
+                    <img src="img/toy_GymBagBilgou.svg" alt="Bag for exercise equipment bilgou">
+                    <h3>Сумка для тренажеров<br> Бильгоу</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р..</p>
+                        <p>3 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
             </ul>
-            <p>Доска балансировочная размечена сверху и снизу в точном соответствии с методикой Бильгоу (рисунок - специальная износостойкая наклейка) <br>
-                Удобная и мягкая регулировка уровня сложности, регулировочный ключ в комплекте!<br>
-                Безопасна для ребенка: изготовлена из экологичной отшлифованной фанеры, без острых кромок и углов<br>
-                Инструкция+методичка с упражнениями на доске-балансире (в электронном или печатном варианте)<br>
-                Рассчитана на вес до 100 кг</p>
+            <ul></ul>
         </div>
     </div>
 </div>
 
-<!-- Blog and Promotions -->
 
-<div class="blog_promotions">
+<!-- Similar products Похожие товары -->
+
+<div class="similar_products">
     <div class="containerNeiro">
-        <a href="#" target="_blank">Блог и Акции</a>
-        <div class="blog">
-            <div class="blog1">
-                <img src="img/stimulation_text_page_blog1.jpg" alt="Cerebellar stimulation">
-                <h4>ЧТО ЭТО? Мозжечковая<br> стимуляция</h4>
-                <p>Доска балансировочная размечена<br> сверху и снизу в точном соответствии с<br>  методикой Бильгоу (рисунок -<br>  специальная износостойкая наклейка)</p>
-            </div>
-            <div class="blog2">
-                <img src="img/stimulation_text_page_blog2.jpg" alt="Cerebellar stimulation">
-                <h4>Доска Бильгоу для<br> мозжечковой стимуляции</h4>
-                <p>Доска балансировочная размечена<br> сверху и снизу в точном соответствии с<br>  методикой Бильгоу (рисунок -<br>  специальная износостойкая наклейка)</p>
-            </div>
-            <div class="blog3">
-                <img src="img/stimulation_text_page_blog1.jpg" alt="Cerebellar stimulation">
-                <h4>ЧТО ЭТО? Мозжечковая<br> стимуляция</h4>
-                <p>Доска балансировочная размечена<br> сверху и снизу в точном соответствии с<br>  методикой Бильгоу (рисунок -<br>  специальная износостойкая наклейка)</p>
-            </div>
-            <div class="blog4">
-                <img src="img/stimulation_text_page_blog2.jpg" alt="Cerebellar stimulation">
-                <h4>Доска Бильгоу для<br> мозжечковой стимуляции</h4>
-                <p>Доска балансировочная размечена<br> сверху и снизу в точном соответствии с<br>  методикой Бильгоу (рисунок -<br>  специальная износостойкая наклейка)</p>
-            </div>
+        <div class="hat">
+            <a href="#" target="_blank">Похожие товары</a>
+            <a href="product_catalog_page.html" target="_blank">В каталог</a>
+            <a href="product_catalog_page.html" target="_blank">Еще</a>
+        </div>
+        <div class="products">
+            <ul>
+                <li class="products1">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
+                    <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р.</p>
+                        <p>3 470 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="product_page.html" target="_blank">Подробнее</a>
+                </li>
+                <li class="products2">
+                    <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
+                    <h3>Набор мячей с фиксацией<br> на одежде</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>650 р.</p>
+                        <p>935 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products3">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
+                    <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
+                    <h3>Мишень напольная цветная</h3>
+                    <h3>Мишень напольная<br> цветная</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>1 590 р.</p>
+                        <p>2 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products4">
+                    <img src="img/toy_GymBagBilgou.svg" alt="Bag for exercise equipment bilgou">
+                    <h3>Сумка для тренажеров<br> Бильгоу</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р..</p>
+                        <p>3 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+            </ul>
+            <ul></ul>
         </div>
     </div>
 </div>
 
-<!-- Contact Information -->
-
-<div class="contact_information">
-    <div class="containerNeiro">
-        <div class="contact">
-            <h4>Контактная информация</h4>
-            <p>Доска балансировочная размечена сверху и снизу в<br> точном соответствии с методикой Бильгоу (рисунок - <br> специальная износостойкая наклейка)</p>
-            <a href="">8 (800) 55 48 97</a><br>
-            <a href="">info@neyro-t.ru</a>
-            <div class="social_media">
-                <img src="img/VK.svg" alt="VK">
-                <img src="img/Instagram.svg" alt="Instagram">
-                <img src="img/WhatsApp.svg" alt="WhatsApp">
-            </div>
-        </div>
-        <div class="map">
-            <img src="img/map.png" alt="map">
-        </div>
-    </div>
-</div>
 
 
 
- <!-- footer -->
+
+
+
+<!-- footer -->
 
  <div class="footer">
     <div class="footer_top">
@@ -508,11 +695,9 @@
 </div>
 
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
 
 <script src="js/script_neiro.js"></script> 
-
 
 </body>
 </html>
