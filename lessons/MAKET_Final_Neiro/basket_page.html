@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="media/neiro_media.css">
 
-    <title>product_catalog_page</title>
+    <title>Basket page</title>
 </head>
 <body>
+    
+  <!-- header -->
 
- <!-- header -->
-
- <div class="header">
+  <div class="header">
     <div class="containerNeiro">
 
 
@@ -133,311 +133,167 @@
         
     </div>
 </div>  
+    
 
+<!-- hat ссылки а-->
 
-
-    <!-- hat ссылки а -->
-
-    <div class="a_page">
-        <div class="containerNeiro">
-            <h1>Каталог продукции</h1>
-            <a href="main _page_neirotrainers.html" target="_blank">Главная страница</a>
-            <a href="product_catalog_page.html" target="_blank">Каталог продукции</a>
-        </div>
-    </div>
-
-    <!-- product_catalog_page -->
-
-<div class="product_catalog_page">
+<div class="a_page">
     <div class="containerNeiro">
-        <div class="filters">
-            <div class="filter1">
-                <ul>
-                    <li>Категории товаров</li>
-                    <li><a href="#">Межполушарные доски</a></li>
-                    <li><a href="#">Нейрокосички</a></li>
-                    <li><a href="#">Балансиры</a><li>
-                    <li><a href="#">Нейровосьмерки</a></li>
-                    <li><a href="#">Разное</a></li>
-                </ul>
+        <h1>Ваша корзина</h1>
+        <a href="main _page_neirotrainers.html" target="_blank">Главная страница</a>
+        <a href="basket_page.html" target="_blank">Корзина</a>
+    </div>
+</div>
+
+
+<!-- ordering Оформление заказа -->
+
+<div class="basket_ordering">
+    <div class="containerNeiro">
+        <div class="basket">
+            <div class="basket1">
+                <div class="basket_img">
+                    <img src="img/toy_BilgouBoard_basket.svg" alt="toy_BilgouBoard">
+                    <div class="name_basket">
+                        <h5>Доска Бильгоу для мозжечковой стимуляции</h5>
+                        <p>Тренажеров для мозжечковой стимуляции.</p>
+                    </div>
+                </div>
+                <div class="basket_about">
+                    <div class="prace_basket">
+                        <div class="prace1">
+                            <h4>2 490 р.</h4>
+                            <p>Цена за 1 шт.</p>
+                        </div>
+                        <div class="number_basket">
+                            <input type="number" min="0" max="100" step="1" value="1" >
+                        </div>
+                        <div class="prace2">
+                            <h4>2 490 р.</h4>
+                            <p>Цена за 1 шт.</p>
+                        </div>
+                    </div>
+                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </div> 
             </div>
-            <div class="filter_form">
-                <form class="form" action="https://fe.it-academy.by/TestForm.php" method="GET" target="blank">
-                <div class="filter2">
-                    <h4>Для кого</h1>
-                    <label class="forwhom">
-                      <input type="checkbox" name="forwhom" value="Autism" checked>
-                      <span class="checkmark"></span>
-                      Аутизм
-                    </label><br>
-                    <label class="forwhom">
-                      <input type="checkbox" name="forwhom" value="Dyslexia">
-                      <span class="checkmark"></span>
-                      Дизлексия
-                    </label><br>
-                    <label class="forwhom">
-                      <input type="checkbox" name="forwhom" value="DTSP">
-                      <span class="checkmark"></span>
-                      ДЦП
-                    </label><br>
-                    <label class="forwhom">
-                        <input type="checkbox" name="forwhom" value="Autism">
-                        <span class="checkmark"></span>
-                        Аутизм
-                    </label><br>
-                    <label class="forwhom">
-                        <input type="checkbox" name="forwhom" value="Dyslexia" checked>
-                        <span class="checkmark"></span>
-                        Дизлексия
-                    </label><br>
-                    <label class="forwhom">
-                        <input type="checkbox" name="forwhom" value="DTSP">
-                        <span class="checkmark"></span>
-                        ДЦП
-                    </label><br>
+            <div class="basket2">
+                <div class="basket_img">
+                    <img src="img/toy_setofballs_baskek.svg" alt="toy_setofballs">
+                    <div class="name_basket">
+                        <h5>Набор мячей с фиксацией на одежде</h5>
+                        <p>Тренажеров для мозжечковой стимуляции.</p>
+                    </div>
                 </div>
-                <div class="filter3">
-                    <h4>Область применения</h4>
-                    <label class="application_area">
-                        <input type="checkbox" name="application_area" value="Speech_development" checked>
-                        <span class="checkmark"></span>
-                        Развитие речи
-                      </label><br>
-                      <label class="application_area">
-                        <input type="checkbox" name="application_area" value="Memory_development">
-                        <span class="checkmark"></span>
-                        Развитие памяти
-                      </label><br>
-                      <label class="application_area">
-                        <input type="checkbox" name="application_area" value="Motor skills development">
-                        <span class="checkmark"></span>
-                        Развитие моторики
-                      </label><br>
-                      <label class="application_area">
-                          <input type="checkbox" name="application_area" value="Development of coordination">
-                          <span class="checkmark"></span>
-                          Развитие координации
-                      </label><br>
-                      <label class="application_area">
-                          <input type="checkbox" name="application_area" value="For specialists" checked>
-                          <span class="checkmark"></span>
-                          Для специалистов
-                      </label><br>
-                </div>
-                <div class="filter4">
-                    <h4>Стоимость</h4>
-                    <input type=range name="price" min=35 max=42 step=0.1 value=36.6>
-                </div>
-                <div class="button_form">
-                    <input type="submit" value="Применить">
-                    <input type="reset" value="Сбросить">  
-                </div>
-                </form>
+                <div class="basket_about">
+                    <div class="prace_basket">
+                        <div class="prace1">
+                            <h4>650 р.</h4>
+                            <p>Цена за 1 шт.</p>
+                        </div>
+                        <div class="number_basket">
+                            <input type="number" min="0" max="100" step="1" value="1" >
+                        </div>
+                        <div class="prace2">
+                            <h4>1 300 р.</h4>
+                            <p>Цена за 2 шт.</p>
+                        </div>
+                    </div>
+                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </div> 
             </div>
         </div>
-        <div class="products">
-            <div class="video_text clearfit">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SVVvp7iqLzE?controls=0&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h4>Что такое доска Бильгоу?</h4>
-                <p>Нейрокоррекционная реабилитация обязательно включает в себя программу стимуляции мозжечка. С помощью полноценной программы можно улучшить концентрацию внимания ребенка, восприятие речи, развить навыки чтения, счета и активизировать память.</p><br>
-                <p>Необыкновенной популярностью у психологов, педагогов и дефектологов пользуется эффективная система упражнений на балансировочной доске Бильгоу.</p>
-            </div>
-            <div class="filter_price">
-                <div class="price1">
-                    <h6>Цена:<h6>
-                </div>
-                <div class="price2">
-                    <select id="category" name="category">
-                        <option value="Ascending" selected>По возрастанию</option>
-                        <option value="Decreasing">По уменьшению</option>
-                    </select>
-                </div>
-                <div class="price3">
-                    <label class="filter_price3">
-                        <input type="checkbox" name="filter_price" value="Stocks" checked>
-                        <span class="checkmark"></span>
-                        Акции
-                    </label>
-                    <label class="filter_price3">
-                        <input type="checkbox" name="filter_price" value="Popular">
-                        <span class="checkmark"></span>
-                        Популярное
-                    </label>
-                    <label class="filter_price3">
-                        <input type="checkbox" name="filter_price" value="New_products">
-                        <span class="checkmark"></span>
-                        Новинки
-                    </label>
-                </div>
-            </div>
-            <div class="all_products">
-                <ul>
-                    <li class="products1">
-                        <span>-30%</span>
-                        <span>Рекомендуем</span>
-                        <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
-                        <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>2 490 р.</p>
-                            <p>3 470 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="product_page.html" target="_blank">Подробнее</a>
-                    </li>
-                    <li class="products2">
-                        <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
-                        <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
-                        <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
-                        <h3>Набор мячей с фиксацией<br> на одежде</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>650 р.</p>
-                            <p>935 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="#" target="_blank">Подробнее</a>
-                    </li>
-                    <li class="products3">
-                        <span>-30%</span>
-                        <span>Рекомендуем</span>
-                        <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
-                        <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
-                        <h3>Мишень напольная цветная</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>1 590 р.</p>
-                            <p>2 000 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="#" target="_blank">Подробнее</a>
-                    </li>
-                    <li class="products1">
-                        <span>-30%</span>
-                        <span>Рекомендуем</span>
-                        <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
-                        <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
-                        <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>2 490 р.</p>
-                            <p>3 470 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="product_page.html" target="_blank">Подробнее</a>
-                    </li>
-                    <li class="products2">
-                        <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
-                        <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
-                        <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
-                        <h3>Набор мячей с фиксацией<br> на одежде</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>650 р.</p>
-                            <p>935 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="#" target="_blank">Подробнее</a>
-                    </li>
-                    <li class="products3">
-                        <span>-30%</span>
-                        <span>Рекомендуем</span>
-                        <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
-                        <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
-                        <h3>Мишень напольная цветная</h3>
-                        <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                        <div class="price">
-                            <p>1 590 р.</p>
-                            <p>2 000 р.</p>
-                        </div>
-                        <div class="buy">
-                            <input type="number" min="0" max="100" step="1" value="1" >
-                            <button>Купить</button>
-                        </div>   
-                        <a href="#" target="_blank">Подробнее</a>
-                    </li>
-                </ul>
-                    <input type=radio class="read-more-radio" name="poem" id="poem1" value=1>
-                    <label for="poem1">Показать еще</label>
-                    <div class="all_products">
-                        <ul>
-                            <li class="products1">
-                                <span>-30%</span>
-                                <span>Рекомендуем</span>
-                                <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
-                                <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
-                                <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
-                                <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
-                                <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                                <div class="price">
-                                    <p>2 490 р.</p>
-                                    <p>3 470 р.</p>
-                                </div>
-                                <div class="buy">
-                                    <input type="number" min="0" max="100" step="1" value="1" >
-                                    <button>Купить</button>
-                                </div>   
-                                <a href="product_page.html" target="_blank">Подробнее</a>
-                            </li>
-                            <li class="products2">
-                                <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
-                                <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
-                                <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
-                                <h3>Набор мячей с фиксацией<br> на одежде</h3>
-                                <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                                <div class="price">
-                                    <p>650 р.</p>
-                                    <p>935 р.</p>
-                                </div>
-                                <div class="buy">
-                                    <input type="number" min="0" max="100" step="1" value="1" >
-                                    <button>Купить</button>
-                                </div>   
-                                <a href="#" target="_blank">Подробнее</a>
-                            </li>
-                            <li class="products3">
-                                <span>-30%</span>
-                                <span>Рекомендуем</span>
-                                <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
-                                <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
-                                <h3>Мишень напольная цветная</h3>
-                                <p>Тренажеров для мозжечковой<br> стимуляции.</p>
-                                <div class="price">
-                                    <p>1 590 р.</p>
-                                    <p>2 000 р.</p>
-                                </div>
-                                <div class="buy">
-                                    <input type="number" min="0" max="100" step="1" value="1" >
-                                    <button>Купить</button>
-                                </div>   
-                                <a href="#" target="_blank">Подробнее</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <input type=radio class="read-more-radio" name="poem" id="poem2" checked value=2>
-                    <label for="poem2">скрыть</label>
-            </div>
+        <div class="ordering">
+
         </div>
     </div>
 </div>
+
+
+
+
+<!-- Maybe you will like -->
+
+<div class="maybe_like">
+    <div class="containerNeiro">
+        <div class="hat">
+            <a href="#" target="_blank">Возможно вам понравится</a>
+            <a href="product_catalog_page.html" target="_blank">В каталог</a>
+            <a href="product_catalog_page.html" target="_blank">Еще</a>
+        </div>
+        <div class="products">
+            <ul>
+                <li class="products1">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_BilgouBoard.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_media725.svg" alt="toy Bilgou Board">
+                    <img src="img/toy_BilgouBoard_mobil.svg" alt="toy Bilgou Board">
+                    <h3>Доска Бильгоу для<br> мозжечковой стимуляции</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р.</p>
+                        <p>3 470 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="product_page.html" target="_blank">Подробнее</a>
+                </li>
+                <li class="products2">
+                    <img src="img/toy_setofballs.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_media725.svg" alt="Set of balls with fixation on clothes">
+                    <img src="img/toy_setofballs_mobil.svg" alt="Set of balls with fixation on clothes">
+                    <h3>Набор мячей с фиксацией<br> на одежде</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>650 р.</p>
+                        <p>935 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products3">
+                    <span>-30%</span>
+                    <span>Рекомендуем</span>
+                    <img src="img/toy_Outdoorcolortarget.svg" alt="Color floor target">
+                    <img src="img/toy_Outdoorcolortarget_media725.svg" alt="Color floor target">
+                    <h3>Мишень напольная цветная</h3>
+                    <h3>Мишень напольная<br> цветная</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>1 590 р.</p>
+                        <p>2 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+                <li class="products4">
+                    <img src="img/toy_GymBagBilgou.svg" alt="Bag for exercise equipment bilgou">
+                    <h3>Сумка для тренажеров<br> Бильгоу</h3>
+                    <p>Тренажеров для мозжечковой<br> стимуляции.</p>
+                    <div class="price">
+                        <p>2 490 р..</p>
+                        <p>3 000 р.</p>
+                    </div>
+                    <div class="buy">
+                        <input type="number" min="0" max="100" step="1" value="1" >
+                        <button>Купить</button>
+                    </div>   
+                    <a href="#" target="_blank">Подробнее</a>
+                </li>
+            </ul>
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -727,10 +583,10 @@
 
 
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
 
 <script src="js/script_neiro.js"></script> 
+
 
 
 </body>

@@ -1159,9 +1159,9 @@ p {
 // product_catalog Новая страница!!!!!!!!!!!!!!!!!
 
 
-// product_catalog
+//  hat ссылки а 
 
-.product_catalog{
+.a_page{
     margin: 50px 0;
     h1{
         font-weight: 700;
@@ -1564,7 +1564,8 @@ p {
 
 
 // hat с сылками a
-.a_page{
+
+.a_page_product{
     margin: 50px 0;
     a:nth-of-type(1), a:nth-of-type(2), a:nth-of-type(3){
         font-weight: 500;
@@ -1852,3 +1853,132 @@ p {
 }
 
 
+// Basket page  Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+// hat с сылками a
+
+
+// ordering Оформление заказа
+
+.basket_ordering{
+    .containerNeiro{
+        .basket{
+            border-radius: 10px;
+            border: 1px solid #EEEEEE;
+            overflow: hidden;
+            margin-bottom: 25px;
+            .basket1, .basket2{
+                width: 1170px;
+                height: 140px;
+                background: #FFFFFF;
+                border: 1px solid #EEEEEE;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .basket_img{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin: 0 20px;
+                    }
+                    .name_basket{
+                        h5{
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 18px;
+                            color: #333333;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #707070;
+                        }
+                    }
+                }
+                .basket_about{
+                    display: flex;
+                    align-items: center;
+                    .prace_basket{
+                        display: flex;
+                        align-items: center;
+                        border-left: 1px solid #EEEEEE;
+                        border-right: 1px solid #EEEEEE;
+
+                        .prace1, .prace2{
+                            margin: 30px 30px;
+                            h4{
+                                font-weight: 700;
+                                font-size: 22px;
+                                line-height: 18px;
+                                color: #333333;
+                            }
+                            p{
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 18px;
+                                color: #707070;  
+                            }
+                        }
+                        .number_basket{
+                            width: 77px;
+                            height: 50px;
+                            background: #FFFFFF;
+                            border: 1px solid #DFDFDF;
+                            border-radius: 5px;
+                            input{
+                                padding-left: 15px;
+                                width: 60px;
+                                height: 45px;
+                                border: none;
+                                outline:none;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #707070;  
+                            }
+                            input[type=number]::-webkit-inner-spin-button,
+                            input[type=number]::-webkit-outer-spin-button {
+                            opacity: 1;
+                            }
+                        }
+                    }
+                    i{
+                        color: #F07FAE; 
+                        margin: 0 40px;
+                    }
+                }  
+            }
+        }
+        .ordering{
+            width: 1170px;
+            height: 94px;
+            background: #F7F7F7;
+            border: 1px solid #EEEEEE;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+// Maybe you will like   
+
+.maybe_like{
+    margin-top: 80px;
+    .containerNeiro{
+       .products{
+            ul{
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+        }
+    }
+}
