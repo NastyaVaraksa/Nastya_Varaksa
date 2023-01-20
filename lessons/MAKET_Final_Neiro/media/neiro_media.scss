@@ -30,6 +30,14 @@
         line-height: 18px;
         color: #333333;
     }
+    @mixin a_hat_text_page{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 18px;
+        color: #333333;
+    }
+
+    // main page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     // header
 
@@ -119,6 +127,7 @@
                 };
             }
             a:nth-of-type(3){
+                margin-right: 12px; 
                 img{
                     width: 30px;
                     height: 30px;
@@ -128,8 +137,8 @@
                 background: #F07FAE;
                 border-radius: 14px;
                 position: absolute;
-                top: 0px;
-                right: -10px;
+                top: 2px;
+                right: 1px;
                 p{
                     font-weight: 700;
                     font-size: 12px;
@@ -195,7 +204,7 @@
                     left: 77px;
                     top: 121px; 
                 }
-                button{
+                a{
                     left: 77px;
                     top: 265px;
                 }
@@ -644,14 +653,444 @@
             }
         }
     }
-
     .footer_mobil{
         display: none;
     }
 
+    // product_catalog_page новая страница !!!!!!!!!!!!!!!!!!!!!!!!!!
 
+    //    hat ссылки а
+
+    .a_page{
+        margin: 38px 0;
+        h1{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+        // product_catalog_page
+    .product_catalog_page{
+        .containerNeiro{
+            .filters{
+                margin-right: 25px;
+                .filter1{
+                    width: 225px;
+                } 
+                .filter_form{
+                    .form{
+                        .filter2, .filter3{
+                            width: 225px;
+                        }
+                        .filter4{
+                            width: 225px;
+                            height: 120px;
+                        }
+                        .button_form{
+                            input[type="submit"]{
+                                padding: 15px 19px;
+                            }
+                            input[type="reset"]{
+                                padding: 15px 17px;
+                            } 
+                        }           
+                    }
+                } 
+            }
+            .products{
+                .video_text{
+                    iframe{
+                        width: 475px;
+                        height: 320px;
+                        float: none;
+                        margin: 0 0px 26px 0;
+                    }
+                }
+                .filter_price{
+                    margin-top: 24px;
+                    margin-bottom: 21px;
+                    display: block;
+                    .price1_2{
+                        border-bottom: 1px solid #EEEEEE;
+                        display: flex;
+                        align-items: center;
+                        .price1{
+                        
+                        }
+                        .price2{
+                            border-left: 1px solid #EEEEEE;
+                            border-right: 1px solid #EEEEEE;
+                            select{
+                                margin: 10px 20px;
+                                border: none;
+                            } 
+                        }
+                    }
+                    .price3{
+                        padding-top: 8px;
+                        height: 43px; 
+                    }
+                }
+                .all_products{
+                    ul{
+                        li{
+                            margin-bottom: 25px;
+                        }
+                        li:nth-of-type(4){
+                            display: block;
+                        }
+                    }
+                    label{
+                        margin-left: 155px;
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+    // product_page Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+    // hat с сылками a
+
+    .a_page_product{
+        margin: 38px 0 28px 0;
+        a:nth-of-type(1), a:nth-of-type(2), a:nth-of-type(3){
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+            background: #FFC480;
+            border-radius: 5px;
+            padding: 3px 14px 3px 15px;
+            margin-right: 10px;
+        }
+        a:nth-of-type(4), a:nth-of-type(2){
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #707070;
+            border: 1px solid #EEEEEE;
+            border-radius: 5px;
+            padding: 3px 14px 3px 15px;
+            background: #FFFFFF;
+        }
+        a:nth-of-type(3){
+            display: none;
+        }
+    }
+
+    // product_page_description
+
+    .product_page_description{
+        .containerNeiro{
+            display: flex;
+            .product_foto{
+                h1{
+                    display: block;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 18px;
+                    color: #333333;
+                    margin-bottom: 10px;
+                }
+                .carousel{
+                    display: block;
+                    width: 450px;
+                    height: 300px;
+                    margin: 0;
+                    margin-right: 20px; 
+                    .carousel-control-next-icon {
+                        bottom: 0;
+                        right: 165px;
+                    }
+                    .carousel-control-prev-icon {
+                        bottom: 0;
+                        right: 215px;
+                    }
+                    iframe{
+                        width: 450px;
+                        height: 300px;
+                    }
+                    img{
+                        width: 440px;
+                        height: 300px;
+                    }   
+                }
+                .text_product{
+                    display: none;
+                }  
+            }
+            .product_description{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 470px;
+                height: 380px;
+                .basket{
+                    h1{
+                       display: none;
+                    }
+                    .prace_basket{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 38px;
+                        .prace{
+                            margin-bottom: 24px;
+                            display: flex;
+                        }
+                    }
+                }
+                .check{
+                    margin-top: 20px;
+                }
+                .description_radio{
+                   display: none;
+                }
+            }
+        }
+    }
+
+    // text_product_media
+
+    .text_product_media{
+        display: block;
+        h5{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #333333;
+        }  
+    }
+
+        // With this product , they buy
+
+    .they_buy{
+        margin-top: 30px;
+        .containerNeiro{
+        .products{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    // Similar products Похожие товары
+
+    .similar_products{
+        margin-top: 39px;
+        .containerNeiro{
+        .products{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+
+    // Basket page  Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    // ordering Оформление заказа
+
+    .basket_ordering{
+        margin-bottom: 50px;
+        .containerNeiro{
+            .basket{
+                border-radius: 10px;
+                border: 1px solid #EEEEEE;
+                overflow: hidden;
+                margin-bottom: 10px;
+                .basket1, .basket2{
+                    width: 725px;
+                    height: 105px;
+                    .basket_img{
+                        img{
+                            width: 75px;
+                            height: 40px;
+                            margin: 0 15px;
+                        }
+                        .name_basket{
+                            h5:nth-of-type(1){
+                                display: none;
+                            }
+                            h5:nth-of-type(2){
+                                display: block;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 16px;
+                                color: #333333;
+                            }
+                            p:nth-of-type(1){
+                                display: none; 
+                            }
+                            p:nth-of-type(2){
+                                display: block;
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 16px;
+                                color: #707070;
+                            }
+                        }
+                    }
+                    .basket_about{
+                        .prace_basket{
+                            .prace1, .prace2{
+                                margin: 15px 18px;
+                                h4{
+                                    font-size: 18px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                            .number_basket{
+                                input{
+                                    padding-left: 15px; 
+                                }
+                            }
+                        }
+                        i{
+                            margin: 0 20px;
+                        }
+                    }  
+                }
+            }
+            .ordering{
+                width: 725px;
+                height: 80px;
+                form{
+                    .search{
+                        width: 269px;
+                        height: 50px;
+                        margin-left: 16px;
+                        position: relative;
+                    }
+                    input[type="search"] {
+                        width: 269px;
+                        height: 50px;
+                        margin-left: 15px;
+                        font-size: 14px;
+                    }
+                }
+                .place_an_order{
+                    .sum{
+                        margin-right: 15px;
+                        h6, p{
+                            font-size: 15px;
+                        }
+                    }
+                    .order{
+                        h6{
+                            font-size: 22px;
+                        }
+                        button{
+                            width: 156px;
+                            margin: 0 20px 0 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+// text_page Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// About company
+.about_company{
+    .containerNeiro{
+        a{
+            @include a_hat_text_page();
+            font-size: 25px;
+        }
+        .company{
+            margin-top: 20px;
+            img{
+                width: 225px;
+                height: 151px;
+                float: left;
+                padding: 0px 25px 9px 0;
+            }
+            p:nth-of-type(1){
+                margin: 10px 0 5px 0;
+            }
+            ul{
+                margin-left: 21px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
+// Blog and Promotions
+
+.blog_promotions{
+    margin: 30px auto 40px auto;
+    .containerNeiro{
+        a{
+            @include a_hat_text_page();
+            font-size: 25px; 
+        }
+        .blog{
+            margin: 18px 0 0px 0;
+            .blog1, .blog2, .blog3, .blog4{
+                img{
+                    width: 224px;
+                    height: 170px;   
+                }
+            }
+            .blog4{
+                display: none;
+            }
+        }
+    }
+}
+
+// Contact Information
+
+.contact_information{
+    .containerNeiro{
+        .contact{
+            h4{
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            p{
+                margin: 13px 0 17px 0;
+            }
+            .social_media{
+                margin-top: 10px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .map{
+            iframe{
+                width: 400px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+
+
+}
 
 
 
@@ -696,6 +1135,15 @@
         line-height: 18px;
         color: #333333;
     }
+    @mixin a_hat_text_page{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 18px;
+        color: #333333;
+    }
+
+    // main page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     .header_top{
         display: none;
     }
@@ -789,12 +1237,15 @@
             a:nth-of-type(2){
                 margin: 0 15px 0 15px;
             }
+            a:nth-of-type(3){
+                margin-right: 10px;
+            }
             .ellipse{
                 background: #F07FAE;
                 border-radius: 14px;
                 position: absolute;
                 top: -5px;
-                right: -10px;
+                right: 0px;
                 p{
                     font-weight: 700;
                     font-size: 10px;
@@ -839,7 +1290,7 @@
             i{
                 margin-left: 60px;
                 color: #000000;
-                font-size: x-large;
+                font-size: large;
             }
         }
         display: block;
@@ -851,7 +1302,6 @@
         align-items: flex-start;
         background-color:#FFFFFF;
         width: 100%;
-       
         z-index: 20;
         a{
             font-weight: 400;
@@ -860,7 +1310,10 @@
             text-decoration-line: underline;
             color: #333333;
             padding: 0;
-            margin: 0px 0 10px 20px;
+            margin: 0px 0 10px 10px;
+        }
+        a:hover{
+            color: #F07FAE;
         }
 
     }
@@ -1367,7 +1820,7 @@
     // footer for mobil
     .footer_mobil{
         display: block;
-        margin-top: 60px;
+        margin-top: 50px;
         color: #FFFFFF;
         .footer_top{
             background-color: #292929;
@@ -1508,6 +1961,7 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            margin-left: 58px;
                             .contacts_footer{
                                 li{
                                     margin-bottom: 5px;
@@ -1566,11 +2020,670 @@
 
     }
 
-   
+    // product_catalog_page новая страница !!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    //    hat ссылки а
+
+    .a_page{
+        margin: 30px 0 20px 0;
+        h1{
+            font-size: 22px;
+            margin-bottom: 9px;
+        }
+        a{
+            font-size: 12px;
+            padding: 2px 10px;
+        }
+        a:nth-of-type(1){
+            margin-right: 5px;
+        }
+    }
+
+    // product_catalog_page
+
+// product_catalog_page
+.product_catalog_page{
+    .containerNeiro{
+        display: block;
+        .filters{
+            margin-right: 31px;
+            .filter1{
+                display: none;
+                width: 270px;
+                height: 223px;
+                border-bottom: 1px solid #EEEEEE;
+                margin-bottom: 26px;
+                ul{ 
+                    li{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 35px;
+                        color: #333333;
+                        text-decoration-line: underline;
+                        a{
+                            
+                        }
+                        a:hover{
+                            color: #F07FAE;
+                        }   
+                    }
+                    li:nth-of-type(1){
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 18px;
+                        text-decoration-line: none;
+                        margin-bottom: 13px;
+                    }
+                }
+            } 
+            .filter_form{
+                .form{
+                    .button_i{
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 190px;
+                        font-size: larger;
+                        margin-top: 30px;
+                        color: #000000;
+                    }
+                    display: block;
+                    position: absolute;
+                    right: -100%;
+                    top: 0;
+                    background-color:#FFFFFF;
+                    width: 100%;
+                    height: 1000vh;
+                    z-index: 20;
+                    .filter2{
+                        height: 262px;
+                        margin-top: 30px;  
+                    }
+                    .filter3{
+                        height: 227px;  
+                    }
+                    .filter2, .filter3{
+                        width: 225px;
+                        margin-bottom: 20px;
+                        margin-left: 15px;   
+                    }
+                    .filter4{
+                        width: 225px;
+                        height: 100px;
+                        margin-left: 15px; 
+                    }
+                    .button_form{
+                        margin-left: 15px; 
+                        input[type="submit"]{
+                            padding: 15px 18px;
+                            font-size: 16px;
+                        }
+                        input[type="reset"]{
+                            font-size: 16px;
+                            padding: 15px 18px;
+                        } 
+                    }           
+                }
+            } 
+        }
+        .products{
+            .video_text{
+                iframe{
+                    float: none;
+                    width: 290px;
+                    height: 200px;
+                    margin: 0 0px 16px 0;
+                }
+                h4{
+                    font-size: 18px;
+                    margin-bottom: 4px;
+                }
+                p{
+                    display: none;
+                }
+                span{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #333333;
+                }
+            }
+            .filter_price{
+                display: block;
+                position: absolute;
+                right: -100%;
+                top: 0;
+                background-color:#FFFFFF;
+                width: 100%;
+                height: 1000vh;
+                z-index: 20;
+                margin: 0;
+                .button_i{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 190px;
+                    font-size: larger;
+                    margin-top: 30px;
+                    color: #000000;
+                }
+                .button_form{
+                    display: block;
+                    margin-top: 80px;
+                    margin-left: 15px;
+                    input{
+                        width: 116px;
+                        height: 50px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        border-radius: 5px;
+                    }
+                    input:nth-of-type(1){
+                        background: #F07FAE;
+                        border: none;
+                        color: #FFFFFF;
+                    }
+                    input:nth-of-type(1):hover{
+                        box-shadow: 0px 0px 10px rgba(228, 30, 30, 0.5);
+                    }
+                    input:nth-of-type(2){
+                        background: #FFFFFF;
+                        border: 1px solid #DFDFDF;
+                        color: #333333;
+                    }
+                    input:nth-of-type(2):hover{
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                    }
+                    
+                }
+                background: #FFFFFF;
+                border: none;
+                .price1_2{
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                    display: block;
+                    border: none;
+                    .price1{
+                        h6{
+                            font-size: 20px;
+                            margin: 34px 0 16px 0;
+                        }
+                    }
+                    .price2{
+                        width: 166px;
+                        height: 50px;
+                        border: 1px solid #EEEEEE;
+                        select{
+                            outline: none;
+                            border: none; 
+                        } 
+                    }
+                }
+                .price3{
+                    display: flex;
+                    flex-direction: column;
+                    .filter_price3{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #333333;
+                        margin-left: 22px;
+                        position: relative;
+                    }
+                    .filter_price3 input {
+                        position: relative;
+                        opacity: 0;
+                        cursor: pointer;
+                        margin-right: 7px;
+                        margin-bottom: 13px;
+                    }
+                    /* Create a custom checkbox */
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: -5px;
+                        height: 20px;
+                        width: 20px;
+                        background: #FFFFFF;
+                    
+                    }
+                    /* On mouse-over, add a grey background color */
+                    .filter_price3:hover input ~ .checkmark {
+                        background-color: #FFFFFF;
+                    }
+                    /* When the checkbox is checked, add a blue background */
+                    .filter_price3 input:checked ~ .checkmark {
+                        background-color: #F07FAE;
+                    }
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    /* Show the checkmark when checked */
+                    .filter_price3 input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    /* Style the checkmark/indicator */
+                    .filter_price3 .checkmark:after {
+                        left: 6px;
+                        top: 1px;
+                        width: 7px;
+                        height: 13px;
+                        border: 1px solid #FFFFFF;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    } 
+            }
+            }
+            .filter_price_mobil{
+                display: block;
+                margin: 20px 0 20px 0;
+                button{
+                    width: 139px;
+                    height: 40px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
+                    border-radius: 5px;
+                }
+                button:nth-of-type(1){
+                    background: #F07FAE;
+                    border: none;
+                    color: #FFFFFF;
+                }
+                button:nth-of-type(1):hover{
+                    box-shadow: 0px 0px 10px rgba(228, 30, 30, 0.5);
+                }
+                button:nth-of-type(2){
+                    background: #FFFFFF;
+                    border: 1px solid #DFDFDF;
+                    color: #333333;
+                }
+                button:nth-of-type(2):hover{
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+            .all_products{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                    li:nth-of-type(3), li:nth-of-type(4) {
+                        display: block;
+                    }
+                }
+                label{
+                    padding: 10px 18px;
+                    width: 140px;
+                    margin-left: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+// product_page Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+// hat с сылками a
+
+.a_page_product{
+    margin: 32px 0 20px 0;
+    a:nth-of-type(1), a:nth-of-type(2), a:nth-of-type(3){
+        font-size: 12px;
+    }
+    a:nth-of-type(4){
+        font-size: 12px;
+    }
+}
+
+  // product_page_description
+
+  .product_page_description{
+    .containerNeiro{
+        display: block;
+        .product_foto{
+            h1{
+                font-size: 22px;
+            }
+            .carousel{
+                display: block;
+                width: 289px;
+                height: 226px;
+                margin: 0;
+                margin-right: 20px; 
+                .carousel-control-next-icon {
+                    bottom: 0;
+                    right: 97px;
+                }
+                .carousel-control-prev-icon {
+                    bottom: 0;
+                    right: 144px;
+                }
+                iframe{
+                    width: 289px;
+                    height: 226px;
+                }
+                img{
+                    width: 250px;
+                    height: 190px;
+                }   
+            }
+            .text_product{
+                display: none;
+            }  
+        }
+        .product_description{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 290px;
+            height: 283px;
+            .basket{
+                h1{
+                   display: none;
+                }
+                .prace_basket{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 28px;
+                    border: none;
+                    .prace{
+                        margin-bottom: 24px;
+                        display: flex;
+                        h6{
+                            font-size: 28px;
+                        }
+                    }
+                    .buy{
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+            .check{
+                margin-top: 20px;
+            }
+            .description_radio{
+               display: none;
+            }
+        }
+    }
+}
+
+// text_product_media
+
+.text_product_media{
+    h5{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 16px;
+    }  
+}
+
+    // With this product , they buy
+
+.they_buy{
+    margin-top: 20px;
+}
+
+// Similar products Похожие товары
+
+.similar_products{
+    margin-top: 20px;
+
+}
 
 
 
 
+// Basket page  Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+// ordering Оформление заказа
+
+
+.basket_ordering{
+    margin-bottom: 40px;
+    .containerNeiro{
+        .basket{
+            border-radius: 10px;
+            border: 1px solid #EEEEEE;
+            overflow: hidden;
+            margin-bottom: 10px;
+            .basket1, .basket2{
+                width: 290px;
+                height: 140px;
+                flex-direction: column;
+                align-items: flex-start;
+                .basket_img{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 15px;
+                    img{
+                        width: 50px;
+                        height: 27px;
+                        margin: 0 15px 0 10px;
+                    }
+                    .name_basket{
+                        h5:nth-of-type(1){
+                            display: none;
+                        }
+                        h5:nth-of-type(2){
+                            font-size: 15px; 
+                        }
+                        p:nth-of-type(1){
+                            display: none; 
+                        }
+                        p:nth-of-type(2){
+                            display: none;
+                        }
+                    }
+                }
+                .basket_about{
+                    border-top: 1px solid #EEEEEE;
+                    display: flex;
+                    justify-content: space-between;
+                    .prace_basket{
+                        border-left: none;
+                        border-right: none;
+                        margin-left: 10px;
+                        .prace1, .prace2{
+                            margin: 0px 0px;
+                            h4{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                        .number_basket{
+                            width: 55px;
+                            height: 40px;
+                            margin: 15px 10px;
+                            input{
+                                width: 50px;
+                                height: 35px;
+                                padding-left: 5px; 
+                            }
+                        }
+                    }
+                    i{
+
+                        margin: 0 12px;
+                    }
+                }  
+            }
+        }
+        .ordering{
+            width: 290px;
+            height: 157px;
+            flex-direction: column;
+            align-items: flex-start;
+            form{
+                .search{
+                    margin: 10px 10px 18px 10px;
+                   }
+                   input[type="search"] {
+                    width: 269px;
+                    height: 50px;
+                    margin-left: 15px;
+                    font-size: 14px;
+                   }
+            }
+            .place_an_order{
+                .sum{
+                    margin-right: 0px;
+                    margin-left: 10px;
+                    margin-bottom: 21px;
+                    h6, p{
+                        font-size: 15px;
+                    }
+                }
+                .order{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    h6{
+                        font-size: 22px;
+                    }
+                    button{
+                        width: 130px;
+                        height: 40px;
+                        margin: 10px 0 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// text_page Новая страница!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// About company
+.about_company{
+    .containerNeiro{
+        a{
+            @include a_hat_text_page();
+            font-size: 20px;
+        }
+        .company{
+            margin-top: 12px;
+            img{
+                width: 289px;
+                height: 194px;
+                float: none;
+                padding: 0px 0px 10px 0;
+            }
+            h3{
+                font-size: 16px;
+            }
+            p:nth-of-type(1){
+                margin: 10px 0 0px 0;
+            }
+            ul{
+                display: none;
+            }
+            p:nth-of-type(2){
+                display: none;
+            }
+        }
+    }
+}
+
+// Blog and Promotions
+
+.blog_promotions{
+    margin: 20px auto 30px auto;
+    .containerNeiro{
+        a{
+            @include a_hat_text_page();
+            font-size: 20px; 
+        }
+        .blog{
+            margin: 10px 0 0px 0;
+            .blog1, .blog2{
+                img{
+                    width: 140px;
+                    height: 106px;;   
+                }
+                h4:nth-of-type(1){
+                    display: none;
+                }
+                h4:nth-of-type(2){
+                    display: block;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #333333;
+                }
+                p:nth-of-type(1){
+                    display: none;
+                }
+                p:nth-of-type(2){
+                    display: block;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 16px;
+                    color: #707070;
+                }
+            }
+            .blog2{
+                margin-left: 7px;
+            }
+            .blog4, .blog3 {
+                display: none;
+            }
+        }
+    }
+}
+
+// Contact Information
+
+.contact_information{
+    .containerNeiro{
+        display: block;
+        .contact{
+            h4{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            p:nth-of-type(1){
+                display: none;
+            }
+            p:nth-of-type(2){
+                display: block;
+                margin: 13px 0 17px 0;
+            }
+            .social_media{
+                margin-top: 10px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .map{
+            margin-top: 16px;
+            iframe{
+                width: 289px;
+                height: 230px;
+            }
+        }
+    }
+}
 
 
 

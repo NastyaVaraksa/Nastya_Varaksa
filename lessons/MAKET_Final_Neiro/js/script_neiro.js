@@ -1,3 +1,100 @@
+function openMenu(){
+    var menu = document.querySelector('.header_top');
+    var btn = document.querySelector('.header_top_mobil img:nth-child(2)');
+    var isOpenMenu = menu.getAttribute('data-open');
+    if(isOpenMenu === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'true')
+    } else {
+        menu.style.right = '-100%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-open', 'false')
+    }
+}
+
+
+function openProduct(){
+    var menu = document.querySelector('.header_bottom');
+    var isopenProduct = menu.getAttribute('data-open');
+    if(isopenProduct === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'false')
+    } else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-open', 'true')
+    }
+}
+function closeProduct(){
+    var menu = document.querySelector('.header_bottom');
+    var btn = document.querySelector('.header_bottom .button_mobil i');
+    var iscloseProduct = menu.getAttribute('data-close');
+    if(iscloseProduct === 'false'){
+        menu.style.right = '0%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-close', 'false')
+    }  else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-close', 'true')
+    }
+}
+
+
+function openFilter(){
+    var menu = document.querySelector('.form');
+    var isopenFilter = menu.getAttribute('data-open');
+    if(isopenFilter === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'false')
+    } else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-open', 'true')
+    }
+}
+function closeFilter(){
+    var menu = document.querySelector('.form');
+    var btn = document.querySelector('.filter_form .button_i i');
+    var iscloseFilter = menu.getAttribute('data-close');
+    if(iscloseFilter === 'false'){
+        menu.style.right = '0%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-close', 'false')
+    }  else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-close', 'true')
+    }
+}
+
+
+function openSorting(){
+    var menu = document.querySelector('.filter_price');
+    var isopenSorting = menu.getAttribute('data-open');
+    if(isopenSorting === 'false'){
+        menu.style.right = '0%';
+        menu.setAttribute('data-open', 'false')
+    } else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-open', 'true')
+    }
+}
+function closeSorting(){
+    var menu = document.querySelector('.filter_price');
+    var btn = document.querySelector('.filter_price .button_i i');
+    var iscloseSorting = menu.getAttribute('data-close');
+    if(iscloseSorting === 'false'){
+        menu.style.right = '0%';
+        btn.innerHTML = '';
+        menu.setAttribute('data-close', 'false')
+    }  else {
+        menu.style.right = '-100%';
+        menu.setAttribute('data-close', 'true')
+    }
+}
+
+
+
+
+
+
 // var products1 = [
 //     {
 //         id: 1,
@@ -139,62 +236,6 @@ for(var i=0; i<products.length; i++){
 
 ul.innerHTML = str;
 
-function openMenu(){
-    var menu = document.querySelector('.main__menu');
-    var btn = document.querySelector('.menu__icons li:last-child');
-    
-    var isOpenMenu = menu.getAttribute('data-open');
-    if(isOpenMenu === 'false'){
-        menu.style.right = '0%';
-        btn.style.background = 'none';
-        btn.style.fontSize = '31px'
-        btn.innerHTML = 'X';
-        menu.setAttribute('data-open', 'true')
-    } else {
-        menu.style.right = '-100%';
-        btn.style.background = 'url("img/burger.svg") no-repeat center';
-        btn.style.fontSize = '31px'
-        btn.innerHTML = '';
-        menu.setAttribute('data-open', 'false')
-    }
-} */}
+ */}
 
-
-function openMenu(){
-    var menu = document.querySelector('.header_top');
-    var btn = document.querySelector('.header_top_mobil img:nth-child(2)');
-    var isOpenMenu = menu.getAttribute('data-open');
-    if(isOpenMenu === 'false'){
-        menu.style.right = '0%';
-        menu.setAttribute('data-open', 'true')
-    } else {
-        menu.style.right = '-100%';
-        btn.innerHTML = '';
-        menu.setAttribute('data-open', 'false')
-    }
-}
-function openProduct(){
-    var menu = document.querySelector('.header_bottom');
-    var isopenProduct = menu.getAttribute('data-open');
-    if(isopenProduct === 'false'){
-        menu.style.right = '0%';
-        menu.setAttribute('data-open', 'true')
-    } else {
-        menu.style.right = '-100%';
-        menu.setAttribute('data-open', 'false')
-    }
-}
-function closeProduct(){
-    var menu = document.querySelector('.header_bottom');
-    var btn = document.querySelector('.header_bottom .button_mobil i');
-    var isloseProduct = menu.getAttribute('data-close');
-    if(isloseProduct === 'false'){
-        menu.style.right = '0%';
-        btn.innerHTML = '';
-        menu.setAttribute('data-close', 'false')
-    }  else {
-        menu.style.right = '-100%';
-        menu.setAttribute('data-close', 'true')
-    }
-}
 
