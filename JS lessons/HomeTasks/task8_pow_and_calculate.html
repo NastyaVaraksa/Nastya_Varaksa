@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pow and calculate</title>
+</head>
+<body>
+<script>
+
+
+function pow(a) {
+    let c;
+    c = a;
+    let d;
+   return function (b) {
+            if (b == 0) {
+                c = 1;
+            } else {
+                if (b > 0){
+                    for (let i = 1; i < b; i++) {
+                    c = c * a; 
+                };  
+                } else if (b < 0) {
+                    c = 1
+                    for (let i = b; i < 0; i++) {
+                    c = c / a; 
+                }
+            }
+            }
+        return console.log(a + `^` + b + ` = ` + c);
+    }      
+}
+
+function calculate(a) {
+    let rezalt;
+    return function(b) {
+        return function(c) {
+                if (b == "+") {
+                rezalt = a + c;
+                } else if (b == "-") {
+                    rezalt = a - c;
+                } else if (b == "*") {
+                    rezalt = a * c;
+                } else if (b == "/") {
+                    if (c == 0){
+                        rezalt = 'Ошибка (на ноль делить нельзя)';
+                    } else {
+                        rezalt = a / c;
+                    } 
+                }
+                return console.log(a + b + c + ` = ` + rezalt);
+                 
+        }
+    }
+} 
+
+pow(-2)(3);
+calculate(1)("+")(2);
+pow(4)(2);
+calculate(3)("*")(7);
+pow(16)(0);
+calculate(15)("/")(3);
+pow(2)(-3);
+calculate(2)("/")(0);
+
+
+
+
+</script>
+    
+
+</body>
+</html>

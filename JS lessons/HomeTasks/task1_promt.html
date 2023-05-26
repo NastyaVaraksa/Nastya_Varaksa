@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home1_promt</title>
+</head>
+<body>
+
+
+
+<script>
+
+// Задание 1.1
+let width = prompt('Введите ширину прямоугольника')
+let length = prompt('Введите длину прямоугольника')
+if (width===length) {
+    console.log((!width && !length) || (!width || !length) ? 'Вы не ввели длину(ширину) прямоугольника' : `Площадь квадрата равна: ${width*length}`)
+} else {
+    console.log((!width && !length) || (!width || !length) ? 'Вы не ввели длину(ширину) прямоугольника' : `Площадь прямоугольника равна: ${width*length}`)
+}
+
+// Задание 1.2
+let month = Number(prompt('Введите номер месяца:'))
+if (month===1 || month===2 || month===12){
+    console.log(`Сейчас пора года: зима`)
+} else if (month===3 || month===4 ||  month===5) {
+    console.log(`Сейчас пора года: весна`)
+} else if (month===6 || month===7 ||  month===8) {
+    console.log(`Сейчас пора года: лето`)
+} else if (month===9 || month===10 ||  month===11) {
+    console.log(`Сейчас пора года: осень`)  
+} else 
+    console.log(`Вы неверно ввели номер месяца`)
+
+// Задание 1.3   
+let num = Number(prompt('Введите любое число:')) 
+let info1, info2, info3
+
+    if (num % 2 == 0){
+        info1 = "четное"
+    } else{
+        info1 = "нечетное"
+    }
+
+    if (Number.isInteger(num)){
+        info2 = "целое"
+    } else{
+        info2 = "дробное"
+    }
+
+    if (num > 0){
+        info3 = "положительное"
+    }else if (num == 0){
+        info3 = "не имеет знака"
+    } else{
+        info3 = "отрицательное"
+    }
+
+    if (!num){
+        info3 = "Вы не ввели число"
+    }
+
+console.log(!num ? 'Вы не ввели число' : `Число, которое вы ввели: 1)${info1}, 2)${info2}, 3)${info3}`);
+
+
+</script>
+   
+</body>
+</html>

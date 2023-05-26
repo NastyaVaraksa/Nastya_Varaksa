@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// методы animal
+let animal = {
+  walk() {
+    if (!this.isSleeping) {
+      alert(`I walk`);
+    }
+  },
+  sleep() {
+    this.isSleeping = true;
+  }
+};
+
+let rabbit = {
+  name: "White Rabbit",
+  __proto__: animal
+};
+
+// модифицирует rabbit.isSleeping
+rabbit.sleep();
+
+
+
+alert(rabbit.isSleeping); // true
+alert(animal.isSleeping); // undefined (нет такого свойства в прототипе)
+
+
+
+let a = "";
+console.log(a);
+a = Number(a);
+console.log(a);
+
+
+
+</script>
+</body>
+</html>

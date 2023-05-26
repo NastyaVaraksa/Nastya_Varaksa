@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons counte</title>
+
+<style>
+button {
+    width: 100px;
+    height: 50px;
+    margin: 50px 5px;
+    font-size: 21px;
+    border: none;
+}
+button:nth-child(1){
+background-color: red;
+}
+button:nth-child(2){
+background-color: yellow;
+}
+button:nth-child(3){
+background-color: green;
+}
+button:hover{
+    border: 2px solid black;
+}
+</style> 
+
+</head>
+<body>
+
+<button class="btn">0</button> 
+<button class="btn">0</button> 
+<button class="btn">0</button> 
+
+
+
+<script>
+
+const buttons = document.querySelectorAll(".btn");
+
+function makeCounter() {
+    let count = 1;
+    return function() {
+        return count++;
+    };
+}
+
+for (let i = 0; i < buttons.length; i += 1) {
+    let counter = makeCounter();
+    buttons[i].onclick = function() {
+        console.log(buttons[i].textContent);
+        buttons[i].textContent = counter();
+    }
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

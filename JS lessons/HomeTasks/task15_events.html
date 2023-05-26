@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        .task1, .task2, .task3, .task4 {
+            margin: 20px 20px;
+        }
+        p{
+            font-size: 21px;
+        }
+        span{
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+  
+<!-- задание 1     -->
+<div class="task1">
+    <p>task1</p>
+    <a href="https://learn.javascript.ru/" title="Атрибут ПЕРВОЙ ссылки">первая ссылка</a><br><br>
+    <a href="https://www.google.by/" title="Атрибут ВТОРОЙ ссылки">вторая ссылка</a><br><br>
+    <a href="https://www.youtube.com/" title="Атрибут ТРЕТЬЕЙ ссылки">третья ссылка</a><br>
+</div>
+
+<!-- задание 2     -->
+<div class="task2">
+    <p>task2</p>
+    <input type="text" name="task2" value="input 1"><br><br>
+    <input type="text" name="task2" value="input 2"><br><br>
+    <input type="text" name="task2" value="input 3"><br>
+</div>
+
+<!-- задание 3     -->
+<div class="task3">
+    <p>task3</p>
+    <span>2</span><br>
+    <span>3</span><br>
+    <span>4</span><br>
+    <span>5</span><br>
+    <span>10</span><br>
+</div>
+
+<!-- задание 4     -->
+<div class="task4">
+    <p>task4</p> 
+    <input type="text" name="task4" data-length="3" placeholder="3"><br><br>
+    <input type="text" name="task4" data-length="5" placeholder="5"><br><br>
+    <input type="text" name="task4" data-length="7" placeholder="7"><br><br>
+    <input type="text" name="task4" data-length="10" placeholder="10"><br>
+</div>
+
+<script>
+
+// задание 1
+var elems1 = document.getElementsByTagName('a');
+for (var i = 0; i < elems1.length; i++) {
+	elems1[i].addEventListener('mouseover', changeText);
+    elems1[i].addEventListener('mouseover', addHref);
+}
+function changeText() {
+    this.innerHTML = this.title;
+    this.removeEventListener('mouseover', changeText);
+
+}
+function addHref() {
+	this.innerHTML = this.innerHTML + ' (' + this.href + ')';
+    this.removeEventListener('mouseover', addHref);
+}
+
+// задание 2
+
+var elems2 = document.querySelectorAll(`[name="task2"]`);
+for (var i = 0; i < elems2.length; i++) {
+	elems2[i].addEventListener('blur', lossFocus, {once: true});
+}
+function lossFocus() {
+	console.log(this.value);
+	this.removeEventListener('blur', lossFocus);
+}
+
+// задание 3
+
+var elems3 = document.getElementsByTagName('span');
+for (var i = 0; i < elems3.length; i++) {
+	elems3[i].addEventListener('click', squareElem);
+}
+function squareElem() {
+	this.innerHTML = this.innerHTML * this.innerHTML;
+    this.removeEventListener('click', squareElem);
+}
+
+// задание 4
+
+var elems4 = document.querySelectorAll(`[name="task4"]`);
+for (var i = 0; i < elems4.length; i++) {
+	elems4[i].addEventListener('blur', guessNumberLetters);
+}
+function guessNumberLetters() {
+	var rightLength = this.dataset.length; //правильное количество
+	var inputLength = this.value.length; //вбитое в инпут количество
+	if(rightLength == inputLength){
+		this.style.borderColor = 'green';
+	} else {
+		this.style.borderColor = 'red';
+	}
+}
+
+</script>    
+</body>
+</html>

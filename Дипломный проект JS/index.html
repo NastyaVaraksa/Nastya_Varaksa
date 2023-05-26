@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+                body, html
+{
+	/* width: 100%;
+	height: 100%; */
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.wrapper
+{ 
+	width: 100%;
+	height: 100%; 
+}
+
+.canvas
+{display: block;
+    margin: 0px auto ;
+    margin-top: 20px;
+  
+	/* width: 100%;
+	height: 100%;
+	background: #000;  */
+}
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <canvas width="0" height="0" class="canvas" id="canvas">Your browser does not support canvas.</canvas>
+    </div>
+
+<script>
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+canvas.width = 1000;
+canvas.height = 800;
+   
+var objects = []; //Game objects
+var speed = 5;
+
+class Road {
+	constructor(image, y){
+		this.x = 0;
+		this.y = y;
+		this.loaded = false;
+
+		this.image = new Image();
+		
+		var obj = this;
+
+		this.image.addEventListener("load", function () { obj.loaded = true; });
+
+		this.image.src = image;
+	}
+
+	Update(road) {
+		this.y += speed; //The image will move down with every frame
+
+		if(this.y > canvas.height) //if the image left the screen, it will change it's position
+		{
+			this.y = road.y - canvas.width + speed; //New position depends on the second Road object
+		}
+	}
+}
+
+var roads = [
+	new Road("img/roadLines.png", 0),
+	new Road("img/roadLines.png", canvas.width)
+]; //Backgrounds
+
+
+class Car{
+	constructor(image, x, y, isPlayer){
+		this.x = x;
+		this.y = y;
+		this.loaded = false;
+		this.dead = false;
+		this.isPlayer = isPlayer;
+		this.okLeft === false;
+		this.okRight === false;
+		this.okUp === false;
+		this.okDown === false;
+
+		this.image = new Image();
+
+		var obj = this;
+
+		this.image.addEventListener("load", function () { obj.loaded = true; });
+
+		this.image.src = image;
+	}
+
+	Update(){
+		if(!this.isPlayer)
+		{
+			this.y += speed;
+		}
+
+		if(this.y > canvas.height + 50)
+		{
+			this.dead = true;
+		}
+		// if(this.okLeft === true && this.x + this.image.width > canvas.width){
+		// 	this.x -= speed; 
+		// }
+		// if(this.okRight === true && this.x < 0){
+		// 	this.x += speed; 
+		// }
+
+	}
+
+	Collide(car){
+		var hit = false;
+
+		if(this.y < car.y + car.image.height && this.y + this.image.height > car.y) //If there is collision by y
+		{
+			if(this.x + this.image.width > car.x && this.x < car.x + car.image.width) //If there is collision by x
+			{
+				hit = true;
+			}
+		}
+
+		return hit;
+	}
+
+	Move(v, d) {
+		if(v == "x") {//Moving on x
+			d *= 2;
+
+			this.x += d; //Changing position
+
+			//Rolling back the changes if the car left the screen
+			if(this.x + this.image.width > canvas.width)
+			{
+				this.x -= d; 
+			}
+	
+			if(this.x < 0)
+			{
+				this.x = 0;
+			}
+		}
+		else {//Moving on y
+			this.y += d;
+
+			if(this.y + this.image.height > canvas.height)
+			{
+				this.y -= d;
+			}
+
+			if(this.y < 0)
+			{
+				this.y = 0;
+			}
+		}
+	}
+	// Move(v) {
+	// 	if(v === true) {//Moving on x
+	// 		d *= 2;
+
+	// 		this.x += d; //Changing position
+
+	// 		//Rolling back the changes if the car left the screen
+	// 		if(this.x + this.image.width > canvas.width)
+	// 		{
+	// 			this.x -= d; 
+	// 		}
+	
+	// 		if(this.x < 0)
+	// 		{
+	// 			this.x = 0;
+	// 		}
+	// 	}
+	// 	else {//Moving on y
+	// 		this.y += d;
+
+	// 		if(this.y + this.image.height > canvas.height)
+	// 		{
+	// 			this.y -= d;
+	// 		}
+
+	// 		if(this.y < 0)
+	// 		{
+	// 			this.y = 0;
+	// 		}
+	// 	}
+	// }
+
+}
+
+var player = new Car("img/car.png", canvas.width / 2, canvas.height / 2, true); //Player's object
+
+// function KeyDown(e)
+// {
+// 	switch(e.keyCode)
+// 	{
+// 		case 37: //Left
+// 		this.okLeft === true;
+// 			break;
+
+// 		case 39: //Right
+// 		this.okRight === true;
+// 			break;
+
+// 		case 38: //Up
+// 		this.okUp === true;
+// 			break;
+
+// 		case 40: //Down
+// 		this.okDown === true;
+// 			break;
+
+// 		case 27: //Esc
+// 			if(timer == null)
+// 			{
+// 				Start();
+// 			}
+// 			else
+// 			{
+// 				Stop();
+// 			}
+// 			break;
+// 	}
+// }
+
+var objects = []; //Game objects
+
+var obs = new Image();
+obs.src = 'img/obs2.png';
+var loadedImages = 0;
+
+obs.onload = function() {
+	loadedImages++;
+	for(var i=0;i<carCount;i++)
+		obstacles[i] = new Obstacles(i);
+}
+
+var xinged = 0;
+var carCount = 4;
+var obsSpeed = 6;
+function Obstacles(order) {
+	this.order = order;
+	this.x = (Math.random()*(canvas.width-100))+50;
+	this.y = -250*this.order-300;
+	this.draw2 = function() {
+		this.y += obsSpeed;
+		if(this.y >= canvas.height){
+			xinged++;
+			while(true) {
+				this.x = (Math.random()*(canvas.width-100))+50;
+				this.y = -400*Math.random()-300;
+				var overlapping = false;
+				for(var i=0;i<carCount ;i++){
+					if(i!=this.order){
+						if((Math.abs(obstacles[i].x-this.x)<100) && 
+							(Math.abs(obstacles[i].y-this.y)<200)){
+							overlapping = true;
+							break;
+						}
+					}
+				}
+				if(overlapping == false){
+					break;
+				}
+			}
+		}
+		ctx.drawImage(obs,this.x,this.y,100,200);
+	}
+}
+var obstacles = [];
+
+
+
+
+
+function Update() {
+	roads[0].Update(roads[1]);
+	roads[1].Update(roads[0]);
+
+	if(objects.length < 10) //Generating new car
+	{
+		objects.push(new Car("img/car_red2.png", RandomInteger(50, canvas.width - 50), -100, false));
+	}
+
+	player.Update();
+
+	if(player.dead){
+		alert("Crash!");
+		Stop();
+	}
+
+	var isDead = false; 
+
+	for(var i = 0; i < objects.length; i++){
+		objects[i].Update();
+
+		if(objects[i].dead)
+		{
+			isDead = true;
+		}
+	}
+
+	if(isDead){
+		objects.shift();
+	}
+
+	var hit = false;
+
+	for(var i = 0; i < objects.length; i++){
+		hit = player.Collide(objects[i]);
+
+		if(hit)
+		{
+			alert("Crash!");
+			Stop();
+			player.dead = true;
+			break;
+		}
+	}
+
+	if(loadedImages == 3){
+		for(var i=0;i<carCount;i++){
+			obstacles[i].draw2();
+		}
+	 overlapping = false;
+	for(var i=0;i<carCount ;i++){
+		if((Math.abs(obstacles[i].x-myCarX)<95) && 
+			(obstacles[i].y >= canvas.height-400)){
+			overlapping = true;
+			break;
+		}
+	}
+	}
+	
+
+	Draw();
+}
+
+function Draw() //Working with graphics
+{
+	ctx.clearRect(0, 0, canvas.width, canvas.height); //Clearing the canvas
+
+	for(var i = 0; i < roads.length; i++)
+	{
+		ctx.drawImage(
+			roads[i].image, //Image
+			0, //First X on image
+			0, //First Y on image
+			roads[i].image.width, //End X on image
+			roads[i].image.height, //End Y on image
+			roads[i].x, //X on canvas
+			roads[i].y, //Y on canvas
+			canvas.width, //Width on canvas
+			canvas.width //Height on canvas
+		);
+	}
+
+    DrawCar(player);
+
+	for(var i = 0; i < objects.length; i++)
+	{
+		DrawCar(objects[i]);
+	}
+
+	
+}
+
+function DrawCar(car)
+{
+	ctx.drawImage(
+		car.image, 
+		0, 
+		0, 
+		car.image.width, 
+		car.image.height, 
+		car.x, 
+		car.y, 
+		car.image.width, 
+		car.image.height 
+	);
+}
+
+// function KeyDown(e)
+// {
+// 	switch(e.keyCode)
+// 	{
+// 		case 37: //Left
+// 			player.Move("x", -speed);
+// 			break;
+
+// 		case 39: //Right
+// 			player.Move("x", speed);
+// 			break;
+
+// 		case 38: //Up
+// 			player.Move("y", -speed);
+// 			break;
+
+// 		case 40: //Down
+// 			player.Move("y", speed);
+// 			break;
+
+// 		case 27: //Esc
+// 			if(timer == null)
+// 			{
+// 				Start();
+// 			}
+// 			else
+// 			{
+// 				Stop();
+// 			}
+// 			break;
+// 	}
+// }
+function KeyDown(e)
+{
+	switch(e.keyCode)
+	{
+		case 37: //Left
+			player.Move("x", -speed);
+			break;
+
+		case 39: //Right
+			player.Move("x", speed);
+			break;
+
+		case 38: //Up
+			player.Move("y", -speed);
+			break;
+
+		case 40: //Down
+			player.Move("y", speed);
+			break;
+
+		case 27: //Esc
+			if(timer == null)
+			{
+				Start();
+			}
+			else
+			{
+				Stop();
+			}
+			break;
+	}
+}
+
+function RandomInteger(min, max) 
+{
+	let rand = min - 0.5 + Math.random() * (max - min + 1);
+	return Math.round(rand);
+}
+
+function start(){
+	Update()
+    requestAnimationFrame(start)
+	// timer = setInterval(Update, 1000 / 60); //Updating the game 60 times a second
+	
+	
+}
+function stop(){
+    cancelAnimationFrame(start)
+	// clearInterval(timer); //Game stop
+	// timer = null;
+}
+
+start();
+
+window.addEventListener("keydown", function (e) { KeyDown(e); }); //Listenning for keyboard events
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc вариант c MVC </title>
+    <style>
+        body {
+      font-size: 21px;
+      text-align: center;
+    }
+
+    input {
+      min-width: 180px;
+      padding: 8px 12px;
+      border: 1px gray solid;
+      border-radius: 3px;
+      margin: 0 5px;
+    }
+    select {
+      min-width: 50px;
+      padding: 8px 12px;
+      border: 1px gray solid;
+      border-radius: 3px;
+      margin: 0 5px;
+    }
+
+    button {
+      margin-left: 15px;
+      font-size: 16px;
+      line-height: 21px;
+      padding: 6px;
+      border-radius: 5px;
+      background-color: rgb(76, 76, 238);
+      color: white;
+      border: none;
+    }
+    button:disabled {
+        background-color: rgb(152, 152, 218);
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Пример использования MVC</h1>
+    <h3>пример умножения двух чисел</h3>
+    <form>
+      <fieldset>
+        <legend>Магия чисел</legend>
+        <p>
+          <input type="number" placeholder="Введите первое значение" name="input_1" id="input_1">
+          <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          <input type="number" placeholder="Введите второе значение" name="input_2" id="input_2">
+          <button id="calculate-btn">Вычислить</button>
+        </p>
+        <div id="show-result"></div>
+      </fieldset>
+    </form>
+      
+<script>
+
+
+// model
+
+const calculate= {
+   
+    disabled: true,
+
+    result: function(){
+
+    },
+    count: function(x) {
+        this.result = Number(inputNumber1.value)  Number(inputNumber2.value);
+
+    },
+    checkNumber: function(){
+        if (inputNumber1.value && inputNumber2.value) {
+            btn.disabled = false;
+        } else{
+            btn.disabled = true;
+        }
+    },
+
+};
+
+let inputNumber1 = document.querySelector("#input_1");
+let inputNumber2 = document.querySelector("#input_2");
+let operator = document.querySelector("#operator");
+let btn = document.querySelector("#calculate-btn");
+
+// view
+
+const webPageView = {
+
+    const multiplyResult  = document.querySelector("#show-result");
+    multiplyResult.textContent = `Результат вычислений = ${result}`;
+}
+
+
+// controller
+
+const controller = {
+    addListeners: function(){
+        let inputNumber1 = document.querySelector("#input_1");
+        let inputNumber2 = document.querySelector("#input_2");  
+        const btn = document.querySelector("#calculate-btn");
+        // const multiplyResult  = document.querySelector("#show-result");
+
+        btn.addEventListener("click", function(event){
+        event.preventDefault();
+        switch (operator.value) {
+        case "+":
+            calculate.count(+)  = Number(inputNumber1.value) + Number(inputNumber2.value);
+            break;
+        case "-":
+            calculate.count(-)  = Number(inputNumber1.value) - Number(inputNumber2.value);
+            break;
+        case "*":
+            calculate.count(*)  = Number(inputNumber1.value) * Number(inputNumber2.value);
+            break;
+        case "/":
+            calculate.count(/)  = Number(inputNumber1.value) / Number(inputNumber2.value);
+            break;
+        }
+
+        inputNumber1.addEventListener("input", function(){
+            calculate.checkNumber();
+        });
+        inputNumber2.addEventListener("input", function(){
+            calculate.checkNumber();
+        });
+
+});
+    }
+}
+
+controller.addListeners();
+
+
+
+
+
+
+
+
+</script>    
+
+
+</body>
+</html>

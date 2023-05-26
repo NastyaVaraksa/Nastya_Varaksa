@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock-canvas</title>
+    
+</head>
+<body>
+<canvas id="wrapperClockCanvas" width="400" height="400">
+    У вашего браузера нет поддержки canvas. Обновите браузер!
+</canvas>  
+    
+
+<script>
+let clockCanvas = document.getElementById(`wrapperClockCanvas`);
+clockCanvas.parentElement.style.display = "block";
+let contextClock = clockCanvas.getContext("2d");
+let clockCanvasCenterX = clockCanvas.offsetWidth / 2;
+let clockCanvasCenterY = clockCanvas.offsetHeight / 2;
+let radius = 150; 
+let	angleValue = 0; 
+let	distanceOfNumbers = 30;
+let smallCircleCX;
+let smallCircleCY;
+let smallCircleRadius = 30;
+let angle;
+let	arrowHoursHeight = 60;
+let	arrowHoursWidth = 9;
+let	arrowMinutesHeight = 120;
+let	arrowMinutesWidth = 5;
+let	arrowSecondsHeight = 145;
+let	arrowSecondsWidth = 2;
+let	hoursDeg; 
+let	minutesDeg; 
+let	secondsDeg; 
+let	hourNumbers = 12;  
+let	digitalWatchText;
+let digitalWatchWidth = 90;
+let	digitalWatchHeight = 25;
+let	radiusForDigitalWatch = 80; 
+
+function bigCircleForWatch() {
+    let gradientRadial = contextClock.createRadialGradient(clockCanvasCenterX,clockCanvasCenterY,200,200,200,20);
+    gradientRadial.addColorStop(0, "rgb(214, 175, 213)");
+    gradientRadial.addColorStop(1, "rgb(186, 81, 182)");
+    contextClock.fillStyle = gradientRadial;
+    contextClock.beginPath();
+    contextClock.arc(clockCanvasCenterX,clockCanvasCenterY,200,0,Math.PI*2);
+    contextClock.fill();
+
+    for (let i = 1; i <= hourNumbers; i++){
+        
+    angleValue += distanceOfNumbers;
+    angle = angleValue / 180 * Math.PI;
+
+    smallCircleCX = Math.round(clockCanvasCenterX + radius * Math.sin(angle));
+    smallCircleCY = Math.round(clockCanvasCenterY - radius * Math.cos(angle));
+
+    contextClock.save();
+    contextClock.shadowColor = "rgba(0,0,0,.75)";
+    contextClock.shadowOffsetX = 10;
+    contextClock.shadowOffsetY = 10;
+    contextClock.shadowBlur = 5;
+    contextClock.fillStyle = "rgb(191, 184, 184)";
+    contextClock.beginPath();
+    contextClock.arc(smallCircleCX,smallCircleCY,smallCircleRadius,0,Math.PI*2);
+    contextClock.fill();
+    contextClock.restore();
+
+    contextClock.fillStyle ='black';
+    contextClock.font ="normal normal 28px 'Times New Roman'";
+    contextClock.textAlign='center';
+    contextClock.textBaseline='middle';
+    contextClock.fillText(i,smallCircleCX, smallCircleCY);
+    }
+}
+
+function hoursArrow() {
+	let time = new Date();
+	hoursDeg = 30 * (time.getHours() + (1 / 60) * time.getMinutes());
+	contextClock.strokeStyle = "black";
+	contextClock.lineWidth = arrowHoursWidth;
+	contextClock.lineCap = "round";
+	contextClock.beginPath();
+	contextClock.moveTo(clockCanvasCenterX, clockCanvasCenterY);
+	contextClock.lineTo(clockCanvasCenterX + arrowHoursHeight * Math.sin(hoursDeg/180*Math.PI), clockCanvasCenterY - arrowHoursHeight * Math.cos(hoursDeg/180*Math.PI));
+	contextClock.stroke();
+}
+
+function minutesArrow() {
+	let time = new Date();
+	minutesDeg = 6 * (time.getMinutes() + (1 / 60) * time.getSeconds());
+	contextClock.strokeStyle = "black";
+	contextClock.lineWidth = arrowMinutesWidth;
+	contextClock.lineCap = "round";
+	contextClock.beginPath();
+	contextClock.moveTo(clockCanvasCenterX, clockCanvasCenterY);
+	contextClock.lineTo(clockCanvasCenterX + arrowMinutesHeight * Math.sin(minutesDeg/180*Math.PI), clockCanvasCenterY - arrowMinutesHeight * Math.cos(minutesDeg/180*Math.PI));
+	contextClock.stroke();
+}
+
+function secondsArrow() {
+	let time = new Date();
+	secondsDeg = 6 * time.getSeconds();
+	contextClock.strokeStyle = "black";
+	contextClock.lineWidth = arrowSecondsWidth;
+	contextClock.lineCap = "round";
+	contextClock.beginPath();
+	contextClock.moveTo(clockCanvasCenterX, clockCanvasCenterY);
+	contextClock.lineTo(clockCanvasCenterX + arrowSecondsHeight * Math.sin(secondsDeg/180*Math.PI), clockCanvasCenterY - arrowSecondsHeight * Math.cos(secondsDeg/180*Math.PI));
+	contextClock.stroke();
+}
+
+function digitalWatch() {
+	let time = new Date(); 
+	contextClock.fillStyle = "black";
+	digitalWatchText = time.toLocaleTimeString();
+	contextClock.font ="normal bold 26px 'Times New Roman'";
+	contextClock.textAlign='center';
+	contextClock.textBaseline='middle';
+	contextClock.fillText(digitalWatchText, clockCanvasCenterX, clockCanvasCenterY - radiusForDigitalWatch);	
+	contextClock.fill();
+}
+
+function startClock() {
+    bigCircleForWatch();
+	hoursArrow();
+	minutesArrow(); 
+	secondsArrow();
+    digitalWatch();
+}
+
+startClock(); 
+setInterval (startClock, 1000); 
+
+</script>
+
+
+</body>
+</html>

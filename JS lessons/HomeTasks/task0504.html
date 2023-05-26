@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-size: 21px;
+      text-align: center;
+    }
+
+    input {
+      min-width: 180px;
+      padding: 8px 12px;
+      border: 1px gray solid;
+      border-radius: 3px;
+      margin: 0 5px;
+    }
+
+    button {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+<body>
+   
+  <h1>Пример решения задачи "в лоб"</h1>
+
+  <h3>пример умножения двух чисел</h3>
+  <form>
+    <fieldset>
+      <legend>Магия чисел</legend>
+      <p>
+        <input type="number" placeholder="Введите первое значение" name="input_1" id="input_1">
+        <span class="mult-sign"> x </span>
+        <input type="number" placeholder="Введите второе значение" name="input_2" id="input_2">
+      </p>
+      <p>
+        <button id="calculate-btn">Вычислить</button>
+      </p>
+      <div id="show-result"></div>
+    </fieldset>
+  </form>
+    
+
+<script>
+
+let inputNumber1 = document.querySelector("#input_1");
+let inputNumber2 = document.querySelector("#input_2");
+let btn = document.querySelector("#calculate-btn");
+let multiplyResult  = document.querySelector("#show-result");
+
+inputNumber1.addEventListener("input", checkNumber);
+inputNumber2.addEventListener("input", checkNumber);
+
+btn.disabled = true;
+
+function checkNumber(){1
+  
+ if (inputNumber1.value && inputNumber2.value) {
+    btn.disabled = false;
+ } else{
+    btn.disabled = true;
+ }
+}
+
+btn.addEventListener("click", (event) => calculateResult(event));
+
+const calculateResult = function(event){
+event.preventDefault();
+let result = inputNumber1.value * inputNumber2.value;
+multiplyResult.textContent = `Результат вычислений = ${result}`;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>

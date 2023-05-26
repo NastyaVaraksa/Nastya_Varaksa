@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home2_while_for</title>
+</head>
+<body>
+    
+<script>
+
+// Задание 2.1
+var triangle = "|_";
+while (triangle.length < 18){
+    console.log(triangle + "\n");
+    triangle += "|_";
+}
+
+
+let str = "";
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
+        if (i < j) continue
+        str += j;
+    }
+   str = str + "\n"
+}
+console.log(str)
+
+// Задание 2.2
+let square = '';
+for (let i = 0; i < 8; i++ ) {
+    for (let j = 0; j < 8; j++) {
+    if (j % 2 == i % 2) {
+        square += '\u2B1C'
+    }
+    else{
+        square += '\u2B1B'
+    }
+    }
+    square += '\n'; 
+}
+console.log(square)
+    
+
+let squ = '';
+for (let i = 0; i < 8; i++ ) {
+    for (let j = 0; j < 8; j++) {
+    if (j % 2 == 0) {
+        squ += '\u2B1C'
+    }
+    else{
+        squ += '\u2B1B'
+    }
+    }
+    squ += '\n'; 
+}
+console.log(squ)  
+    
+    
+</script>
+
+</body>
+</html>

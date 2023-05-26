@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compression</title>
+</head>
+<body>
+    
+<script>
+
+function compress(str) {
+  let newstr = "";
+  let count = 1;
+  for (let i = 0; i <= str.length; i++) {
+    if (str.charAt(i) === str.charAt(i + 1)) {
+      count += 1;
+    } else {
+      newstr += `${str.charAt(i)}${count}`;
+      count = 1;
+    }
+  }
+  return  console.log(`"` + str + `"` + ` => ` + `"` + newstr + `"`) ;
+}
+
+compress("a");
+compress("aaa");
+compress("aabbb");
+compress("fffdccbbb");
+
+function uncompress(str) {
+  let newstr;
+  let newstr2 = [];
+  let index = 1;
+  let numberArray = str.match(/(\d+)/g);
+  let strArray = [];
+  for (let i = 0; i < str.length; i++) {
+      if (!isFinite(str[i])) {
+        strArray.push(str[i]);
+      }
+    };
+  if (str.length==1) {
+    newstr2 += `${str}`;
+    newstr = newstr2;
+
+  } else {
+    for (let i = 0; i < strArray.length; i++) {
+      newstr2[i] = strArray[i].repeat(numberArray[i])  ;
+      newstr = newstr2.join('');
+    }
+     
+  }
+ 
+  return console.log(`"` + str + `"` + ` => ` + `"` + newstr + `"`) ;
+}
+
+
+uncompress("a");
+uncompress("a5");
+uncompress("a2b3");
+uncompress("a12b1c3");
+
+
+  
+</script>
+</body>
+</html>

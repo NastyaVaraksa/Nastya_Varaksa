@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method-counter</title>
+</head>
+<body>
+    
+<script>
+
+// function GetCounter2(a = 0) {
+//     this.a = a;
+//     this.show = function() {
+//         console.log(a);
+//        return this;
+//     };
+//     this.count = function(b) {
+//     this.b = b;
+//        a += b;
+//        return this;
+//     };
+//     this.reset = function() {
+//        a = 0;
+//        return this;
+//     };
+// }
+
+//   const counter2 = new GetCounter2(5);
+//   counter.show() // 5
+//   .count(4)
+//   .show() // 9
+//   .count(3)
+//   .show() // 12
+//   .reset()
+//   .show() // 0
+//   .count(8)
+//   .show(); // 8
+ 
+
+// let resalt2 = {
+//   a: 0,
+//    count(b){
+//       this.a += b
+//       return this;
+//    },
+//    log() {
+//       console.log(this.a);
+//       return this;
+//    },
+//    reset(){
+//       this.a = 0;
+//       return this;
+//    }
+// }
+
+// function getCounter2(a=0) {
+
+//   resalt.a = a;
+//   return resalt;
+// }
+
+// const counter2 = getCounter2();
+//   counter2.log() // 5
+//   .count(4)
+//   .log() // 9
+//   .count(3)
+//   .log() // 12
+//   .reset()
+//   .log() // 0
+//   .count(8)
+//   .log(); // 8
+
+
+//   let resalt = {
+//   a: 0,
+//    count(b){
+//       this.a += b
+//       return this;
+//    },
+//    log() {
+//       console.log(this.a);
+//       return this;
+//    },
+//    reset(){
+//       this.a = 0;
+//       return this;
+//    }
+// }
+
+const getCounter = function(a=0) {
+   return {
+      a: a,
+      log:  function() {
+      console.log(this.a);
+      return this;
+      },
+      count:  function(b) {
+      this.a += b;
+      return this;
+      },
+      reset:  function() {
+      this.a = a;
+      return this;
+      }
+   };
+};
+
+const counter = getCounter();
+  counter.log() // 5
+  .count(4)
+  .log() // 9
+  .count(3)
+  .log() // 12
+  .reset()
+  .log() // 0
+  .count(8)
+  .log(); // 8
+
+  const counter2 = getCounter(150);
+  counter2.log() // 5
+  .count(4)
+  .log() // 9
+  .count(3)
+  .log() // 12
+  .reset()
+  .log() // 0
+  .count(8)
+  .log(); // 8
+
+  
+
+
+
+//   function getCounter(a = 0) {
+//    this.a = a;
+//     let resalt = a;
+
+//     this.show = function() {
+//         console.log(resalt);
+//        return count;
+//     }
+//      this.count = function(b) {
+//       this.b = b;
+//        resalt += b;
+//        return count;
+//     }
+//     function reset() {
+//        resalt = 0;
+//        return reset;
+//     }
+    
+//     return this.show
+// }
+
+//   const counter = getCounter(5);
+//   counter.show() // 5
+//   .count(4)
+//   .show() // 9
+//   .count(3)
+//   .show() // 12
+//   .reset()
+//   .show() // 0
+//   .count(8)
+//   .show(); // 8
+ 
+
+
+</script>
+
+
+</body>
+</html>

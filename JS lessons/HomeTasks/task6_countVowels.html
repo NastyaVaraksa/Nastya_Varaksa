@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countVowels</title>
+</head>
+<body>
+    
+<script>
+
+function countVowelLetters(words){
+
+   let vowels = ['у','е','ы','а','о','э','я','и','ю','ё'];
+   let count = 0;
+   
+    for(let letter of words.toLowerCase()) {
+        if (vowels.includes(letter)){
+        count += 1;
+      }
+    }
+    
+    return count;
+}
+
+console.log(`Количество гласных = ` + countVowelLetters('Пришла зима, запахло…'));
+console.log(`Количество гласных = ` + countVowelLetters('Ghbdtn, z r dfv bp Hjccbb'));
+console.log(`Количество гласных = ` + countVowelLetters('длинношеее'));
+console.log(`Количество гласных = ` + countVowelLetters('Не будете ли Вы так любезны, Иван, передать мне блокнот и «Известия'));
+console.log(`Количество гласных = ` + countVowelLetters('Архангел Уриил'));
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

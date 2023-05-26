@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #dropDown--menu li {
+            min-height: 50px;
+            padding: 0.1px;
+            list-style-type: none;
+            border-bottom: 1px solid rgb(176, 176, 176);
+            position: relative;
+        }
+
+        #dropDown--menu li:hover {
+            cursor: pointer;
+            background: rgb(176, 176, 176);
+        }
+
+        #dropDown--menu li div {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 0.5s;
+        }
+
+        #dropDown--menu li p {
+            display: none;
+            transition: 0.5s;
+        }
+
+        .container {
+            width: 1380px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="dropDown--menu">
+            <li>
+                <div data-id="1" data-open="false" class="plus">
+                    <img src="Vector.svg" alt="">
+                </div>
+                <h3>title1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor neque quos odio
+                    laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur voluptatum est ullam,
+                    incidunt voluptas.</p>
+            </li>
+            <li>
+                <div data-id="2" data-open="false" class="plus">
+                    <img src="Vector.svg" alt="">
+                </div>
+                <h3>title2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor neque quos odio
+                    laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur voluptatum est ullam,
+                    incidunt voluptas.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor
+                    neque quos odio laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur
+                    voluptatum est ullam, incidunt voluptas.</p>
+            </li>
+            <li>
+                <div data-id="3" data-open="false" class="plus">
+                    <img src="Vector.svg" alt="">
+                </div>
+                <h3>title3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor neque quos odio
+                    laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur voluptatum est ullam,
+                    incidunt voluptas.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor
+                    neque quos odio laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur
+                    voluptatum est ullam, incidunt voluptas.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vero, illum, quasi dolor neque quos odio laudantium a expedita repellat ea excepturi? Unde beatae
+                    mollitia aspernatur voluptatum est ullam, incidunt voluptas.</p>
+            </li>
+            <li>
+                <div data-id="4" data-open="false" class="plus">
+                    <img src="Vector.svg" alt="">
+                </div>
+                <h3>title4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum, quasi dolor neque quos odio
+                    laudantium a expedita repellat ea excepturi? Unde beatae mollitia aspernatur voluptatum est ullam,
+                    incidunt voluptas.</p>
+            </li>
+            <li>
+                <div data-id="5" data-open="false" class="plus">
+                    <img src="Vector.svg" alt="">
+                </div>
+                <h3>title5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var elems = document.getElementsByClassName('plus');
+
+        for (var i = 0; i < elems.length; i++) {
+            var elem = elems[i];
+            elem.addEventListener('click', function (event) {
+                var plusBtn = event.currentTarget;
+                if (plusBtn.dataset.open === 'false') {
+                    plusBtn.style.transform = 'rotate(45deg)';
+                    plusBtn.dataset.open = 'true';
+                    var id = plusBtn.dataset.id;
+                    var currectP = document.querySelector('li:nth-child(' + id + ') p');
+                    currectP.style.display = 'block';
+                } else{
+                    plusBtn.style.transform = 'rotate(0deg)';
+                    plusBtn.dataset.open = 'false';
+                    var id = plusBtn.dataset.id;
+                    var currectP = document.querySelector('li:nth-child(' + id + ') p');
+                    currectP.style.display = 'none';
+                }
+            })
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <div>
+        <canvas id="racecanvas" width="640" height="300" style="border: 1px dotted #800000;">
+         No canvas support in your broswer:(
+        </canvas>
+        <div id="racecount">0</div>
+       </div>
+    <script type="text/javascript">
+        (function(elementId, counterId, width, height, speed, density) {
+         var canvas = document.getElementById(elementId),
+          counter = document.getElementById(counterId),
+          context = canvas.getContext('2d'),
+          position = Math.floor(width/2), 
+          size = 10,
+          count = 0,
+          blocks = [];
+         canvas.width = width; 
+         canvas.height = height;
+        
+         var game = setInterval(function() {
+          if (Math.random() < density) blocks.push([Math.random()*(width-size),-size,Math.round(Math.random())]);
+          context.clearRect(0,0,width,height);
+          context.fillStyle = '#000000';
+          context.fillRect(position,height-size*4,size,size*4);
+          for (var i = 0; i < blocks.length; i++) {
+           context.fillStyle = blocks[i][2] ? '#800000' : '#008000';
+           context.fillRect(blocks[i][0],blocks[i][1],size,size);
+           if (blocks[i][1] > height - size*5 && blocks[i][1] < height - size && 
+               Math.abs( position - blocks[i][0]) < size ) { //Столкновение
+            if (blocks[i][2]) count--; 
+            else count++;
+            counter.innerHTML = count;
+           }
+           if (blocks[i][1] > height - size/2) blocks.splice (i--,1);
+           else blocks[i][1] += size/2;
+          }
+          if (density<0.5) density += 0.0005;
+         },speed);
+        
+         document.addEventListener('mousemove', function (e) { //Обработчик движения мыши
+          if (e.pageX > 0) {
+           if (e.pageX < width) position = e.pageX;
+           else position = width-10;
+          }
+          else position = 0;
+         }, false);
+        })('racecanvas','racecount',640,300,30,0.07); 
+        //id канвы и счётчика, размеры канвы, скорость (в мс), плотность (от 0 до 1)
+        </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinks</title>
+    <style>
+body{
+	margin: 50px;
+}
+button{
+    width: 150px;
+    height: 50px;
+    font-size:18px;
+    color: black;
+    background:rgb(173, 162, 162);
+}
+p, h2, span, table{
+    font-size:20px;
+    margin: 0;
+    padding: 0;
+}
+#coctailInfoAbout{
+    font-size:26px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+.underline {
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+ 
+<div>
+    <button class="button1" value="button1" id="coctailName" title="button Ввод рецепта">Ввод рецепта</button><br><br>
+    <button class="button2" value="button2" id="coctailInfo" title="button Рецепт напитка">Рецепт напитка</button><br><br>
+    <button class="button3" value="button3" id="coctailInfoDelete" title="button Удаление рецепта">Удаление рецепта</button><br><br>
+    <button class="button4" value="button4" id="coctailList" title="button Перечень всех коктейлей">Перечень всех коктейлей</button><br><br>
+    <h2 id="coctailInfoTitle"></h2>
+    <table id="coctailInfoIngredient"></table>
+    <p id="coctailInfoRecipe"></p>
+    <p id="coctailInfoAbout"></p>
+</div> 
+
+
+ <script>
+
+function HashStorage(key, value) {
+    let self = this;
+
+    self.hashStorage = { };
+
+    self.addValue = function(key, value) {
+        self.hashStorage[key] = value;
+    }
+
+    self.getValue = function(key) {
+        if(key in self.hashStorage) {
+            return self.hashStorage[key];
+        } 
+        else {
+            return undefined;
+        }
+    }
+
+    self.deleteValue = function(key) {
+        if(key in self.hashStorage) {
+            delete self.hashStorage[key];
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    self.getKeys = function() {
+        let keys = [];
+        for(let key in self.hashStorage){
+            keys.push(key);
+        }
+        return keys;
+    }
+}
+
+
+let coctailStorage = new HashStorage();
+
+coctailStorage.addValue(`Маргарита`, {
+    alcohol: true,
+    ingredients: 
+    `Водка Finlandia 50 мл.
+    Кофейный ликер 25мл.
+    Лед в кубиках 120 г.`,
+    recipe: `Наполни стакан кубиками льда доверху, затем налей кофейный ликер 25 мл, водку 50 мл и размешай коктейльной ложкой.`
+});
+
+coctailStorage.addValue(`Пеликан`, {
+    alcohol: false,
+    ingredients: 
+    `Гренадин Monin 10мл.
+    Клубничный сироп Monin 10мл.
+    Персиковый сок 150мл.
+    Лимонный сок 15мл.
+    Банан 110г.
+    Клубника 50г.
+    Дробленый лед 60г.`,
+    recipe: `Положи в блендер очищенную и нарезанную половинку банана и клубнику 2 ягоды. Налей лимонный сок 15 мл, гренадин 10 мл, клубничный сироп 10 мл и персиковый сок 150 мл. Добавь в блендер совок дробленого льда и взбей. Перелей в хайбол. Укрась кружком банана и половинкой клубники на коктейльной шпажке.`
+
+});
+
+coctailStorage.addValue(`Мохито`, {
+    alcohol: true,
+    ingredients: 
+    `Белый ром 50 мл.
+    Сахарный сироп 15 мл.
+    Содовая 100 мл.
+    Лайм  80 г.
+    Мята 3 г.
+    Дробленый лед 200 г.`,
+    recipe: `Лайм разрезать на 4 части. Из 3 отжать сок. В высокий стакан (хайбол или коллинз) положить листочки мяты, сахар, сок лайма. Все это растолочь с помощью барной ложки с красным кончиком или ступкой. Засыпать лед на 2/3 емкости. Залить ром и содовую воду, аккуратно размешать с помощью соломинки. Украсить напиток долькой лайма, льдом и мятными листьями.`
+});
+
+
+let coctailName = document.getElementById(`coctailName`);
+
+coctailName.onclick = function() {
+    let keyName = prompt(`Напишите название напитка:`);
+    let valueName = { };
+    let valueIngredients = prompt(`Напишите необходимые ингредиенты для приготовления ${keyName} и в каких пропорциях. Каждый игредиент отделяйте от другого точкой (.)!`);   
+    valueName.alcohol = confirm(`Если напиток ${keyName} алкогольный, нажмите \'ок\', если безалкогольный \'отмена\'`);
+    valueName.ingredients = valueIngredients;
+    valueName.recipe = prompt(`Напишите рецепт приготовления ${keyName}:`);
+    coctailStorage.addV alue(keyName, valueName);
+}
+
+let coctailInfo = document.getElementById(`coctailInfo`);
+
+coctailInfo.onclick = function() {
+    let coctailInfoName = prompt(`Напишите название напитка:`);
+    let coctailInfoAbout = document.getElementById(`coctailInfoAbout`);
+    let coctailInfoIngredients = document.getElementById(`coctailInfoIngredient`);
+    let coctailInfoTitle = document.getElementById(`coctailInfoTitle`);
+    let coctailInfoRecipe = document.getElementById(`coctailInfoRecipe`);
+    
+
+    let information = coctailStorage.getValue(coctailInfoName);
+    information.ingredients = information.ingredients.split(`.`);
+
+    if(coctailStorage.getValue(coctailInfoName) !== undefined) {
+        coctailInfoTitle.innerHTML = `Коктейль :${coctailInfoName}` 
+        +` (`+ `алкогольный: `+(information.alcohol === true ? `Да` : `Нет`) +`)`
+        coctailInfoIngredient.innerHTML = `<span class="underline">` + `Необходимые ингредиенты: ` + `</span>`;
+        coctailInfoIngredient.innerHTML += '<table>';
+            for(let i=0; i < information.ingredients.length - 1; i++) {
+            coctailInfoIngredient.innerHTML += '<tr><td>' + information.ingredients[i] + '</td></tr>';     
+        }
+        coctailInfoIngredient.innerHTML += '</table>';
+        coctailInfoRecipe.innerHTML = `<span class="underline">` +  `Pецепт приготовления:`+  `</span>` +`<br>` + (information.recipe ? information.recipe : `Рецепт приготовления отсутствует`);
+    }
+    else {
+        coctailInfoAbout.innerHTML = `Напиток не найден`;
+    }
+}
+
+let coctailInfoDelete = document.getElementById(`coctailInfoDelete`);
+
+coctailInfoDelete.onclick = function() {
+    let coctailInfoDelete = prompt(`Напишите название напитка, который хотите удалить:`);
+    let coctailInfoAbout = document.getElementById(`coctailInfoAbout`);
+
+    if(coctailStorage.deleteValue(coctailInfoDelete) === true) {
+        coctailInfoAbout.innerHTML = `Вы удалили напиток`;
+    }
+    else {
+        coctailInfoAbout.innerHTML = `Напиток не найден`;
+    }
+}
+
+let coctailList = document.getElementById(`coctailList`);
+
+coctailList.onclick = function() {
+    let coctailInfoAbout = document.getElementById(`coctailInfoAbout`);
+    coctailInfoAbout.innerHTML = coctailStorage.getKeys();
+}
+
+
+</script>
+
+</body>
+</html>

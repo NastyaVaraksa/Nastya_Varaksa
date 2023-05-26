@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+        <button id="btn">Отсчитать</button>
+        <input type="date" id="birthday" value="">
+        <input type="text" value="" id="result">
+    </form>
+<script>
+
+var birthday = document.getElementById('birthday');
+            var result = document.getElementById('result');
+            var btn = document.getElementById('btn');
+            if(birthday && result && btn){
+                birthday.addEventListener('change', function(event){
+                    var bdDate = event.target.valueAsDate.getTime() 
+                    var date = new Date();
+                    var today = date.getTime();
+                    if(bdDate > today){
+                        result.value = Math.floor((bdDate-today)/86400000); // 86400000 - количество милисекунд в сутках
+                    }
+                    else {
+                        alert("Укажите дату больше текушей.");
+                    }
+                });
+                btn.addEventListener('click', function(event){
+                    document.forms["myForm"].reset();
+                });
+            }
+
+</script>   
+</body>
+</html>
