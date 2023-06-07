@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "NASTYA",
+      "score": 50,
+      "id": 1
+    },
+    {
+      "name": "ZHENYA",
+      "score": 35,
+      "id": 2
+    }
+  ]
+}

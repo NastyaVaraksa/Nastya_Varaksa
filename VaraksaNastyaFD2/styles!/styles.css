@@ -1,0 +1,356 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  background: url("../img/fon.jpg");
+  background-color: #010111;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* registration page */
+.registration h1 {
+  font-size: 26px;
+  margin: 0 auto; }
+.registration .form {
+  position: relative;
+  padding: 10px 30px;
+  margin: 20px 0 0;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-size: 18px;
+  -webkit-box-shadow: 0 0 30px 6px blueviolet;
+          box-shadow: 0 0 30px 6px blueviolet;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px); }
+  .registration .form .form__label {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0 5px 8px; }
+  .registration .form .form__input {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    border: 2px solid blue;
+    padding: 8px 40px 8px 40px; }
+  .registration .form .form__input::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 0.5; }
+  .registration .form .form__input:-ms-input-placeholder {
+    color: #000000;
+    opacity: 0.5; }
+  .registration .form .form__input::-ms-input-placeholder {
+    color: #000000;
+    opacity: 0.5; }
+  .registration .form .form__input::placeholder {
+    color: #000000;
+    opacity: 0.5; }
+  .registration .form .form__input:hover {
+    border: 2px solid blueviolet; }
+  .registration .form .form__input:focus {
+    border: 2px solid transparent;
+    outline: 3px solid blueviolet; }
+  .registration .form .form__input:hover::-webkit-input-placeholder {
+    color: blueviolet; }
+  .registration .form .form__input:hover:-ms-input-placeholder {
+    color: blueviolet; }
+  .registration .form .form__input:hover::-ms-input-placeholder {
+    color: blueviolet; }
+  .registration .form .form__input:hover::placeholder {
+    color: blueviolet; }
+  .registration .form .form__buttons {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .registration .form .form__buttons .button {
+      display: block;
+      color: #ffffff;
+      border: 2px solid blue;
+      border-radius: 8px;
+      padding: 8px 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#8d8de8), to(blue));
+      background: linear-gradient(#8d8de8, blue); }
+    .registration .form .form__buttons .button:focus {
+      border: 2px solid blueviolet;
+      outline: none; }
+    .registration .form .form__buttons .button:hover {
+      background-color: blueviolet;
+      background: -webkit-gradient(linear, left top, left bottom, from(#b987cb), to(blueviolet));
+      background: linear-gradient(#b987cb, blueviolet); }
+
+/* Home Page */
+.menu .name_game {
+  color: #ffffff;
+  font-size: 50px;
+  -webkit-animation: color-change 1s infinite;
+          animation: color-change 1s infinite; }
+@-webkit-keyframes color-change {
+  0% {
+    color: blueviolet; }
+  50% {
+    color: blue; }
+  100% {
+    color: blueviolet; } }
+@keyframes color-change {
+  0% {
+    color: blueviolet; }
+  50% {
+    color: blue; }
+  100% {
+    color: blueviolet; } }
+.menu ul {
+  margin-left: -85px;
+  list-style-type: none; }
+  .menu ul li a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none; }
+  .menu ul li a:hover {
+    color: blueviolet; }
+
+/* ссылка backНоме */
+.divBackНоме {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .divBackНоме a {
+    font-size: 30px;
+    -webkit-animation: color-change 1s infinite;
+            animation: color-change 1s infinite; }
+@keyframes color-change {
+  0% {
+    color: blueviolet; }
+  50% {
+    color: blue; }
+  100% {
+    color: blueviolet; } }
+/* Game Page */
+.game {
+  width: 100%;
+  height: 100%; }
+  .game a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .game .divBtnGame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0; }
+    .game .divBtnGame .btnGame {
+      margin-right: 15px;
+      font-size: 18px; }
+    .game .divBtnGame .btnGame:hover {
+      scale: 1.1; }
+    .game .divBtnGame .btnPauseGame {
+      display: block;
+      background-color: green;
+      border: 1px solid grey;
+      border-radius: 10px; }
+    .game .divBtnGame .btnRestartGame {
+      border: 1px solid grey;
+      border-radius: 10px; }
+    .game .divBtnGame .btnRestartGame:active {
+      background-color: yellow; }
+    .game .divBtnGame .btnSoundOff {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url("../img/off3.png");
+      background-repeat: no-repeat; }
+    .game .divBtnGame .btnSoundOn {
+      display: none;
+      width: 50px;
+      height: 50px;
+      background-image: url("../img/on4.png");
+      background-repeat: no-repeat; }
+  .game .divSpan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .game .divSpan span {
+      margin-right: 15px;
+      font-size: 24px;
+      color: #000000; }
+  .game canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+
+/* Rules Page */
+.rules {
+  margin: 0 50px; }
+
+/* records Page */
+@media all and (max-width: 1201px) {
+  /* Rules Page */
+  .rules {
+    font-size: 18px;
+    margin: 0 40px; } }
+@media all and (max-width: 1024px) {
+  /* Home Page */
+  .menu .name_game {
+    font-size: 40px;
+    margin-left: 60px; }
+
+  ul {
+    margin-left: -50px; }
+    ul li a {
+      font-size: 30px; }
+
+  /* Rules Page */
+  .rules {
+    font-size: 18px;
+    margin: 0 30px; } }
+@media all and (max-width: 768px) {
+  /* Home Page */
+  .menu .name_game {
+    font-size: 30px;
+    margin-left: 80px; }
+  .menu ul {
+    margin-left: -40px; }
+    .menu ul li a {
+      font-size: 30px; }
+
+  /* Rules Page */
+  .rules {
+    font-size: 14px;
+    margin: 0 20px; }
+
+  /* records Page */
+  .content {
+    font-size: 18px; }
+
+  .records h2 {
+    font-size: 18px; }
+
+  .usersList2 li {
+    font-size: 18px; }
+
+  /* Game Page */
+  .game .divBtnGame {
+    margin: 5px 0; }
+    .game .divBtnGame .btnGame {
+      margin-right: 5px;
+      font-size: 14px; }
+  .game .divSpan span {
+    margin-right: 5px;
+    font-size: 14px; }
+
+  /* ссылка backНоме */
+  .divBackНоме a {
+    font-size: 20px; } }
+@media all and (max-width: 550px) {
+  /* registration page */
+  .registration {
+    font-size: 18px; }
+    .registration h1 {
+      font-size: 18px;
+      margin: 10px auto; } }
+@media all and (max-width: 480px) {
+  /* registration page */
+  .registration {
+    font-size: 13px; }
+    .registration h1 {
+      font-size: 18px; }
+
+  /* Home Page */
+  .menu .name_game {
+    font-size: 20px;
+    margin-left: 90px; }
+  .menu ul {
+    margin-left: -30px; }
+    .menu ul li a {
+      font-size: 20px; }
+
+  /* Rules Page */
+  .rules {
+    font-size: 13px;
+    margin: 0 10px; }
+
+  /* records Page */
+  h2.toplist-page__title {
+    font-size: 20px; }
+
+  /* Game Page */
+  .game .divBtnGame {
+    margin: 5px 0; }
+    .game .divBtnGame .btnGame {
+      margin-right: 3px;
+      font-size: 12px; }
+  .game .divSpan span {
+    margin-right: 3px;
+    font-size: 12px; }
+
+  /* ссылка backНоме */
+  .divBackНоме a {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=styles.css.map */

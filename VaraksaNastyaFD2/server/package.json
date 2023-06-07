@@ -1,0 +1,9 @@
+
+{
+  "scripts": {
+    "start": "json-server --port 9090 --watch db.json"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.3"
+  }
+}

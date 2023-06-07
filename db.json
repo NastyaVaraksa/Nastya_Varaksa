@@ -1,0 +1,299 @@
+{
+  "users": [
+    {
+      "name": "NASTYA",
+      "score": 100,
+      "id": 1
+    },
+    {
+      "name": "nastya",
+      "score": 6,
+      "id": 2
+    },
+    {
+      "name": "inna",
+      "score": 15,
+      "id": 3
+    },
+    {
+      "name": "nastya",
+      "score": 23,
+      "id": 4
+    },
+    {
+      "name": "nastya",
+      "score": 38,
+      "id": 5
+    },
+    {
+      "name": "inna",
+      "score": 13,
+      "id": 6
+    },
+    {
+      "name": "max",
+      "score": 22,
+      "id": 7
+    },
+    {
+      "name": "max",
+      "score": 6,
+      "id": 8
+    },
+    {
+      "name": "max",
+      "score": 88,
+      "id": 9
+    },
+    {
+      "name": "max",
+      "score": 35,
+      "id": 10
+    },
+    {
+      "name": "max",
+      "score": 3,
+      "id": 11
+    },
+    {
+      "name": "max",
+      "score": 14,
+      "id": 12
+    },
+    {
+      "name": "max",
+      "score": 10,
+      "id": 13
+    },
+    {
+      "name": "max",
+      "score": 28,
+      "id": 14
+    },
+    {
+      "name": "max",
+      "score": 9,
+      "id": 15
+    },
+    {
+      "name": "max",
+      "score": 1,
+      "id": 16
+    },
+    {
+      "name": "max",
+      "score": 16,
+      "id": 17
+    },
+    {
+      "name": "max",
+      "score": 30,
+      "id": 18
+    },
+    {
+      "name": "max",
+      "score": 14,
+      "id": 19
+    },
+    {
+      "name": "max",
+      "score": 6,
+      "id": 20
+    },
+    {
+      "name": "max",
+      "score": 2,
+      "id": 21
+    },
+    {
+      "name": "max",
+      "score": 6,
+      "id": 22
+    },
+    {
+      "name": "max",
+      "score": 12,
+      "id": 23
+    },
+    {
+      "name": "max",
+      "score": 3,
+      "id": 24
+    },
+    {
+      "name": "max",
+      "score": 13,
+      "id": 25
+    },
+    {
+      "name": "max",
+      "score": 9,
+      "id": 26
+    },
+    {
+      "name": "max",
+      "score": 7,
+      "id": 27
+    },
+    {
+      "name": "max",
+      "score": 7,
+      "id": 28
+    },
+    {
+      "name": "max",
+      "score": 36,
+      "id": 29
+    },
+    {
+      "name": "max",
+      "score": 52,
+      "id": 30
+    },
+    {
+      "name": "max",
+      "score": 13,
+      "id": 31
+    },
+    {
+      "name": "max",
+      "score": 2,
+      "id": 32
+    },
+    {
+      "name": "max",
+      "score": 5,
+      "id": 33
+    },
+    {
+      "name": "nastya",
+      "score": 3,
+      "id": 34
+    },
+    {
+      "name": "nastya",
+      "score": 2,
+      "id": 35
+    },
+    {
+      "name": "nastya",
+      "score": 4,
+      "id": 36
+    },
+    {
+      "name": "nastya",
+      "score": 3,
+      "id": 37
+    },
+    {
+      "name": "nastya",
+      "score": 38,
+      "id": 38
+    },
+    {
+      "name": "nastya",
+      "score": 21,
+      "id": 39
+    },
+    {
+      "name": "nastya",
+      "score": 45,
+      "id": 40
+    },
+    {
+      "name": "nastya",
+      "score": 6,
+      "id": 41
+    },
+    {
+      "name": "nastya",
+      "score": 19,
+      "id": 42
+    },
+    {
+      "name": "nastya",
+      "score": 66,
+      "id": 43
+    },
+    {
+      "name": "nastya",
+      "score": 16,
+      "id": 44
+    },
+    {
+      "name": "nastya",
+      "score": 7,
+      "id": 45
+    },
+    {
+      "name": "nastya",
+      "score": 1,
+      "id": 46
+    },
+    {
+      "name": "nastya",
+      "score": 33,
+      "id": 47
+    },
+    {
+      "name": "nastya",
+      "score": 27,
+      "id": 48
+    },
+    {
+      "name": "nastya",
+      "score": 4,
+      "id": 49
+    },
+    {
+      "name": "nastya",
+      "score": 26,
+      "id": 50
+    },
+    {
+      "name": "nastya",
+      "score": 29,
+      "id": 51
+    },
+    {
+      "name": "nastya",
+      "score": 54,
+      "id": 52
+    },
+    {
+      "name": "nastya",
+      "score": 7,
+      "id": 53
+    },
+    {
+      "name": "nastya",
+      "score": 6,
+      "id": 54
+    },
+    {
+      "name": "nastya",
+      "score": 86,
+      "id": 55
+    },
+    {
+      "name": "nastya",
+      "score": 13,
+      "id": 56
+    },
+    {
+      "name": "nastya",
+      "score": 11,
+      "id": 57
+    },
+    {
+      "name": "nastya",
+      "score": 137,
+      "id": 58
+    },
+    {
+      "name": "nastya",
+      "score": 137,
+      "id": 59
+    }
+  ]
+}
